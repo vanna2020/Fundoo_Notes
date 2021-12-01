@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const utilities = require('../utilities/helper.js');
 
 const userSchema = mongoose.Schema({
     firstName: {
@@ -12,8 +13,8 @@ const userSchema = mongoose.Schema({
     email: {
         type: String,
         required: true,
-        unique: true
-    },          
+        unique: true,
+    },
     password: {
         type: String,
         required: true,
@@ -28,22 +29,34 @@ const user = mongoose.model('User', userSchema);
 class userModel {
 
     registerUser = (userDetails, callback) => {
-        const newUser = new user();
-        newUser.firstName = userDetails.firstName;
-        newUser.lastName = userDetails.lastName;
-        newUser.email = userDetails.email;
-        newUser.password = userDetails.password;
-
-        newUser.save()
-            .then(data => {
-                callback(null, data);
-            })
-            .catch(err => {
-                callback({ message: "Error while Storing User Details in DataBase" }, null);
-            })
-    };
-
-    loginModel = (loginData, callBack) => {
+        const newUser = new user({
+            firstName: userDetails.firstName,
+            lastName: userDetails.lastName,
+            email: userDetails.email,
+            password: userDetails.password
+        });
+        try {
+            utilities.hashing(userDetails.password, (error, hash) => {
+                if (hash) {
+                    newUser.password = hash;
+                    newUser.save((error, data) => {
+                        if (error) {
+                            callback(error, null);
+                        } else {
+                            callback(null, data);
+                        }
+                    });
+                } else {
+                    throw error;
+                }
+            });
+        }
+        catch (error) {
+            logger.error('Find error in model');
+            return callback('Internal Error', null)
+        }
+    }
+    loginUser = (loginData, callBack) => {
         //To find a user email in the database
         user.findOne({ email: loginData.email }, (error, data) => {
             if (error) {
