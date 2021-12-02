@@ -9,15 +9,7 @@ app.use(express.json())
 const dbConfig = require('./config/database.config.js');
 const mongoose = require('mongoose');
 
-// Connecting to the database
-//mongoose.connect(dbConfig.url, {
-  //  useNewUrlParser: true
-//}).then(() => {
-  //  console.log("Successfully connected to the database");    
-//}).catch(err => {
-  //  console.log('Could not connect to the database. Exiting now...', err);
-    //process.exit();
-//});
+
 dbConfig.connection();
 // define a simple route
 app.get('/', (req, res) => {
@@ -25,7 +17,7 @@ app.get('/', (req, res) => {
 });
 
 // Require Notes routes
-require('./App/routes/note.routes.js')(app);
+require('./App/routes/note.routes.js')(app)
 
 // listen for requests
 app.listen(3000, () => {
