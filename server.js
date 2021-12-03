@@ -1,25 +1,31 @@
 const express = require('express');
+require('dotenv').config();
+
 
 // create express app
 const app = express();
 
+
+// parse requests of content-type - application/x-www-form-urlencoded
+app.use(express.urlencoded({ extended: true }))
+
+// parse requests of content-type - application/json
 app.use(express.json())
 
 // Configuring the database
 const dbConfig = require('./config/database.config.js');
-const mongoose = require('mongoose');
 
-
+// Connecting to the database
 dbConfig.connection();
 // define a simple route
 app.get('/', (req, res) => {
-    res.json({"message": "Welcome to EasyNotes application. Take notes quickly. Organize and keep track of all your notes."});
+    res.json({ "message": "Welcome to fundooNotes application. Take notes quickly. Organize and keep track of all your notes." });
 });
-
 // Require Notes routes
-require('./App/routes/note.routes.js')(app)
+require('./app/routes/note.routes.js')(app);
 
 // listen for requests
-app.listen(3000, () => {
-    console.log("Server is listening on port 3000");
+app.listen(process.env.PORT, () => {
+    console.log("Server is listening");
 });
+module.exports = app

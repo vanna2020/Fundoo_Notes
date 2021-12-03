@@ -18,7 +18,13 @@ class Helper {
       lastName: data.lastName,
       email: data.email
     };
-    return jwt.sign({ dataForToken }, process.env.JWT_SECRET, { expiresIn: '24H' });
+    return jwt.sign(
+        { dataForToken },
+         process.env.JWT_SECRET,
+          { 
+              expiresIn: '20H'
+             }
+             );
   };
 }
 
