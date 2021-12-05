@@ -12,7 +12,7 @@ describe('registartion', () => {
   it('givenRegistrationDetails_whenProper_shouldSaveInDB', (done) => {
     // const registartionDetails = registrationData.user.correctRegister;
     const registerfaker = {
-      firstName: faker.name.findName(),
+      firstName: faker.name.firstName(),
       lastName: faker.name.lastName(),
       email: faker.internet.email(),
       password: faker.internet.password()
