@@ -7,6 +7,7 @@
  const mongoose = require('mongoose');
  const utilities = require('../utilities/helper.js');
  const { logger } = require('../../logger/logger');
+ const Otp = require('./otp.js');
  
  const userSchema = mongoose.Schema({
      firstName: {
@@ -91,5 +92,21 @@
              }
          });
      }
-}
-module.exports = new userModel();
+ 
+     /**
+     * @description mongoose function for forgot password
+     * @param {*} email
+     * @param {*} callback
+     */
+     forgotPassword = (data, callback) => {
+         user.findOne({ email: data.email }, (err, data) => {
+             if (data) {
+                 return callback(null, data);
+             } else {
+                 logger.error('User with email id does not  exists');
+                 return callback(err, null);
+             }
+         });
+     };
+ }
+ module.exports = new userModel();
