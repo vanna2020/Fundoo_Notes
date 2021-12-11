@@ -1,7 +1,19 @@
+/**
+ * @description   : Taking the request from the client and gives the response
+ * @author        : Vandana Singh
+*/
+
 const userService = require('../service/service.js')
 const validation = require('../utilities/validation');
 const { logger } = require('../../logger/logger')
 class Controller {
+
+  /**
+     * @description Create and save user and sending response to service
+     * @method register to save the user
+     * @param req,res for service
+     */
+
   register = (req, res) => {
     try {
       const user = {
@@ -45,6 +57,12 @@ class Controller {
     }
   }
 
+  /**
+     * @description retrieving login info from user by email and password
+     * @method login
+     * @param req,res for service
+     */
+
   login = (req, res) => {
     try {
       const userLoginInfo = {
@@ -69,6 +87,7 @@ class Controller {
             error
           });
         }
+        logger.info('User logged in successfully');
         return res.status(200).json({
           success: true,
           message: 'User logged in successfully',

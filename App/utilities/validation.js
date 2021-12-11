@@ -1,5 +1,11 @@
-const Joi = require('joi');
+/**
+ * @module       : utilities
+ * @file         : validation.js
+ * @description  : it contains the validation for register and login API
+ * @author       : Vandana Singh
+ */
 
+ const Joi = require('joi');
 class Validation {
   authRegister =
         Joi.object({
