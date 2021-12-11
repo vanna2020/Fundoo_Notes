@@ -12,25 +12,35 @@
     "host": "localhost:3000",
     "basePath": "/",
     "tags": [],
-    "schemes": ["http"],
-    "consumes": ["application/json"],
-    "produces": ["application/json"],
+    "schemes": [
+        "http"
+    ],
+    "consumes": [
+        "application/json"
+    ],
+    "produces": [
+        "application/json"
+    ],
     "paths": {
         "/register": {
             "post": {
-                "tags": ["Register"],
+                "tags": [
+                    "Register"
+                ],
                 "description": "Register new user",
                 "parameters": [
                     {
                         "name": "Register",
                         "in": "body",
                         "description": "User that we want to register",
-                        "schema": { 
+                        "schema": {
                             "$ref": "#/definitions/registerUser"
                         }
                     }
                 ],
-                "produces": ["application/json"],
+                "produces": [
+                    "application/json"
+                ],
                 "responses": {
                     "201": {
                         "description": "New user is Registered"
@@ -44,10 +54,11 @@
                 }
             }
         },
-
         "/login": {
             "post": {
-                "tags": ["Login"],
+                "tags": [
+                    "Login"
+                ],
                 "description": "Login user",
                 "parameters": [
                     {
@@ -59,8 +70,9 @@
                         }
                     }
                 ],
-
-                "produces": ["application/json"],
+                "produces": [
+                    "application/json"
+                ],
                 "responses": {
                     "200": {
                         "description": "ok"
@@ -72,7 +84,6 @@
             }
         }
     },
-
     "definitions": {
         "registerUser": {
             "type": "object",
@@ -89,7 +100,6 @@
                 "password": {
                     "type": "string"
                 }
-                
             }
         },
         "loginUser": {

@@ -1,5 +1,5 @@
 const bcrypt = require('bcryptjs');
-const jwt=require('jsonwebtoken');
+const jwt = require('jsonwebtoken');
 
 class Helper {
   hashing = (password, callback) => {
@@ -19,12 +19,12 @@ class Helper {
       email: data.email
     };
     return jwt.sign(
-        { dataForToken },
-         process.env.JWT_SECRET,
-          { 
-              expiresIn: '20H'
-             }
-             );
+      { dataForToken },
+      process.env.JWT_SECRET,
+      {
+        expiresIn: '20H'
+      }
+    );
   };
 }
 
