@@ -1,3 +1,4 @@
+//Added rules for eslint
 module.exports = {
     parser: "@babel/eslint-parser",
     env: {
