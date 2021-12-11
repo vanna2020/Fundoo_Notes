@@ -4,3 +4,4 @@
 {"level":"info","message":"User logged in successfully","timestamp":"2021-12-11T09:14:31.729Z"}
 {"level":"info","message":"User registered","timestamp":"2021-12-11T09:48:58.355Z"}
 {"level":"error","message":"User with email id does not  exists","timestamp":"2021-12-11T09:50:00.977Z"}
+{"level":"info","message":"User registered","timestamp":"2021-12-11T10:41:59.267Z"}
