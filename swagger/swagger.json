@@ -111,6 +111,38 @@
                     }
                 }
             }
+        },
+        "/reset-Password": {
+            "put": {
+                "tags": [
+                    "reset password"
+                ],
+                "description": "Already registered ? Then reset password successfully !!",
+                "parameters": [
+                    {
+                        "name": "Reset Password",
+                        "in": "body",
+                        "description": "Reset Password with code",
+                        "schema": {
+                            "$ref": "#/definitions/resetPassword"
+                        }
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "reset password succesfully !!"
+                    },
+                    "400": {
+                        "description": "Incorrect Password for reset password"
+                    },
+                    "500": {
+                        "description": "Internal server error"
+                    }
+                }
+            }
         }
     },
     "definitions": {
@@ -146,6 +178,20 @@
             "type": "object",
             "properties": {
                 "email": {
+                    "type": "string"
+                }
+            }
+        },
+        "resetPassword": {
+            "type": "object",
+            "properties": {
+                "email": {
+                    "type": "string"
+                },
+                "newPassword": {
+                    "type": "string"
+                },
+                "code": {
                     "type": "string"
                 }
             }
