@@ -1,1 +1,10 @@
 {"level":"error","message":"User with email id does not  exists","timestamp":"2021-12-11T09:50:00.978Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-12-14T09:44:18.565Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-12-14T09:44:37.212Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-12-14T09:44:45.673Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-12-14T09:46:32.501Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-12-14T09:46:54.416Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-12-14T09:51:54.680Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2021-12-14T09:52:13.840Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2021-12-14T09:55:05.145Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2021-12-14T10:00:20.620Z"}
