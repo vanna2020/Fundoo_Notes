@@ -5,3 +5,7 @@
 {"level":"info","message":"User registered","timestamp":"2021-12-11T09:48:58.355Z"}
 {"level":"error","message":"User with email id does not  exists","timestamp":"2021-12-11T09:50:00.977Z"}
 {"level":"info","message":"User registered","timestamp":"2021-12-11T10:41:59.267Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2021-12-14T09:31:27.672Z"}
+{"level":"info","message":"Email id found","timestamp":"2021-12-14T09:32:20.987Z"}
+{"level":"info","message":" token generated ","timestamp":"2021-12-14T09:32:21.250Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2021-12-14T09:32:21.286Z"}
