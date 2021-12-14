@@ -5,6 +5,7 @@ chai.use(chaiHttp);
 const registrationData = require('./user.json');
 const loginData = require('./user.json');
 const userInputs = require('./user.json');
+const inputData = require('./user.json');
 const faker = require('faker');
 
 chai.should();
@@ -152,6 +153,36 @@ describe('forgotPassword', () => {
         res.should.have.status(400);
         res.body.should.have.property('success').eql(false);
         res.body.should.have.property('message').eql('Wrong Input Validations');
+        done();
+      });
+  });
+});
+
+describe('reset Password API', () => {
+  it('givenresetdetails_whenproper_shouldberesetlinkSent', (done) => {
+    const reset = inputData.user.validDetails;
+    chai
+      .request(server)
+      .put('/reset-Password')
+      .send(reset)
+      .end((error, res) => {
+        res.should.have.status(200);
+        res.body.should.have.property('success').eql(true);
+        res.body.should.have.property('message').eql('Password reset succesfully');
+        done();
+      });
+  });
+
+  it('givenresetdetails_whenNotproper_shouldberesetlinkSent', (done) => {
+    const reset = inputData.user.invalidDetails;
+    chai
+      .request(server)
+      .put('/reset-Password')
+      .send(reset)
+      .end((error, res) => {
+        res.should.have.status(400);
+        res.body.should.have.property('success').eql(false);
+        res.body.should.have.property('message').eql('Invalid password');
         done();
       });
   });
