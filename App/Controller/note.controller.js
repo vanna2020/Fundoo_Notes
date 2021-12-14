@@ -1,6 +1,6 @@
 /**
  * @description   : Taking the request from the client and gives the response
- * @author          : Vandana Singh
+ * @author        : Vandana Singh
 */
 
 const userService = require('../service/service.js')
