@@ -18,6 +18,16 @@ class Note {
                 description: req.body.description
             };
 
+            const createNoteValidation = validation.notesCreationValidation.validate(note);
+            if (createNoteValidation.error) {
+                console.log(createNoteValidation.error);
+                return res.status(400).send({
+                    success: false,
+                    message: 'Wrong Input Validations',
+                    data: createNoteValidation
+                });
+            }
+
             noteService.createNote(note, (error, data) => {
                 if (error) {
                     logger.error('failed to post note');

@@ -93,3 +93,4 @@
 {"level":"info","message":"User logged in successfully","timestamp":"2021-12-16T18:49:48.332Z"}
 {"level":"error","message":"Internal server error","timestamp":"2021-12-16T18:50:34.906Z"}
 {"level":"info","message":"Successfully inserted note","timestamp":"2021-12-16T19:00:43.882Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2021-12-16T19:08:16.110Z"}
