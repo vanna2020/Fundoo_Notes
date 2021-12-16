@@ -94,3 +94,8 @@
 {"level":"error","message":"Internal server error","timestamp":"2021-12-16T18:50:34.906Z"}
 {"level":"info","message":"Successfully inserted note","timestamp":"2021-12-16T19:00:43.882Z"}
 {"level":"info","message":"Successfully inserted note","timestamp":"2021-12-16T19:08:16.110Z"}
+{"level":"info","message":"User registered","timestamp":"2021-12-16T19:14:17.501Z"}
+{"level":"info","message":"Email id found","timestamp":"2021-12-16T19:15:30.940Z"}
+{"level":"info","message":" token generated ","timestamp":"2021-12-16T19:15:31.181Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2021-12-16T19:15:31.198Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2021-12-16T19:17:39.560Z"}
