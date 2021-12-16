@@ -26,12 +26,12 @@ exports.sendEmail = (mailMessage) => {
     <h3>${otpcode}</h3>`
     };
 
-    transporter.sendMail(message, (err, info) => {
+    transporter.sendMail(message, (err, data) => {
         if (err) {
             console.log(err);
         } else {
-            console.log('email has been sent', info.response);
-            return info.response;
+            console.log('email has been sent', data.response);
+            return data.response;
         }
     });
 };

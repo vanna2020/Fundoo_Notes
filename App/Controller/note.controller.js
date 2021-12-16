@@ -127,6 +127,7 @@ class Controller {
           data: validationforgotPassword
         });
       }
+      
       userService.forgotPassword(userCredential, (error, result) => {
         if (error) {
           return res.status(400).send({
@@ -141,7 +142,6 @@ class Controller {
         }
       });
     } catch (error) {
-      console.log("Error", error);
       logger.error('Internal server error');
       return res.status(500).send({
         success: false,

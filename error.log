@@ -37,3 +37,9 @@
 {"level":"error","message":"Invalid Credential","timestamp":"2021-12-14T10:41:17.499Z"}
 {"level":"error","message":"Wrong Input Validations","timestamp":"2021-12-14T10:41:17.763Z"}
 {"level":"error","message":"Invalid password","timestamp":"2021-12-14T10:41:18.284Z"}
+{"level":"error","message":"User with email id does not  exists","timestamp":"2021-12-14T18:46:32.307Z"}
+{"level":"error","message":"User Not Exist","timestamp":"2021-12-15T18:56:11.307Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-16T18:46:56.165Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-16T18:49:14.514Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-16T18:49:21.431Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-16T18:50:34.907Z"}

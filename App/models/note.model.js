@@ -99,15 +99,19 @@
      * @param {*} callback
      */
      forgotPassword = (data, callback) => {
-         user.findOne({ email: data.email }, (err, data) => {
-             if (data) {
-                 return callback(null, data);
-             } else {
-                 logger.error('User with email id does not  exists');
-                 return callback(err, null);
-             }
-         });
-     };
+        user.findOne({ email: data.email }, (err, data) => {
+            if (err) {
+                logger.error('Some error in the query');
+                return callback(err, null);
+            } else {
+                if(!data){
+                    logger.error('User Not Exist')
+                }else{
+                    return callback(null, data);
+                }
+            }
+        });
+    };
  
      /**
          * @description mongooose method for reseting the password
