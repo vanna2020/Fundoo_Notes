@@ -20,7 +20,7 @@ class Note {
 
             const createNoteValidation = validation.notesCreationValidation.validate(note);
             if (createNoteValidation.error) {
-                console.log(createNoteValidation.error);
+                logger.error('Wrong Input Validation')
                 return res.status(400).send({
                     success: false,
                     message: 'Wrong Input Validations',
@@ -52,5 +52,39 @@ class Note {
             });
         }
     }
+
+    /**
+  * @description function written to get all the notes from the database
+  * @param {*} req
+  * @param {*} res
+  * @returns response
+  */
+    getNote = (req, res) => {
+        try {
+            const id = { id: req.user.dataForToken.id };
+
+            noteService.getNote(id, resolve, reject);
+            function resolve(data) {
+                logger.info('Get All Notes successfully');
+                return res.status(201).json({
+                    message: 'Get All Notes successfully',
+                    success: true,
+                    data: data
+                });
+            }
+            function reject() {
+                logger.error('Failed to get all notes');
+                return res.status(400).json({
+                    message: 'failed to get all notes',
+                    success: false
+                });
+            }
+        } catch {
+            logger.error('Internal Error');
+            return res.status(500).json({
+                message: 'Internal Error'
+            });
+        }
+    };
 }
 module.exports = new Note();

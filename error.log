@@ -50,3 +50,7 @@
 {"level":"error","message":"Invalid Credential","timestamp":"2021-12-16T19:25:45.782Z"}
 {"level":"error","message":"Wrong Input Validations","timestamp":"2021-12-16T19:25:46.140Z"}
 {"level":"error","message":"Invalid password","timestamp":"2021-12-16T19:25:46.558Z"}
+{"level":"error","message":"Otp doesnt match","timestamp":"2021-12-16T20:05:29.197Z"}
+{"level":"error","message":"Otp doesnt match","timestamp":"2021-12-16T20:05:29.205Z"}
+{"level":"error","message":"Otp doesnt match","timestamp":"2021-12-16T20:06:33.210Z"}
+{"level":"error","message":"Otp doesnt match","timestamp":"2021-12-16T20:06:33.213Z"}

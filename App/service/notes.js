@@ -16,5 +16,15 @@ class Service {
             }
         });
     }
+
+    /**
+   * @description this function is written to trigger or call the models function
+   * @returns error if it has error else data
+   */
+    getNote = (id, resolve, reject) => {
+        noteModel.getNote(id)
+            .then((data) => resolve(data))
+            .catch(() => reject());
+    };
 }
 module.exports = new Service();

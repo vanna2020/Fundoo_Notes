@@ -119,6 +119,7 @@
          * @param {*} callback
          * @returns
          */
+     
      resetPassword = (userData, callback) => {
          Otp.findOne({ code: userData.code }, (error, data) => {
              if (data) {

@@ -201,5 +201,26 @@ class Controller {
       });
     }
   }
+  getNoteById = (req, res) => {
+    try {
+      const id = { id: req.user.dataForToken.id };
+      const getNoteValidation = validation.getNoteValidation.validate(id);
+      if (getNoteValidation.error) {
+        logger.log(getNoteValidation.error);
+        return res.status(400).send({
+          success: false,
+          message: 'Wrong Input Validations',
+          data: getNoteValidation
+        });
+      }
+      res.status(201).json({
+        message: 'Get All Notes successfully',
+        success: true
+      })
+    }
+    catch {
+      console.log("error", error);
+    }
+  }
 }
 module.exports = new Controller();
