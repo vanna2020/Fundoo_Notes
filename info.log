@@ -133,3 +133,4 @@
 {"level":"info","message":"User logged in successfully","timestamp":"2021-12-18T15:09:16.978Z"}
 {"level":"info","message":"Successfully inserted note","timestamp":"2021-12-18T15:10:49.595Z"}
 {"level":"info","message":"Get All Notes successfully","timestamp":"2021-12-18T15:19:58.218Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2021-12-18T15:24:18.184Z"}

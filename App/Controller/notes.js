@@ -63,6 +63,16 @@ class Note {
         try {
             const id = { id: req.user.dataForToken.id };
 
+            const getNoteValidation = validation.getNoteValidation.validate(id);
+            if (getNoteValidation.error) {
+                console.log(getNoteValidation.error);
+                return res.status(400).send({
+                    success: false,
+                    message: 'Wrong Input Validations',
+                    data: getNoteValidation
+                });
+            }
+
             noteService.getNote(id, resolve, reject);
             function resolve(data) {
                 logger.info('Get All Notes successfully');
