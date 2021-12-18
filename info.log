@@ -163,3 +163,10 @@
 {"level":"error","message":"Wrong Input Validations","timestamp":"2021-12-18T15:32:01.615Z"}
 {"level":"info","message":"Password reset succesfully","timestamp":"2021-12-18T15:32:02.153Z"}
 {"level":"error","message":"Invalid password","timestamp":"2021-12-18T15:32:02.172Z"}
+{"level":"info","message":"User registered","timestamp":"2021-12-18T15:40:57.108Z"}
+{"level":"info","message":"Email id found","timestamp":"2021-12-18T15:41:52.244Z"}
+{"level":"info","message":" token generated ","timestamp":"2021-12-18T15:41:52.540Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2021-12-18T15:41:52.553Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2021-12-18T15:43:49.534Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2021-12-18T15:44:30.978Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2021-12-18T15:46:12.845Z"}
