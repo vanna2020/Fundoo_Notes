@@ -170,3 +170,10 @@
 {"level":"info","message":"Successfully inserted note","timestamp":"2021-12-18T15:43:49.534Z"}
 {"level":"info","message":"Get All Notes successfully","timestamp":"2021-12-18T15:44:30.978Z"}
 {"level":"info","message":"Get All Notes successfully","timestamp":"2021-12-18T15:46:12.845Z"}
+{"level":"error","message":"Otp doesnt match","timestamp":"2021-12-19T17:36:12.521Z"}
+{"level":"error","message":{"acknowledged":true,"matchedCount":1,"modifiedCount":1,"upsertedCount":0,"upsertedId":null},"timestamp":"2021-12-19T17:38:24.144Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2021-12-19T17:38:24.152Z"}
+{"level":"info","message":"Email id found","timestamp":"2021-12-19T17:39:05.726Z"}
+{"level":"info","message":" token generated ","timestamp":"2021-12-19T17:39:06.035Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2021-12-19T17:39:06.116Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2021-12-19T17:39:50.100Z"}

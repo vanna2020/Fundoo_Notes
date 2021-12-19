@@ -65,7 +65,7 @@ class Note {
 
             const getNoteValidation = validation.getNoteValidation.validate(id);
             if (getNoteValidation.error) {
-                console.log(getNoteValidation.error);
+                logger.error(getNoteValidation.error);
                 return res.status(400).send({
                     success: false,
                     message: 'Wrong Input Validations',
