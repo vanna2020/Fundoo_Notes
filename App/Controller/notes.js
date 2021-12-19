@@ -103,7 +103,7 @@ class Note {
      * @param {*} res
      * @returns response
      */
-    getNoteById = async (req, res) => {
+    getNoteById = (req, res) => {
         try {
             const noteId = req.params.id;
             const id = { userId: req.user.dataForToken.id, noteId: req.params.id };
@@ -118,20 +118,23 @@ class Note {
                 });
             }
 
-            const data = await noteService.getNoteById(id);
-            if (data.message) {
-                return res.status(404).json({
-                    message: 'Note not found',
-                    success: false
-                });
-            }
-            return res.status(200).json({
-                message: 'Note retrieved succesfully',
-                success: true,
-                data: data
+            const data = noteService.getNoteById(id, (error, data) => {
+                if (data.message) {
+                    return res.status(404).json({
+                        message: 'Note not found',
+                        success: false
+                    });
+                }
+                return res.status(200).json({
+                    message: 'Note retrieved succesfully',
+                    success: true,
+                    data: data
 
+                });
             });
-        } catch (err) {
+        }
+
+        catch (err) {
             return res.status(500).json({
                 message: 'Internal Error',
                 success: false,
