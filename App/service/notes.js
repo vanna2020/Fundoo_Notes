@@ -26,5 +26,17 @@ class Service {
             .then((data) => resolve(data))
             .catch(() => reject());
     };
+
+    /**
+     * @description this function is written to trigger or call the models function
+     * @returns error if it has error else data
+     */
+    getNoteById = async (id) => {
+        try {
+            return await noteModel.getNoteById(id);
+        } catch (err) {
+            return err;
+        }
+    };
 }
 module.exports = new Service();
