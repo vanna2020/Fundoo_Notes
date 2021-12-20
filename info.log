@@ -266,3 +266,21 @@
 {"level":"error","message":{"acknowledged":true,"matchedCount":1,"modifiedCount":1,"upsertedCount":0,"upsertedId":null},"timestamp":"2021-12-20T15:29:46.048Z"}
 {"level":"info","message":"Password reset succesfully","timestamp":"2021-12-20T15:29:46.049Z"}
 {"level":"error","message":"Invalid password","timestamp":"2021-12-20T15:29:46.066Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2021-12-20T17:49:35.876Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2021-12-20T17:49:36.128Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2021-12-20T17:49:38.268Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2021-12-20T17:49:38.317Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2021-12-20T17:49:38.380Z"}
+{"level":"info","message":"Email id found","timestamp":"2021-12-20T17:49:38.504Z"}
+{"level":"info","message":" token generated ","timestamp":"2021-12-20T17:49:38.757Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2021-12-20T17:49:38.764Z"}
+{"level":"error","message":"Invalid User","timestamp":"2021-12-20T17:49:38.788Z"}
+{"level":"error","message":"Invalid Credential","timestamp":"2021-12-20T17:49:38.789Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2021-12-20T17:49:38.913Z"}
+{"level":"error","message":{"acknowledged":true,"matchedCount":1,"modifiedCount":1,"upsertedCount":0,"upsertedId":null},"timestamp":"2021-12-20T17:49:39.380Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2021-12-20T17:49:39.382Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-12-20T17:49:39.398Z"}
+{"level":"info","message":"Email id found","timestamp":"2021-12-20T18:01:33.669Z"}
+{"level":"info","message":" token generated ","timestamp":"2021-12-20T18:01:34.118Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2021-12-20T18:01:34.130Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2021-12-20T18:06:10.993Z"}

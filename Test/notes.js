@@ -85,3 +85,17 @@ describe('Get notes by ID api', () => {
             });
     });
 });
+// Update data by id
+describe('Update notes by ID api', () => {
+    it('givenPoperDetails_ShouldGetUpdatedNoteAPI', (done) => {
+      const token = noteDB.notes.getNoteWithValidToken;
+      chai
+        .request(server)
+        .get('/getnotes/6165357e39139e12b1b2986f')
+        .set({ authorization: token })
+        .end((err, res) => {
+          res.should.have.status(200);
+          done();
+        });
+    });
+  });
