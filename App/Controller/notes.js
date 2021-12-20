@@ -119,24 +119,24 @@ class Note {
             }
 
             const data = noteService.getNoteById(id, (error, data) => {
-                if (data.message) {
+                if (error) {
                     return res.status(404).json({
                         message: 'Note not found',
                         success: false
                     });
+                } else {
+                    return res.status(200).json({
+                        message: 'Note retrieved succesfully',
+                        success: true,
+                        data: data
+                    });
                 }
-                return res.status(200).json({
-                    message: 'Note retrieved succesfully',
-                    success: true,
-                    data: data
-
-                });
             });
         }
 
         catch (err) {
             return res.status(500).json({
-                message: 'Internal Error',
+                message: 'Internal Server Error',
                 success: false,
                 data: err
             });
