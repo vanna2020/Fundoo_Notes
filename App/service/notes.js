@@ -1,3 +1,9 @@
+/**
+ * @module       Service
+ * @file         user.service.js
+ * @description  Service class holds the callback method for controller
+ * @author       Vandana Singh
+ */
 const { logger } = require('../../logger/logger');
 const noteModel = require('../models/notes');
 class Service {

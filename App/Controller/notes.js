@@ -1,3 +1,7 @@
+/**
+ * @description   : Taking the request from the client and gives the response
+ * @author        : Vandana Singh
+*/
 const noteService = require('../service/notes');
 const { logger } = require('../../logger/logger');
 const validation = require('../utilities/validation');
