@@ -119,11 +119,11 @@ describe('Update notes api', () => {
 
 // delete note test cases
 describe('delete notes api', () => {
-    it.only('givenValidValidation_ShouldDeleteNote', (done) => {
+    it('givenValidValidation_ShouldDeleteNote', (done) => {
         const token = noteDB.notes.getNoteWithValidToken;
         chai
             .request(server)
-            .delete('/deletenotes/61bb8e9f68518d176ca3e23e')
+            .delete('/deletenotes/61bb92b8eafe568409a140e3')
             .set({ authorization: token })
             .end((err, res) => {
                 res.should.have.status(200);
@@ -132,7 +132,7 @@ describe('delete notes api', () => {
             });
     });
 
-    it.only('givenValidValidation_ShouldNotDeleteNote', (done) => {
+    it('givenValidValidation_ShouldNotDeleteNote', (done) => {
         const token = noteDB.notes.getNoteWithInValidToken;
         chai
             .request(server)
@@ -145,7 +145,7 @@ describe('delete notes api', () => {
             });
     });
 
-    it.only('givenInvalidValidValidation_ShouldNotUpdateNote', (done) => {
+    it('givenInvalidValidValidation_ShouldNotDeleteNote', (done) => {
         const token = noteDB.notes.getNoteWithValidToken;
         chai
             .request(server)
