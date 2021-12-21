@@ -29,5 +29,8 @@ module.exports = (app) => {
   app.get('/getnotes/:id', helper.validateToken, noteController.getNoteById);
 
   // api for updatenotes
-   app.put('/updatenotes/:id', helper.validateToken, noteController.updateNoteById);
+  app.put('/updatenotes/:id', helper.validateToken, noteController.updateNoteById);
+
+  //api for deletenotes
+  app.delete('/deletenotes/:id', helper.validateToken, noteController.deleteNoteById);
 }

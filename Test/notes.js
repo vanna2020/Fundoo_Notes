@@ -116,3 +116,18 @@ describe('Update notes api', () => {
             });
     });
 });
+
+// delete note test cases
+describe('delete notes api', () => {
+    it('givenValidToken_ShouldUpdateNote', (done) => {
+        const token = noteDB.notes.getNoteWithValidToken;
+        chai
+            .request(server)
+            .delete('/deletenotes/:id')
+            .set({ authorization: token })
+            .end((err, res) => {
+                res.should.have.status(200);
+                done();
+            });
+    });
+});
