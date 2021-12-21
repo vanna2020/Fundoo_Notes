@@ -190,33 +190,43 @@ class Note {
     };
 
     /**
-    * @description function written to delete note by ID
-    * @param {*} req
-    * @param {*} res
-    * @returns response
-    */res
-    deleteNoteById = (req,) => {
+      * @description function written to delete note by ID
+      * @param {*} req
+      * @param {*} res
+      * @returns response
+      */
+    deleteNoteById = async (req, res) => {
         try {
             const id = { userId: req.user.dataForToken.id, noteId: req.params.id };
-            const deleteNoteValidation = validation.validateLabel.validate(id);
-            if (deleteNoteValidation.error) {
-                console.log(deleteNoteValidation.error);
-                return res.status(400).send({
-                    success: false,
-                    message: 'Wrong Input Validations',
-                    data: deleteNoteValidation
+
+            // const deleteNoteValidation = validation.notesdelete.validate(id);
+            // if (deleteNoteValidation.error) {
+            //     console.log(deleteNoteValidation.error);
+            //     return res.status(400).send({
+            //         success: false,
+            //         message: 'Wrong Input Validations',
+            //         data: deleteNoteValidation
+            //     });
+            // }
+            const data = await noteService.deleteNoteById(id);
+            if (data.message) {
+                return res.status(404).json({
+                    message: 'Note not found',
+                    success: false
                 });
             }
-            res.status(200).json({
+            return res.status(200).json({
                 message: 'Note Deleted succesfully',
                 success: true,
-
+                data: data
+            });
+        } catch (err) {
+            return res.status(500).json({
+                message: 'Note not deleted',
+                success: false,
+                data: err
             });
         }
-
-        catch (err) {
-
-        };
     }
 }
 module.exports = new Note();

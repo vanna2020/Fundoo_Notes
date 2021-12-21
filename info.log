@@ -319,3 +319,4 @@
 {"level":"info","message":"Email id found","timestamp":"2021-12-21T13:49:34.198Z"}
 {"level":"info","message":" token generated ","timestamp":"2021-12-21T13:49:34.679Z"}
 {"level":"info","message":"User logged in successfully","timestamp":"2021-12-21T13:49:34.743Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2021-12-21T14:14:29.533Z"}

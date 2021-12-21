@@ -52,16 +52,30 @@ class Service {
      * @description this function is written to trigger or call the models function
      * @returns error if it has error else data
      */
-     updateNoteById = (updateNote, callback) => {
+    updateNoteById = (updateNote, callback) => {
         noteModel.updateNoteById(updateNote, (error, data) => {
-          if (error) {
-            logger.error(error);
-            return callback(error, null);
-          } else {
-            return callback(null, data);
-          }
+            if (error) {
+                logger.error(error);
+                return callback(error, null);
+            } else {
+                return callback(null, data);
+            }
         }
         );
-      };
+    };
+
+
+    /**
+* @description deleting notes by id
+* @param {*} notesId
+* @returns
+*/
+    deleteNoteById = async (id) => {
+        try {
+            return await noteModel.deleteNoteById(id);
+        } catch (err) {
+            return err;
+        }
+    }
 }
 module.exports = new Service();
