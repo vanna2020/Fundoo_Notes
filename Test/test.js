@@ -24,13 +24,12 @@ describe('registartion', () => {
       .send(registerfaker)
       .end((err, res) => {
         if (err) {
-          console.log('Please check details again and re-enter the details with proper format');
-          done()
+          return done(err,"Please check details again and re-enter the details with proper format");
         }
         res.should.have.status(200);
         res.body.should.have.property('success').eql(true);
-        res.body.should.have.property('message').eql('User Registered');
-        done()
+        res.body.should.have.property('message').eql("User Registered");
+        done();
       });
   });
 

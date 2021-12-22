@@ -87,5 +87,10 @@ class Validation {
     description: Joi.string().min(5)
       .required()
   });
+
+  notesdelete = Joi.object({
+    userId: Joi.string().required(),
+    noteId: Joi.string().required()
+  });
 }
 module.exports = new Validation();

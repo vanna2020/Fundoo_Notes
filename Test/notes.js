@@ -123,7 +123,7 @@ describe('delete notes api', () => {
         const token = noteDB.notes.getNoteWithValidToken;
         chai
             .request(server)
-            .delete('/deletenotes/61bb92b8eafe568409a140e3')
+            .delete('/deletenotes/61c35394d3eb5dd85aceb7c0')
             .set({ authorization: token })
             .end((err, res) => {
                 res.should.have.status(200);
