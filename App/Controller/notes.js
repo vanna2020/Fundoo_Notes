@@ -27,10 +27,22 @@ class Note {
                   data: createNoteValidation
                 });
               }
-                return res.status(201).send({
-                    message: 'Found Token',
+              noteService.createNote(note, (error, data) => {
+                if (error) {
+                  logger.error('failed to post note');
+                  return res.status(400).json({
+                    message: 'failed to post note',
+                    success: false
+                  });
+                } else {
+                  logger.info('Successfully inserted note');
+                  return res.status(201).send({
+                    message: 'Successfully inserted note',
                     success: true,
-                });
+                    data: data
+                  });
+                }
+              });
         } catch (error) {
             logger.error('Internal server error');
             return res.status(500).json({

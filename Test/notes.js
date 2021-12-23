@@ -98,4 +98,36 @@ describe('create notes api', () => {
             done();
           });
       });
+      it.only('Should return true from CreateNoteApi Service Layer , return appropriate response', (done) => {
+        const token = noteDB.notes.validToken;
+        const createNotes = {
+          title: faker.lorem.word(),
+          description :faker.lorem.word()
+        }
+        chai
+          .request(server)
+          .post('/createnotes')
+          .set({ authorization: token })
+          .send(createNotes)
+          .end((err, res) => {
+            res.should.have.status(201);
+            done();
+          });
+      });
+      it.only('Should return false from CreateNoteApi Service layer , return appropriate response', (done) => {
+        const token = noteDB.notes.invalidToken;
+        const createNotes = {
+          title: faker.lorem.word(),
+          description :faker.lorem.word()
+        };
+        chai
+          .request(server)
+          .post('/createnotes')
+          .set({ authorization: token })
+          .send(createNotes)
+          .end((err, res) => {
+            res.should.have.status(400);
+            done();
+          });
+      });
     });
