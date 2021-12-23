@@ -29,6 +29,7 @@ class Note {
               }
               noteService.createNote(note, (error, data) => {
                 if (error) {
+                    console.log("11",error);
                   logger.error('failed to post note');
                   return res.status(400).json({
                     message: 'failed to post note',
