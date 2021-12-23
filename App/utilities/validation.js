@@ -63,6 +63,7 @@ class Validation {
   notesCreationValidation = Joi.object({
     userId: Joi.string().required(),
     title: Joi.string().min(2).required(),
+    description:Joi.string().min(2)
   });
 }
 module.exports = new Validation();
