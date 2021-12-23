@@ -19,18 +19,6 @@ module.exports = (app) => {
   //api for reset-password
   app.put('/reset-Password', controller.resetPassword);
 
-  // api for CRUD
-  app.post('/createnotes', helper.validateToken, noteController.createNote);
-
-  // api for getnotes
-  app.get('/getnotes', helper.validateToken, noteController.getNote);
-
-  // api for getnotesById
-  app.get('/getnotes/:id', helper.validateToken, noteController.getNoteById);
-
-  // api for updatenotes
-  app.put('/updatenotes/:id', helper.validateToken, noteController.updateNoteById);
-
-  //api for deletenotes
-  app.delete('/deletenotes/:id', helper.validateToken, noteController.deleteNoteById);
+  
+ 
 }
