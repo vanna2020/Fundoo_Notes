@@ -675,3 +675,25 @@
 {"level":"error","message":{"acknowledged":true,"matchedCount":1,"modifiedCount":1,"upsertedCount":0,"upsertedId":null},"timestamp":"2021-12-23T18:09:53.015Z"}
 {"level":"info","message":"Password reset succesfully","timestamp":"2021-12-23T18:09:53.016Z"}
 {"level":"error","message":"Invalid password","timestamp":"2021-12-23T18:09:53.031Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2021-12-23T18:41:28.819Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2021-12-23T18:42:23.656Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2021-12-23T18:42:23.781Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2021-12-23T18:42:23.820Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2021-12-23T18:42:23.861Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2021-12-23T18:42:23.908Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2021-12-23T18:42:25.950Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2021-12-23T18:42:25.979Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2021-12-23T18:42:26.030Z"}
+{"level":"info","message":"Email id found","timestamp":"2021-12-23T18:42:26.131Z"}
+{"level":"info","message":" token generated ","timestamp":"2021-12-23T18:42:26.428Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2021-12-23T18:42:26.433Z"}
+{"level":"error","message":"Invalid User","timestamp":"2021-12-23T18:42:26.459Z"}
+{"level":"error","message":"Invalid Credential","timestamp":"2021-12-23T18:42:26.461Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2021-12-23T18:42:26.682Z"}
+{"level":"error","message":{"acknowledged":true,"matchedCount":1,"modifiedCount":1,"upsertedCount":0,"upsertedId":null},"timestamp":"2021-12-23T18:42:27.125Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2021-12-23T18:42:27.127Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-12-23T18:42:27.142Z"}
+{"level":"info","message":"Email id found","timestamp":"2021-12-24T05:57:30.459Z"}
+{"level":"info","message":" token generated ","timestamp":"2021-12-24T05:57:30.902Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2021-12-24T05:57:31.006Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2021-12-24T05:58:10.497Z"}

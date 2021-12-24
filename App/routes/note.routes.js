@@ -6,7 +6,7 @@
  */
 
 const controller = require('../Controller/note.controller.js');
-const noteController = require('../Controller/notes')
+const noteController = require('../Controller/userNotes')
 const helper = require('../utilities/helper');
 
 module.exports = (app) => {
