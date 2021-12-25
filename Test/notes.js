@@ -9,9 +9,9 @@ const { string } = require('joi');
 chai.should();
 
 describe('create notes api', () => {
-    it('givenNotes_InValidToken', (done) => {
+   it('givenNotes_InValidToken', (done) => {
         const token = noteDB.notes.invalidToken;
-        chai
+        chai 
             .request(server)
             .post('/createnotes')
             .set({ authorization: token })
@@ -168,3 +168,26 @@ describe('create notes api', () => {
             });
     });
 });
+    describe('get note api', () => {
+        it.only('gettinganotesApplyingInValidToken', (done) => {
+             chai 
+                 .request(server)
+                 .get('/getnotes')
+                 .end((err, res) => {
+                     res.should.have.status(500);
+                     done();
+                 });
+         });
+         it.only('gettinganotes_validToken_is Authentic Request', (done) => {
+            const token = noteDB.notes.validToken;
+            chai
+                .request(server)
+                .get('/getnotes')
+                .set({ authorization: token })
+                .end((err, res) => {
+                    res.should.have.status(201);
+                    done();
+                });
+        });
+});
+
