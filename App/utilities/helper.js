@@ -11,12 +11,12 @@ const jwt = require('jsonwebtoken');
 class Helper {
   hashing = (password) => {
     return new Promise((resolve, reject) => {
-    bcrypt.hash(password, 10)
-      .then((err)=> {
-        resolve(err);
-      }).catch((hash)=> {
-         reject(hash);
-      });
+      bcrypt.hash(password, 10)
+        .then((err) => {
+          resolve(err);
+        }).catch((hash) => {
+          reject(hash);
+        });
     });
   }
   token = (data) => {
@@ -28,7 +28,6 @@ class Helper {
     };
     return jwt.sign({ dataForToken }, process.env.JWT_SECRET, { expiresIn: '24H' });
   };
-
 
   validateToken = (req, res, next) => {
     const header = req.headers.authorization;

@@ -9,9 +9,9 @@ const { string } = require('joi');
 chai.should();
 
 describe('create notes api', () => {
-   it('givenNotes_InValidToken', (done) => {
+    it('givenNotes_InValidToken', (done) => {
         const token = noteDB.notes.invalidToken;
-        chai 
+        chai
             .request(server)
             .post('/createnotes')
             .set({ authorization: token })
@@ -33,7 +33,7 @@ describe('create notes api', () => {
             .set({ authorization: token })
             .send(createNotes)
             .end((err, res) => {
-                if(err){
+                if (err) {
                     return res.status(500)
                 }
                 res.should.have.status(400);
@@ -64,7 +64,7 @@ describe('create notes api', () => {
             .set({ authorization: token })
             .send(createNotes)
             .end((err, res) => {
-                if(err){
+                if (err) {
                     return res.status(500)
                 }
                 res.should.have.status(400);
@@ -168,37 +168,65 @@ describe('create notes api', () => {
             });
     });
 });
-    describe('get note api', () => {
-        it.only('gettinganotesApplyingInValidToken', (done) => {
-             chai 
-                 .request(server)
-                 .get('/getnotes')
-                 .end((err, res) => {
-                     res.should.have.status(500);
-                     done();
-                 });
-         });
-         it.only('gettinganotes_validToken_is Authentic Request', (done) => {
-            const token = noteDB.notes.validToken;
-            chai
-                .request(server)
-                .get('/getnotes')
-                .set({ authorization: token })
-                .end((err, res) => {
-                    res.should.have.status(201);
-                    done();
-                });
-        });
-        it.only('gettinganotes_inValidToken_is not Authentic', (done) => {
-            const token = noteDB.notes.invalidToken;
-            chai
-                .request(server)
-                .get('/getnotes')
-                .set({ authorization: token })
-                .end((err, res) => {
+describe('get note api', () => {
+    it.only('gettinganotesApplyingInValidToken', (done) => {
+        chai
+            .request(server)
+            .get('/getnotes')
+            .end((err, res) => {
+                res.should.have.status(500);
+                done();
+            });
+    });
+    it.only('gettinganotes_validToken_is Authentic Request', (done) => {
+        const token = noteDB.notes.validToken;
+        chai
+            .request(server)
+            .get('/getnotes')
+            .set({ authorization: token })
+            .end((err, res) => {
+                res.should.have.status(201);
+                done();
+            });
+    });
+    it.only('gettinganotes_inValidToken_is not Authentic', (done) => {
+        const token = noteDB.notes.invalidToken;
+        chai
+            .request(server)
+            .get('/getnotes')
+            .set({ authorization: token })
+            .end((err, res) => {
+                res.should.have.status(400);
+                done();
+            });
+    });
+    it.only('gettinganotes_validToken_is Authentic Request', (done) => {
+        const token = noteDB.notes.validToken;
+        chai
+            .request(server)
+            .get('/getnotes')
+            .set({ authorization: token })
+            .end((err, res) => {
+                if (err) {
                     res.should.have.status(400);
-                    done();
-                });
-        });
+                }
+                res.should.have.status(201);
+                done();
+            });
+    });
+    it.only('gettinganotes_validToken_is Authentic Request', (done) => {
+        const token = noteDB.notes.validToken;
+        chai
+            .request(server)
+            .get('/getnotes')
+            .set({ authorization: token })
+            .end((err, res) => {
+                if (err) {
+                    res.should.have.status(400);
+                }
+                res.should.have.status(201);
+                done();
+            });
+    });
 });
 
