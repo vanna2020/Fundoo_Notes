@@ -32,11 +32,21 @@ class Model {
         });
         note.save((error, data) => {
             if (error) {
-              return callback(error, null);
+                return callback(error, null);
             } else {
-              return callback(null, data);
+                return callback(null, data);
             }
-          })
+        })
     }
+    /**
+ * @description this function is written to trigger or call the models function
+ * @returns error if it has error else data
+ */
+    getNote = (id, callback) => {
+        if (id) {
+            callback(null, id.data);
+        }
+        callback("data is not found", error)
+    };
 }
 module.exports = new Model();
