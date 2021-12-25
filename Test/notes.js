@@ -236,5 +236,16 @@ describe('get note api', () => {
                 done();
             });
     });
+    it.only('gettinganotes_validToken_Checking Response .find', (done) => {
+        const token = noteDB.notes.validToken;
+        chai
+            .request(server)
+            .get('/getnotes')
+            .set({ authorization: token })
+            .end((err, res) => {
+                res.should.have.status(201);
+                done();
+            });
+    });
 });
 
