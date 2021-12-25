@@ -200,7 +200,7 @@ describe('get note api', () => {
                 done();
             });
     });
-    it.only('gettinganotes_validToken_is Authentic Request', (done) => {
+    it.only('gettinganotes_validToken_idValidation Verified or not', (done) => {
         const token = noteDB.notes.validToken;
         chai
             .request(server)
@@ -214,16 +214,13 @@ describe('get note api', () => {
                 done();
             });
     });
-    it.only('gettinganotes_validToken_is Authentic Request', (done) => {
+    it.only('gettinganotes_validToken_Checking Service Response', (done) => {
         const token = noteDB.notes.validToken;
         chai
             .request(server)
             .get('/getnotes')
             .set({ authorization: token })
             .end((err, res) => {
-                if (err) {
-                    res.should.have.status(400);
-                }
                 res.should.have.status(201);
                 done();
             });

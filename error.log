@@ -306,3 +306,26 @@
 {"level":"error","message":"Wrong Input Validations","timestamp":"2021-12-25T09:31:39.283Z"}
 {"level":"error","message":{"acknowledged":true,"matchedCount":1,"modifiedCount":1,"upsertedCount":0,"upsertedId":null},"timestamp":"2021-12-25T09:31:39.642Z"}
 {"level":"error","message":"Invalid password","timestamp":"2021-12-25T09:31:39.657Z"}
+{"level":"error","message":"Failed to get all notes","timestamp":"2021-12-25T12:58:52.211Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-25T12:58:52.239Z"}
+{"level":"error","message":"Failed to get all notes","timestamp":"2021-12-25T12:58:52.577Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-25T12:58:52.580Z"}
+{"level":"error","message":"Failed to get all notes","timestamp":"2021-12-25T12:58:52.820Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-25T12:58:52.824Z"}
+{"level":"error","message":"Failed to get all notes","timestamp":"2021-12-25T12:59:41.796Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-25T12:59:41.817Z"}
+{"level":"error","message":"Failed to get all notes","timestamp":"2021-12-25T12:59:42.040Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-25T12:59:42.047Z"}
+{"level":"error","message":"Failed to get all notes","timestamp":"2021-12-25T12:59:42.231Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-25T12:59:42.236Z"}
+{"level":"error","message":"Failed to get all notes","timestamp":"2021-12-25T13:02:44.127Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-25T13:02:44.138Z"}
+{"level":"error","message":"Failed to get all notes","timestamp":"2021-12-25T13:02:44.452Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-25T13:02:44.456Z"}
+{"level":"error","message":"Failed to get all notes","timestamp":"2021-12-25T13:02:44.646Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-25T13:02:44.650Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-25T13:07:20.648Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-25T13:07:20.880Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-25T13:08:34.132Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-25T13:08:34.299Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-25T13:08:34.447Z"}

@@ -746,3 +746,36 @@
 {"level":"info","message":"Successfully inserted note","timestamp":"2021-12-25T11:18:04.643Z"}
 {"level":"info","message":"Successfully inserted note","timestamp":"2021-12-25T11:19:19.306Z"}
 {"level":"info","message":"Successfully inserted note","timestamp":"2021-12-25T11:19:58.863Z"}
+{"level":"info","message":"Succesfully Fetched the note","timestamp":"2021-12-25T12:41:01.725Z"}
+{"level":"info","message":"Succesfully Fetched the note","timestamp":"2021-12-25T12:41:01.860Z"}
+{"level":"info","message":"Succesfully Fetched the note","timestamp":"2021-12-25T12:41:01.938Z"}
+{"level":"error","message":"Failed to get all notes","timestamp":"2021-12-25T12:58:52.207Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-25T12:58:52.238Z"}
+{"level":"error","message":"Failed to get all notes","timestamp":"2021-12-25T12:58:52.575Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-25T12:58:52.580Z"}
+{"level":"error","message":"Failed to get all notes","timestamp":"2021-12-25T12:58:52.819Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-25T12:58:52.823Z"}
+{"level":"error","message":"Failed to get all notes","timestamp":"2021-12-25T12:59:41.787Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-25T12:59:41.816Z"}
+{"level":"error","message":"Failed to get all notes","timestamp":"2021-12-25T12:59:42.039Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-25T12:59:42.046Z"}
+{"level":"error","message":"Failed to get all notes","timestamp":"2021-12-25T12:59:42.230Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-25T12:59:42.235Z"}
+{"level":"error","message":"Failed to get all notes","timestamp":"2021-12-25T13:02:44.123Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-25T13:02:44.138Z"}
+{"level":"error","message":"Failed to get all notes","timestamp":"2021-12-25T13:02:44.450Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-25T13:02:44.455Z"}
+{"level":"error","message":"Failed to get all notes","timestamp":"2021-12-25T13:02:44.639Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-25T13:02:44.649Z"}
+{"level":"info","message":"Succesfully Fetched the note","timestamp":"2021-12-25T13:04:36.798Z"}
+{"level":"info","message":"Succesfully Fetched the note","timestamp":"2021-12-25T13:04:36.896Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2021-12-25T13:07:20.635Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-25T13:07:20.648Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2021-12-25T13:07:20.877Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-25T13:07:20.879Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2021-12-25T13:08:34.114Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-25T13:08:34.131Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2021-12-25T13:08:34.295Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-25T13:08:34.298Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2021-12-25T13:08:34.443Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-25T13:08:34.446Z"}

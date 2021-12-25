@@ -16,5 +16,15 @@ class Service {
       }
     });
   }
+    /**
+  * @description this function is written to trigger or call the models function
+  * @returns error if it has error else data
+  */
+  getNote = (id, callback) => {
+      if (id) {
+        callback(null, id.data);
+      }
+      callback("data is not found",error)
+  };
 }
 module.exports = new Service();
