@@ -60,11 +60,20 @@ class Note {
    */
     getNote = (req, res) =>{
       try {
+        if(req.user){
         logger.info('Successfully inserted note');
         return res.status(201).send({
           message: 'Successfully inserted note',
           success: true
         });
+      }
+        else{
+          logger.error('Internal server error');
+          return res.status(400).json({
+              message: 'Error occured',
+              success: false
+          });
+        }
       }catch(error){
         logger.error('Internal server error');
         return res.status(500).json({
