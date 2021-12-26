@@ -928,3 +928,15 @@
 {"level":"info","message":"Password reset succesfully","timestamp":"2021-12-26T07:53:33.505Z"}
 {"level":"error","message":"Invalid password","timestamp":"2021-12-26T07:53:33.555Z"}
 {"level":"error","message":"Internal server error","timestamp":"2021-12-26T08:37:36.304Z"}
+{"level":"info","message":"Email id found","timestamp":"2021-12-26T10:16:25.634Z"}
+{"level":"info","message":" token generated ","timestamp":"2021-12-26T10:16:26.409Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2021-12-26T10:16:26.451Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2021-12-26T10:19:08.819Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2021-12-26T10:19:08.907Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2021-12-26T10:19:08.961Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2021-12-26T10:23:06.301Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2021-12-26T10:23:06.456Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2021-12-26T10:23:06.514Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2021-12-26T10:25:09.486Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2021-12-26T10:25:09.555Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2021-12-26T10:25:09.582Z"}

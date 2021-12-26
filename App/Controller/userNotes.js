@@ -107,9 +107,20 @@ class Note {
           data: getNoteValidation
         });
       }
-      return res.status(201).send({
-        success: true,
-        message: 'Valid Entry of Token'
+      noteService.getNoteById(id, (err, data) => {
+        if (err) {
+          logger.error('Note is Found')
+          return res.status(404).json({
+            message: 'Note not found',
+            success: false
+          });
+        }
+        logger.info('Get Note _id successfully');
+        return res.status(201).json({
+          message: 'Note retrieved succesfully',
+          success: true,
+          data: data
+        });
       });
     } catch (error) {
       logger.error('Internal server error');
