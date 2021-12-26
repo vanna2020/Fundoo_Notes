@@ -461,6 +461,7 @@
 {"level":"error","message":{"acknowledged":true,"matchedCount":1,"modifiedCount":1,"upsertedCount":0,"upsertedId":null},"timestamp":"2021-12-26T12:39:17.647Z"}
 {"level":"error","message":"Invalid password","timestamp":"2021-12-26T12:39:17.662Z"}
 {"level":"error","message":"Internal server error","timestamp":"2021-12-26T15:41:07.295Z"}
+<<<<<<< HEAD
 {"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\":id\"","timestamp":"2021-12-26T17:39:42.721Z","value":":id","valueType":"string"}
 {"level":"error","message":"failed to update note","timestamp":"2021-12-26T17:39:42.724Z"}
 {"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\":id\"","timestamp":"2021-12-26T17:42:04.611Z","value":":id","valueType":"string"}
@@ -481,3 +482,11 @@
 {"level":"error","message":"Wrong Input Validations","timestamp":"2021-12-26T17:47:57.440Z"}
 {"level":"error","message":{"acknowledged":true,"matchedCount":1,"modifiedCount":1,"upsertedCount":0,"upsertedId":null},"timestamp":"2021-12-26T17:47:58.126Z"}
 {"level":"error","message":"Invalid password","timestamp":"2021-12-26T17:47:58.144Z"}
+=======
+{"kind":"ObjectId","level":"error","path":"userId","reason":{},"stringValue":"\":id\"","timestamp":"2021-12-26T17:17:29.066Z","value":":id","valueType":"string"}
+{"level":"error","message":"failed to update note","timestamp":"2021-12-26T17:17:29.068Z"}
+{"kind":"ObjectId","level":"error","path":"userId","reason":{},"stringValue":"\":id\"","timestamp":"2021-12-26T17:18:48.518Z","value":":id","valueType":"string"}
+{"level":"error","message":"failed to update note","timestamp":"2021-12-26T17:18:48.529Z"}
+{"kind":"ObjectId","level":"error","path":"userId","reason":{},"stringValue":"\":id\"","timestamp":"2021-12-26T17:29:58.662Z","value":":id","valueType":"string"}
+{"level":"error","message":"failed to update note","timestamp":"2021-12-26T17:29:58.667Z"}
+>>>>>>> Development

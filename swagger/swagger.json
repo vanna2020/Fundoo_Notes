@@ -267,73 +267,137 @@
                     }
                 }
             }
-        }
-    },
-        "definitions": {
-            "registerUser": {
-                "type": "object",
-                "properties": {
-                    "firstName": {
-                        "type": "string"
+        },
+        "/updatenotes/{id}": {
+            "put": {
+                "tags": [
+                    "update Notes"
+                ],
+                "description": "update a note by ID for perticuler person id !!",
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "Authorization",
+                        "description": "Token for vaidation",
+                        "schema": {
+                            "type": "string",
+                            "required": true
+                        }
                     },
-                    "lastName": {
-                        "type": "string"
+                    {
+                        "in": "path",
+                        "name": "id",
+                        "description": "Id of note you want to update",
+                        "schema": {
+                            "type": "string"
+                        }
                     },
-                    "email": {
-                        "type": "string"
-                    },
-                    "password": {
-                        "type": "string"
+                    {
+                        "in": "body",
+                        "name": "note",
+                        "description": "Note body",
+                        "schema": {
+                            "$ref": "#/definitions/updatenotes"
+                        }
                     }
-                }
-            },
-            "loginUser": {
-                "type": "object",
-                "properties": {
-                    "email": {
-                        "type": "string"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "201": {
+                        "description": "update note succesfully !!"
                     },
-                    "password": {
-                        "type": "string"
-                    }
-                }
-            },
-            "forgotpassword": {
-                "type": "object",
-                "properties": {
-                    "email": {
-                        "type": "string"
-                    }
-                }
-            },
-            "resetPassword": {
-                "type": "object",
-                "properties": {
-                    "email": {
-                        "type": "string"
+                    "401": {
+                        "description": "Please enter Valid Token"
                     },
-                    "password": {
-                        "type": "string"
-                    },
-                    "code": {
-                        "type": "string"
+                    "500": {
+                        "description": "Internal server error"
                     }
-                }
-            },
-            "notes": {
-                "type": "object",
-                "properties": {
-                    "title": {
-                        "type": "string"
-                    },
-                    "description": {
-                        "type": "string"
-                    }
-                },
-                "example": {
-                    "title": "Write a title here.....",
-                    "description": "Write a description here....."
                 }
             }
         }
+    },
+    "definitions": {
+        "registerUser": {
+            "type": "object",
+            "properties": {
+                "firstName": {
+                    "type": "string"
+                },
+                "lastName": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "password": {
+                    "type": "string"
+                }
+            }
+        },
+        "loginUser": {
+            "type": "object",
+            "properties": {
+                "email": {
+                    "type": "string"
+                },
+                "password": {
+                    "type": "string"
+                }
+            }
+        },
+        "forgotpassword": {
+            "type": "object",
+            "properties": {
+                "email": {
+                    "type": "string"
+                }
+            }
+        },
+        "resetPassword": {
+            "type": "object",
+            "properties": {
+                "email": {
+                    "type": "string"
+                },
+                "password": {
+                    "type": "string"
+                },
+                "code": {
+                    "type": "string"
+                }
+            }
+        },
+        "notes": {
+            "type": "object",
+            "properties": {
+                "title": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                }
+            },
+            "example": {
+                "title": "Write a title here.....",
+                "description": "Write a description here....."
+            }
+        },
+        "updatenotes": {
+            "type": "object",
+            "properties": {
+                "title": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                }
+            },
+            "example": {
+                "title": "Write a title here.....",
+                "description": "Write a description here....."
+            }
+        }
     }
+}

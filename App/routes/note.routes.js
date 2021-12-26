@@ -20,10 +20,10 @@ module.exports = (app) => {
   app.put('/reset-Password', controller.resetPassword);
   //API for Create Note 
   app.post('/createnotes', helper.validateToken, noteController.createNote);
-  // API for Get Note
+  //API for Get Note
   app.get('/getnotes', helper.validateToken, noteController.getNote);
-  // API for GetNotesbyId 
+  //API for GetNotesbyId 
   app.get('/getnotes/:id', helper.validateToken, noteController.getNoteById);
-  // api for updatenotes Id 
+  //API for updatenotes Id 
   app.put('/updatenotes/:id', helper.validateToken, noteController.updateNoteById); 
 }
