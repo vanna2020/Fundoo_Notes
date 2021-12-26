@@ -423,4 +423,21 @@ describe('Update Note api', () => {
                 done();
             });
     });
+    it.only('Should return true When id is match,', (done) => {
+        const token = noteDB.notes.validToken;
+        const createNotes = {
+            title: faker.lorem.word(),
+            description: faker.lorem.word()
+        };
+        chai
+            .request(server)
+            .put('/updatenotes/61bb8cdb43eaf55834512bf6')
+            .set({ authorization: token })
+            .send(createNotes)
+            .end((err, res) => {
+                res.should.have.status(201);
+                done();
+            });
+    });
+
 });

@@ -1188,3 +1188,22 @@
 {"level":"info","message":"Successfully inserted note","timestamp":"2021-12-26T17:11:15.296Z"}
 {"level":"info","message":"Successfully inserted note","timestamp":"2021-12-26T17:11:15.341Z"}
 {"level":"info","message":"Successfully inserted note","timestamp":"2021-12-26T17:11:15.370Z"}
+{"kind":"ObjectId","level":"error","path":"userId","reason":{},"stringValue":"\":id\"","timestamp":"2021-12-26T17:17:29.051Z","value":":id","valueType":"string"}
+{"level":"error","message":"failed to update note","timestamp":"2021-12-26T17:17:29.068Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2021-12-26T17:17:29.400Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2021-12-26T17:17:29.674Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2021-12-26T17:17:29.758Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2021-12-26T17:17:29.790Z"}
+{"kind":"ObjectId","level":"error","path":"userId","reason":{},"stringValue":"\":id\"","timestamp":"2021-12-26T17:18:48.502Z","value":":id","valueType":"string"}
+{"level":"error","message":"failed to update note","timestamp":"2021-12-26T17:18:48.527Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2021-12-26T17:18:48.701Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2021-12-26T17:18:48.847Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2021-12-26T17:18:48.880Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2021-12-26T17:18:48.914Z"}
+{"kind":"ObjectId","level":"error","path":"userId","reason":{},"stringValue":"\":id\"","timestamp":"2021-12-26T17:29:58.655Z","value":":id","valueType":"string"}
+{"level":"error","message":"failed to update note","timestamp":"2021-12-26T17:29:58.666Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2021-12-26T17:29:58.795Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2021-12-26T17:29:59.058Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2021-12-26T17:29:59.106Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2021-12-26T17:29:59.161Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2021-12-26T17:29:59.198Z"}
