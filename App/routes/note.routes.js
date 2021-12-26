@@ -1,7 +1,7 @@
 /**
  * @module       routes
  * @file         user.routes.js
- * @description  API Routing
+ * @description  api Routing
  * @author       Vandana Singh
  */
 
@@ -10,18 +10,20 @@ const noteController = require('../Controller/userNotes')
 const helper = require('../utilities/helper');
 
 module.exports = (app) => {
-  // api for registration
+  // API for registration
   app.post('/register', controller.register);
-  // api for login
+  // API for login
   app.post('/login', controller.login);
-  // api for forget pasword
+  // API for forget pasword
   app.post('/forgotPassword', controller.forgotPassword);
-  //api for reset-password
+  //API for reset-password
   app.put('/reset-Password', controller.resetPassword);
-  // api for Create Note 
+  //API for Create Note 
   app.post('/createnotes', helper.validateToken, noteController.createNote);
-  // api for Get Note
-   app.get('/getnotes', helper.validateToken, noteController.getNote);
-// api for getnotes Id 
-app.get('/getnotes/:id', helper.validateToken, noteController.getNoteById);
+  // API for Get Note
+  app.get('/getnotes', helper.validateToken, noteController.getNote);
+  // API for GetNotesbyId 
+  app.get('/getnotes/:id', helper.validateToken, noteController.getNoteById);
+  // api for updatenotes Id 
+  app.put('/updatenotes/:id', helper.validateToken, noteController.updateNoteById); 
 }

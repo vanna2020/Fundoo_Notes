@@ -331,3 +331,27 @@ describe('get note By id Api', () => {
             });
     });
 });
+
+describe('Update Note api', () => {
+    it.only('UpdateNotesById_by_checking_server_error', (done) => {
+        chai
+            .request(server)
+            .put('/updatenotes/:id')
+            .end((err, res) => {
+                res.should.have.status(500);
+                done();
+            });
+    });
+
+    it.only('givenvalidToken_should give true when it is valid entry of token', (done) => {
+        const token = noteDB.notes.validToken;
+        chai
+            .request(server)
+            .put('/updatenotes/:id')
+            .set({ authorization: token })
+            .end((err, res) => {
+                res.should.have.status(201);
+                done();
+            });
+    });
+});

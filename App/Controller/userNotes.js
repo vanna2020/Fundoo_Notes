@@ -101,41 +101,62 @@ class Note {
 * @param {*} res
 * @returns response
 */
-getNoteById = (req, res) => {
-  try {
-    const id = { userId: req.user.dataForToken.id, noteId: req.params.id };
-    const getNoteValidation = validation.getNoteValidation.validate(id);
-    if (getNoteValidation.error) {
-      console.log(getNoteValidation.error);
-      return res.status(400).send({
-        success: false,
-        message: 'Wrong Input Validations',
-        data: getNoteValidation
-      });
-    }
-    noteService.getNoteById(id, (err, data) => {
-      if (err) {
-        logger.error('Note is Found')
-        return res.status(400).json({
-          message: 'Note not found',
-          success: false
+  getNoteById = (req, res) => {
+    try {
+      const id = { userId: req.user.dataForToken.id, noteId: req.params.id };
+      const getNoteValidation = validation.getNoteValidation.validate(id);
+      if (getNoteValidation.error) {
+        console.log(getNoteValidation.error);
+        return res.status(400).send({
+          success: false,
+          message: 'Wrong Input Validations',
+          data: getNoteValidation
         });
       }
-      logger.info('Get Note _id successfully');
+      noteService.getNoteById(id, (err, data) => {
+        if (err) {
+          logger.error('Note is Found')
+          return res.status(400).json({
+            message: 'Note not found',
+            success: false
+          });
+        }
+        logger.info('Get Note _id successfully');
+        return res.status(201).json({
+          message: 'Note retrieved succesfully',
+          success: true,
+          data: data
+
+        });
+      });
+    } catch (err) {
+      return res.status(500).json({
+        message: 'Internal Error',
+        success: false,
+        data: err
+      });
+    }
+  };
+
+  /**
+    * @description function written to updateNotesById from the database
+    * @param {*} req
+    * @param {*} res
+    * @returns res
+    * */
+  updateNoteById = (req, res) => {
+    try {
       return res.status(201).json({
         message: 'Note retrieved succesfully',
-        success: true,
-        data: data
-
+        success: true
       });
-    });
-  } catch (err) {
-    return res.status(500).json({
-      message: 'Internal Error',
-      success: false,
-      data: err
-    });
+    } catch (error) {
+      logger.error('Internal server error');
+      return res.status(500).json({
+        message: 'Internal server error',
+        success: false
+      });
+    }
   }
-};
 }
 module.exports = new Note();
