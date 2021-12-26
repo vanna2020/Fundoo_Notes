@@ -58,25 +58,32 @@ class Model {
   * @param {*} callback
   * @returns
   */
-     getNoteById = (id, callback) => {
+    getNoteById = (id, callback) => {
         NoteRegister.find({ $and: [{ _id: id.noteId }, { userId: id.userId }] })
-          .then((data) => {
-            callback(null, data)
-          }).catch((err) => {
-            callback(err, null)
-          })
-      };
-       /**
-   * @description it acts as a middleware between controller and model for updatemyid
-   * @param {*} inputData
-   * @param {*} callback
-   * @returns
-   */
-  updateNoteById = (id, callback) => {
-    if(!id) {
-      return callback("id is not found", null)
-    }
-    return callback(null, id)
-  }
+            .then((data) => {
+                callback(null, data)
+            }).catch((err) => {
+                callback(err, null)
+            })
+    };
+    /**
+* @description it acts as a middleware between controller and model for updatemyid
+* @param {*} inputData
+* @param {*} callback
+* @returns
+*/
+    updateNoteById = (updatedNote, callback) => {
+        try {
+            NoteRegister.findByIdAndUpdate(updatedNote.id, { title: updatedNote.title, description: updatedNote.description }, { new: true }, (err, data) => {
+                if (err) {
+                    return callback(err, null);
+                } else {
+                    return callback(null, data);
+                }
+            });
+        } catch (err) {
+            return callback(err, null);
+        }
+    };
 }
 module.exports = new Model();

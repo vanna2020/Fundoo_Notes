@@ -333,16 +333,7 @@ describe('get note By id Api', () => {
 });
 
 describe('Update Note api', () => {
-    it.only('UpdateNotesById_by_checking_server_error', (done) => {
-        chai
-            .request(server)
-            .put('/updatenotes/:id')
-            .end((err, res) => {
-                res.should.have.status(500);
-                done();
-            });
-    });
-    it.only('givenvalidToken_should give true when it is valid entry of Token', (done) => {
+    it('givenvalidToken_should give true when it is valid entry of Token', (done) => {
         const token = noteDB.notes.validToken;
         chai
             .request(server)
@@ -353,7 +344,7 @@ describe('Update Note api', () => {
                 done();
             });
     });
-    it.only('InvalidToken_should give false when it is invalid entry of Token', (done) => {
+    it('InvalidToken_should give false when it is invalid entry of Token', (done) => {
         const token = noteDB.notes.invalidToken;
         chai
             .request(server)
@@ -364,7 +355,7 @@ describe('Update Note api', () => {
                 done();
             });
     });
-    it.only('Given Id should give true when it is validate', (done) => {
+    it('Given Id should give true when it is validate', (done) => {
         const token = noteDB.notes.validToken;
         chai
             .request(server)
@@ -375,23 +366,7 @@ describe('Update Note api', () => {
                 done();
             });
     });
-    it.only('given Proper Details Should Update Note Using Fake Data', (done) => {
-        const token = noteDB.notes.validToken;
-        const createNotes = {
-            title: faker.lorem.word(),
-            description: faker.lorem.word()
-        };
-        chai
-            .request(server)
-            .put('/updatenotes/61bb8cdb43eaf55834512bf6')
-            .set({ authorization: token })
-            .send(createNotes)
-            .end((err, res) => {
-                res.should.have.status(201);
-                done();
-            });
-    });
-    it.only('Should return true from UpdateNote Service Layer , return appropriate response', (done) => {
+    it('given Proper Details Should Update Note Using Fake Data', (done) => {
         const token = noteDB.notes.validToken;
         const createNotes = {
             title: faker.lorem.word(),
@@ -407,7 +382,55 @@ describe('Update Note api', () => {
                 done();
             });
     });
-    it.only('Checking the Response from Model layer from Valid Token', (done) => {
+    it('Should return true from UpdateNote Service Layer , return appropriate response', (done) => {
+        const token = noteDB.notes.validToken;
+        const createNotes = {
+            title: faker.lorem.word(),
+            description: faker.lorem.word()
+        };
+        chai
+            .request(server)
+            .put('/updatenotes/61bb8cdb43eaf55834512bf6')
+            .set({ authorization: token })
+            .send(createNotes)
+            .end((err, res) => {
+                res.should.have.status(201);
+                done();
+            });
+    });
+    it('Checking the Response from Model layer from Valid Token', (done) => {
+        const token = noteDB.notes.validToken;
+        const createNotes = {
+            title: faker.lorem.word(),
+            description: faker.lorem.word()
+        };
+        chai
+            .request(server)
+            .put('/updatenotes/61bb8cdb43eaf55834512bf6')
+            .set({ authorization: token })
+            .send(createNotes)
+            .end((err, res) => {
+                res.should.have.status(201);
+                done();
+            });
+    });
+    it('Should return true When id is match,', (done) => {
+        const token = noteDB.notes.validToken;
+        const createNotes = {
+            title: faker.lorem.word(),
+            description: faker.lorem.word()
+        };
+        chai
+            .request(server)
+            .put('/updatenotes/61bb8cdb43eaf55834512bf6')
+            .set({ authorization: token })
+            .send(createNotes)
+            .end((err, res) => {
+                res.should.have.status(201);
+                done();
+            });
+    });
+    it('It should return true when note is updated', (done) => {
         const token = noteDB.notes.validToken;
         const createNotes = {
             title: faker.lorem.word(),
