@@ -97,11 +97,18 @@ class Note {
 
   getNoteById = (req, res) => {
     try {
+      if (req.user) {
+        return res.status(201).send({
+          success: true,
+          message: 'Valid Entry of Token'
+        });
+      } else {
+        return res.status(400).json({
+          message: 'Invalid Token of Entry',
+          success: false
+        })
+      }
 
-      return res.status(201).send({
-        success: true,
-        message: 'Valid Entry of Token'
-      });
     } catch (error) {
       logger.error('Internal server error');
       return res.status(500).json({

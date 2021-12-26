@@ -274,4 +274,15 @@ describe('get note By id Api', () => {
                 done();
             });
     });
+    it.only('Given Token Should Give false When it is invalid Token', (done) => {
+        const token = noteDB.notes.invalidToken;
+        chai
+            .request(server)
+            .get('/getnotes/:id')
+            .set({ authorization: token })
+            .end((err, res) => {
+                res.should.have.status(400);
+                done();
+            });
+    });
 });
