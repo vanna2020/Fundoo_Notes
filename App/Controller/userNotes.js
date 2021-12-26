@@ -160,10 +160,22 @@ class Note {
           data: updateNoteValidation
         });
       }
-      return res.status(201).json({
-        message: 'Getting Appropriate response from token',
-        success: true
-      });
+      noteService.updateNoteById(updateNote, (error, data) => {
+        if (error) {
+          logger.error('failed to update note');
+          return res.status(400).json({
+            message: 'failed to update note',
+            success: false
+          });
+        } else {
+          logger.info('Successfully inserted note');
+          return res.status(201).send({
+            message: 'Successfully update note',
+            success: true,
+            data: data
+          });
+        }
+      })
     } catch (error) {
       logger.error('Internal server error');
       return res.status(500).json({
