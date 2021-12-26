@@ -94,5 +94,21 @@ class Note {
       });
     }
   }
+
+  getNoteById = (req, res) => {
+    try {
+
+      return res.status(201).send({
+        success: true,
+        message: 'Valid Entry of Token'
+      });
+    } catch (error) {
+      logger.error('Internal server error');
+      return res.status(500).json({
+        message: 'Error occured',
+        success: false
+      });
+    }
+  }
 }
 module.exports = new Note();
