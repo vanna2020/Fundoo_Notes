@@ -484,4 +484,15 @@ describe('Delete Note By Id api', () => {
                 done();
             });
     });
+    it.only('InvalidToken_should return false', (done) => {
+        const token = noteDB.notes.invalidToken;
+        chai
+            .request(server)
+            .delete('/deletenotes/:id')
+            .set({ authorization: token })
+            .end((err, res) => {
+                res.should.have.status(400);
+                done();
+            });
+    });
 });

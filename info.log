@@ -1295,3 +1295,8 @@
 {"level":"info","message":"Successfully inserted note","timestamp":"2021-12-26T18:07:22.692Z"}
 {"level":"info","message":"Successfully inserted note","timestamp":"2021-12-26T18:08:24.070Z"}
 {"level":"info","message":"Token is valid","timestamp":"2021-12-26T18:46:20.430Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-26T18:54:19.578Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-26T18:54:19.669Z"}
+{"level":"info","message":"Token validated successfully","timestamp":"2021-12-26T18:56:18.186Z"}
+{"level":"info","message":"Token validated successfully","timestamp":"2021-12-26T18:56:18.238Z"}
+{"level":"info","message":"Token validated successfully","timestamp":"2021-12-26T19:01:42.329Z"}

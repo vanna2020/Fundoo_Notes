@@ -490,3 +490,5 @@
 {"kind":"ObjectId","level":"error","path":"userId","reason":{},"stringValue":"\":id\"","timestamp":"2021-12-26T17:29:58.662Z","value":":id","valueType":"string"}
 {"level":"error","message":"failed to update note","timestamp":"2021-12-26T17:29:58.667Z"}
 >>>>>>> Development
+{"level":"error","message":"Internal server error","timestamp":"2021-12-26T18:54:19.581Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-26T18:54:19.670Z"}
