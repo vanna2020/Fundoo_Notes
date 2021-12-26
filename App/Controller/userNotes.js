@@ -101,29 +101,41 @@ class Note {
 * @param {*} res
 * @returns response
 */
-  getNoteById = (req, res) => {
-    try {
-      const id = { userId: req.user.dataForToken.id, noteId: req.params.id };
-      const getNoteValidation = validation.getNoteValidation.validate(id);
-      if (getNoteValidation.error) {
-        console.log(getNoteValidation.error);
-        return res.status(400).send({
-          success: false,
-          message: 'Wrong Input Validations',
-          data: getNoteValidation
-        });
-      }
-      return res.status(201).send({
-        success: true,
-        message: 'Retrieve Note Successfully'
-      });
-    } catch (error) {
-      logger.error('Internal server error');
-      return res.status(500).json({
-        message: 'Internal server error',
-        success: false
+getNoteById = (req, res) => {
+  try {
+    const id = { userId: req.user.dataForToken.id, noteId: req.params.id };
+    const getNoteValidation = validation.getNoteValidation.validate(id);
+    if (getNoteValidation.error) {
+      console.log(getNoteValidation.error);
+      return res.status(400).send({
+        success: false,
+        message: 'Wrong Input Validations',
+        data: getNoteValidation
       });
     }
+    noteService.getNoteById(id, (err, data) => {
+      if (err) {
+        logger.error('Note is Found')
+        return res.status(400).json({
+          message: 'Note not found',
+          success: false
+        });
+      }
+      logger.info('Get Note _id successfully');
+      return res.status(201).json({
+        message: 'Note retrieved succesfully',
+        success: true,
+        data: data
+
+      });
+    });
+  } catch (err) {
+    return res.status(500).json({
+      message: 'Internal Error',
+      success: false,
+      data: err
+    });
   }
+};
 }
 module.exports = new Note();
