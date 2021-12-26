@@ -184,5 +184,28 @@ class Note {
       });
     }
   }
+  
+  /**
+  * @description function written to deleteNotesById from the database
+  * @param {*} req
+  * @param {*} res
+  * @returns res
+  * */
+   deleteNoteById = (req, res) => {
+     try{
+      logger.info('Token is valid');
+      return res.status(201).send({
+        message: 'Successfully id is found',
+        success: true
+      });
+     
+     }catch{
+      logger.error('Internal server error');
+      return res.status(500).json({
+        message: 'Internal server error',
+        success: false
+      });
+     }
+   }
 }
 module.exports = new Note();

@@ -462,5 +462,26 @@ describe('Update Note api', () => {
                 done();
             });
     });
-
+});
+describe('Delete Note By Id api', () => {
+    it.only('DeleteNotesById by Checking Server error', (done) => {
+        chai
+            .request(server)
+            .delete('/deletenotes/:id')
+            .end((err, res) => {
+                res.should.have.status(500);
+                done();
+            });
+    });
+    it.only('validToken should give true when it is valid entry of token', (done) => {
+        const token = noteDB.notes.validToken;
+        chai
+            .request(server)
+            .delete('/deletenotes/:id')
+            .set({ authorization: token })
+            .end((err, res) => {
+                res.should.have.status(201);
+                done();
+            });
+    });
 });
