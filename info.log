@@ -1138,3 +1138,4 @@
 {"level":"info","message":"Password reset succesfully","timestamp":"2021-12-26T12:19:00.997Z"}
 {"level":"error","message":"Invalid password","timestamp":"2021-12-26T12:19:01.018Z"}
 {"level":"info","message":"Get Note _id successfully","timestamp":"2021-12-26T12:23:02.968Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2021-12-26T12:36:37.726Z"}
