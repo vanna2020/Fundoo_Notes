@@ -36,7 +36,7 @@ class Service {
     * @param {*} callback
     * @returns
     */
-   getNoteById = (id, callback) => {
+  getNoteById = (id, callback) => {
     noteModel.getNoteById(id, (err, data) => {
       if (data) {
         return callback(null, data)

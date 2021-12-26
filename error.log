@@ -414,3 +414,11 @@
 {"level":"error","message":"Internal server error","timestamp":"2021-12-26T11:01:17.803Z"}
 {"level":"error","message":"Internal server error","timestamp":"2021-12-26T11:01:17.864Z"}
 {"level":"error","message":"Internal server error","timestamp":"2021-12-26T11:01:17.927Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2021-12-26T11:55:49.853Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2021-12-26T11:55:49.875Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2021-12-26T11:55:49.897Z"}
+{"level":"error","message":"Invalid User","timestamp":"2021-12-26T11:55:50.259Z"}
+{"level":"error","message":"Invalid Credential","timestamp":"2021-12-26T11:55:50.259Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2021-12-26T11:55:50.368Z"}
+{"level":"error","message":{"acknowledged":true,"matchedCount":1,"modifiedCount":1,"upsertedCount":0,"upsertedId":null},"timestamp":"2021-12-26T11:55:50.953Z"}
+{"level":"error","message":"Invalid password","timestamp":"2021-12-26T11:55:50.969Z"}

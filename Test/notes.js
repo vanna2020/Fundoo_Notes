@@ -253,17 +253,7 @@ describe('get note api', () => {
 });
 
 describe('get note By id Api', () => {
-    it.only('Not Getting Note by Id While Applying InValidToken', (done) => {
-        const token = noteDB.notes.invalidToken
-        chai
-            .request(server)
-            .get('/getnotes/:id')
-            .end((err, res) => {
-                res.should.have.status(500);
-                done();
-            });
-    });
-    it.only('Given Token Should give True When it is a Valid Token ', (done) => {
+    it('Given Token Should give True When it is a Valid Token ', (done) => {
         const token = noteDB.notes.validToken;
         chai
             .request(server)
@@ -274,7 +264,7 @@ describe('get note By id Api', () => {
                 done();
             });
     });
-    it.only('Given Token Should give false When it is invalid Token', (done) => {
+    it('Given Token Should give false When it is invalid Token', (done) => {
         const token = noteDB.notes.invalidToken;
         chai
             .request(server)
@@ -285,7 +275,7 @@ describe('get note By id Api', () => {
                 done();
             });
     });
-    it.only('If Token is Verified Then given id should be validated', (done) => {
+    it('If Token is Verified Then given id should be validated', (done) => {
         const token = noteDB.notes.validToken;
         chai
             .request(server)
@@ -296,7 +286,7 @@ describe('get note By id Api', () => {
                 done();
             });
     });
-    it.only('Checking the Service Response from the Valid Token', (done) => {
+    it('Checking the Service Response from the Valid Token', (done) => {
         const token = noteDB.notes.validToken;
         chai
             .request(server)
@@ -307,7 +297,7 @@ describe('get note By id Api', () => {
                 done();
             });
     });
-    it.only('Checking the Response from Model layer from Valid Token', (done) => {
+    it('Checking the Response from Model layer from Valid Token', (done) => {
         const token = noteDB.notes.validToken;
         chai
             .request(server)
@@ -318,7 +308,18 @@ describe('get note By id Api', () => {
                 done();
             });
     });
-    it.only('Checking the UserID from Collection using .findOne Method', (done) => {
+    it(' the UserID from Collection using .find Method', (done) => {
+        const token = noteDB.notes.validToken;
+        chai
+            .request(server)
+            .get('/getnotes/61bb8cdb43eaf55834512bf6')
+            .set({ authorization: token })
+            .end((err, res) => {
+                res.should.have.status(201);
+                done();
+            });
+    });
+    it('From Id Verifying the Note by using .findOne Method', (done) => {
         const token = noteDB.notes.validToken;
         chai
             .request(server)

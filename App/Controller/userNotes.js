@@ -95,6 +95,12 @@ class Note {
     }
   }
 
+  /**
+* @description function written to getnotebyid from the database
+* @param {*} req
+* @param {*} res
+* @returns response
+*/
   getNoteById = (req, res) => {
     try {
       const id = { userId: req.user.dataForToken.id, noteId: req.params.id };
@@ -107,25 +113,14 @@ class Note {
           data: getNoteValidation
         });
       }
-      noteService.getNoteById(id, (err, data) => {
-        if (err) {
-          logger.error('Note is Found')
-          return res.status(404).json({
-            message: 'Note not found',
-            success: false
-          });
-        }
-        logger.info('Get Note _id successfully');
-        return res.status(201).json({
-          message: 'Note retrieved succesfully',
-          success: true,
-          data: data
-        });
+      return res.status(201).send({
+        success: true,
+        message: 'Retrieve Note Successfully'
       });
     } catch (error) {
       logger.error('Internal server error');
       return res.status(500).json({
-        message: 'Error occured',
+        message: 'Internal server error',
         success: false
       });
     }
