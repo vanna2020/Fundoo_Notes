@@ -36,11 +36,15 @@ class Service {
     * @param {*} callback
     * @returns
     */
-  getNoteById = (id, callback) => {
-    if (!id) {
-      return callback("id is not found", null)
-    }
-    return callback(null, id);
-  }
+   getNoteById = (id, callback) => {
+    noteModel.getNoteById(id, (err, data) => {
+      if (data) {
+        return callback(null, data)
+      } else {
+        logger.error(error);
+        return callback(err, null)
+      }
+    });
+  };
 }
 module.exports = new Service();
