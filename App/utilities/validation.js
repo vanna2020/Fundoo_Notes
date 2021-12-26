@@ -68,5 +68,9 @@ class Validation {
   NoteValidation = Joi.object({
     id: Joi.string().required()
   })
+  getNoteValidation = Joi.object({
+    userId: Joi.string().required(),
+    noteId: Joi.string().required()
+  });
 }
 module.exports = new Validation();

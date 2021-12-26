@@ -398,3 +398,4 @@
 {"level":"error","message":"Wrong Input Validations","timestamp":"2021-12-26T07:53:33.001Z"}
 {"level":"error","message":{"acknowledged":true,"matchedCount":1,"modifiedCount":1,"upsertedCount":0,"upsertedId":null},"timestamp":"2021-12-26T07:53:33.504Z"}
 {"level":"error","message":"Invalid password","timestamp":"2021-12-26T07:53:33.555Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-26T08:37:36.307Z"}
