@@ -1169,3 +1169,9 @@
 {"level":"info","message":"Password reset succesfully","timestamp":"2021-12-26T12:39:17.648Z"}
 {"level":"error","message":"Invalid password","timestamp":"2021-12-26T12:39:17.662Z"}
 {"level":"error","message":"Internal server error","timestamp":"2021-12-26T15:41:07.261Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2021-12-26T16:13:33.650Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2021-12-26T16:13:33.837Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2021-12-26T16:14:29.015Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2021-12-26T16:14:29.059Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2021-12-26T16:16:06.614Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2021-12-26T16:16:06.675Z"}

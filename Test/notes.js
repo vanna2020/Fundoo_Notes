@@ -342,7 +342,6 @@ describe('Update Note api', () => {
                 done();
             });
     });
-
     it.only('givenvalidToken_should give true when it is valid entry of Token', (done) => {
         const token = noteDB.notes.validToken;
         chai
@@ -371,6 +370,22 @@ describe('Update Note api', () => {
             .request(server)
             .put('/updatenotes/61bb8cdb43eaf55834512bf6')
             .set({ authorization: token })
+            .end((err, res) => {
+                res.should.have.status(201);
+                done();
+            });
+    });
+    it.only('given Proper Details Should Update Note Using Fake Data', (done) => {
+        const token = noteDB.notes.validToken;
+        const createNotes = {
+            title: faker.lorem.word(),
+            description: faker.lorem.word()
+        };
+        chai
+            .request(server)
+            .put('/updatenotes/61bb8cdb43eaf55834512bf6')
+            .set({ authorization: token })
+            .send(createNotes)
             .end((err, res) => {
                 res.should.have.status(201);
                 done();
