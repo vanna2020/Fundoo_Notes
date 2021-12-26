@@ -1168,3 +1168,4 @@
 {"level":"error","message":{"acknowledged":true,"matchedCount":1,"modifiedCount":1,"upsertedCount":0,"upsertedId":null},"timestamp":"2021-12-26T12:39:17.647Z"}
 {"level":"info","message":"Password reset succesfully","timestamp":"2021-12-26T12:39:17.648Z"}
 {"level":"error","message":"Invalid password","timestamp":"2021-12-26T12:39:17.662Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-26T15:41:07.261Z"}

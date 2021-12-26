@@ -343,7 +343,7 @@ describe('Update Note api', () => {
             });
     });
 
-    it.only('givenvalidToken_should give true when it is valid entry of token', (done) => {
+    it.only('givenvalidToken_should give true when it is valid entry of Token', (done) => {
         const token = noteDB.notes.validToken;
         chai
             .request(server)
@@ -354,7 +354,7 @@ describe('Update Note api', () => {
                 done();
             });
     });
-    it.only('InvalidToken_should give false when it is invalid entry of token', (done) => {
+    it.only('InvalidToken_should give false when it is invalid entry of Token', (done) => {
         const token = noteDB.notes.invalidToken;
         chai
             .request(server)
@@ -362,6 +362,17 @@ describe('Update Note api', () => {
             .set({ authorization: token })
             .end((err, res) => {
                 res.should.have.status(400);
+                done();
+            });
+    });
+    it.only('Given Id should give true when it is validate', (done) => {
+        const token = noteDB.notes.validToken;
+        chai
+            .request(server)
+            .put('/updatenotes/61bb8cdb43eaf55834512bf6')
+            .set({ authorization: token })
+            .end((err, res) => {
+                res.should.have.status(201);
                 done();
             });
     });
