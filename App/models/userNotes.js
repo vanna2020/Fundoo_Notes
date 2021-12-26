@@ -59,10 +59,14 @@ class Model {
   * @returns
   */
     getNoteById = (id, callback) => {
-        if (!id) {
-            return callback("id is not found", null)
-        }
-        return callback(null, id);
+        NoteRegister.find({ userId: id.UserId }, (error, data) => {
+            if (data) {
+                callback(null, data);
+            }
+            else {
+                callback(error, null);
+            }
+        });
     }
 }
 module.exports = new Model();
