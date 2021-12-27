@@ -1302,3 +1302,16 @@
 {"level":"info","message":"Token validated successfully","timestamp":"2021-12-26T19:01:42.329Z"}
 {"level":"info","message":"Token validated successfully","timestamp":"2021-12-26T19:15:34.325Z"}
 {"level":"info","message":"Token validated successfully","timestamp":"2021-12-26T19:15:34.434Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-27T04:48:47.528Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-27T04:48:47.685Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-27T04:48:47.744Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-27T04:48:47.871Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-27T04:48:48.001Z"}
+{"level":"info","message":"Email id found","timestamp":"2021-12-27T04:50:54.755Z"}
+{"level":"info","message":" token generated ","timestamp":"2021-12-27T04:50:55.462Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2021-12-27T04:50:55.485Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-27T04:53:04.713Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-27T04:53:04.843Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-27T04:53:04.927Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-27T04:53:05.011Z"}
+{"level":"error","message":"Internal server error","timestamp":"2021-12-27T04:53:05.102Z"}
