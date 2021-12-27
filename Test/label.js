@@ -29,4 +29,15 @@ describe('Add label by id api ', () => {
                 done();
             });
     });
+    it.only('Given Token Should give false when token is not verify', (done) => {
+        const token = labelDB.label.invalidToken
+        chai
+            .request(server)
+            .post('/addlabel/:id')
+            .set({ authorization: token })
+            .end((err, res) => {
+                res.should.have.status(400);
+                done();
+            });
+    });
 })

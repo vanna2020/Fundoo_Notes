@@ -5,17 +5,22 @@ class Label {
      * @param {*} res
      * @returns response
      */
-     addLabelById = (req, res) => {
+    addLabelById = (req, res) => {
         try {
-            return res.status(201).json({
-                message: 'Valid Entry of Token'
-            });
+            if (req.user) {
+                return res.status(201).json({
+                    message: 'Valid Entry of Token'
+                });
+            } else {
+                return res.status(400).json({
+                    message: 'InValid Entry of Token'
+                });
+            }
         } catch (err) {
             logger.error('Internal Error');
             return res.status(500).json({
                 message: 'Internal Error'
             }
-
             )
         };
     }
