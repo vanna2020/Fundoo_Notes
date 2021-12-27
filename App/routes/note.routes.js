@@ -6,8 +6,9 @@
  */
 
 const controller = require('../Controller/note.controller.js');
-const noteController = require('../Controller/userNotes')
+const noteController = require('../Controller/userNotes');
 const helper = require('../utilities/helper');
+const crud = require('../Controller/crud.label');
 
 module.exports = (app) => {
   // API for registration
@@ -28,4 +29,6 @@ module.exports = (app) => {
   app.put('/updatenotes/:id', helper.validateToken, noteController.updateNoteById); 
   //API for delete By Id 
   app.delete('/deletenotes/:id', helper.validateToken, noteController.deleteNoteById);
+  //API for addLabel By Id 
+  app.post('/addlabel/:id', helper.validateToken, crud.addLabelById);
 }
