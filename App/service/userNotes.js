@@ -71,10 +71,12 @@ class Service {
      * @returns
      */
   deleteNoteById = (id, callback) => {
-    if (!id) {
-      return callback("Id is not found", null);
-    }
-    return callback(null, id);
+    noteModel.deleteNoteById(id, (error, data) => {
+      if (error) {
+        return callback(error, null);
+      }
+      return callback(null, data);
+    });
   };
 }
 module.exports = new Service();

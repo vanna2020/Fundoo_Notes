@@ -85,5 +85,17 @@ class Model {
             return callback(err, null);
         }
     };
+    /**
+    * @description it acts as a middleware between controller and model for deleteNoteById
+    * @param {*} inputData
+    * @param {*} callback
+    * @returns
+    */
+    deleteNoteById = (id, callback) => {
+        if (!id) {
+            return callback("Id is not found", null);
+        }
+        return callback(null, id);
+    };
 }
 module.exports = new Model();
