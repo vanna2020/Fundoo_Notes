@@ -506,4 +506,15 @@ describe('Delete Note By Id api', () => {
                 done();
             });
     });
+    it.only('Should give true when,return appropriate response from Service layer', (done) => {
+        const token = noteDB.notes.validToken;
+        chai
+            .request(server)
+            .delete('/deletenotes/61bb8cdb43eaf55834512bf6')
+            .set({ authorization: token })
+            .end((err, res) => {
+                res.should.have.status(201);
+                done();
+            });
+    });
 });

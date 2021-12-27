@@ -52,7 +52,7 @@ class Service {
    * @param {*} callback
    * @returns
    */
-   updateNoteById = (updateNote, callback) => {
+  updateNoteById = (updateNote, callback) => {
     noteModel.updateNoteById(updateNote, (error, data) => {
       if (error) {
         logger.error(error);
@@ -62,6 +62,19 @@ class Service {
       }
     }
     );
+  };
+
+  /**
+     * @description it acts as a middleware between controller and model for deleteNoteById
+     * @param {*} inputData
+     * @param {*} callback
+     * @returns
+     */
+  deleteNoteById = (id, callback) => {
+    if (!id) {
+      return callback("Id is not found", null);
+    }
+    return callback(null, id);
   };
 }
 module.exports = new Service();
