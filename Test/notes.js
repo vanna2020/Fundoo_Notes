@@ -464,7 +464,7 @@ describe('Update Note api', () => {
     });
 });
 describe('Delete Note By Id api', () => {
-    it.only('DeleteNotesById by Checking Server error', (done) => {
+    it('DeleteNotesById by Checking Server error', (done) => {
         chai
             .request(server)
             .delete('/deletenotes/:id')
@@ -473,18 +473,18 @@ describe('Delete Note By Id api', () => {
                 done();
             });
     });
-    it.only('validToken should give true when it is valid entry of token', (done) => {
+    it('validToken should give true when it is valid entry of token', (done) => {
         const token = noteDB.notes.validToken;
         chai
             .request(server)
-            .delete('/deletenotes/:id')
+            .delete('/deletenotes/61bb8cdb43eaf55834512bf6')
             .set({ authorization: token })
             .end((err, res) => {
                 res.should.have.status(201);
                 done();
             });
     });
-    it.only('InvalidToken_should return false', (done) => {
+    it('InvalidToken_should return false', (done) => {
         const token = noteDB.notes.invalidToken;
         chai
             .request(server)
@@ -495,7 +495,7 @@ describe('Delete Note By Id api', () => {
                 done();
             });
     });
-    it.only('Should give true when it is validate with the given id', (done) => {
+    it('Should give true when it is validate with the given id', (done) => {
         const token = noteDB.notes.validToken;
         chai
             .request(server)
@@ -506,7 +506,7 @@ describe('Delete Note By Id api', () => {
                 done();
             });
     });
-    it.only('Should give true when,return appropriate response from Service layer', (done) => {
+    it('Should give true when,return appropriate response from Service layer', (done) => {
         const token = noteDB.notes.validToken;
         chai
             .request(server)
@@ -517,7 +517,7 @@ describe('Delete Note By Id api', () => {
                 done();
             });
     });
-    it.only('Should give true when,return appropriate response from Model layer', (done) => {
+    it('Should give true when,return appropriate response from Model layer', (done) => {
         const token = noteDB.notes.validToken;
         chai
             .request(server)
@@ -528,7 +528,18 @@ describe('Delete Note By Id api', () => {
                 done();
             });
     });
-    it.only('When Id is Found it Should Written True', (done) => {
+    it('When Id is Found it Should Written True', (done) => {
+        const token = noteDB.notes.validToken;
+        chai
+            .request(server)
+            .delete('/deletenotes/61bb8cdb43eaf55834512bf6')
+            .set({ authorization: token })
+            .end((err, res) => {
+                res.should.have.status(201);
+                done();
+            });
+    });
+    it('when User Id and Note Id Match Should Delete Note By Id', (done) => {
         const token = noteDB.notes.validToken;
         chai
             .request(server)

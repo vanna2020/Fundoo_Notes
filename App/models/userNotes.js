@@ -92,13 +92,12 @@ class Model {
     * @returns
     */
     deleteNoteById = (id, callback) => {
-
-        NoteRegister.find({ userId: id.id }, (error, data) => {
-            if (error) {
-                return callback(error, null);
+        NoteRegister.findOneAndDelete({ $and: [{ _id: id.noteId }, { userId: id.userId }] }, (error, data) => {
+            if (data) {
+                return callback(null, data);
             }
-            return callback(null, data);
-        });
+            return callback(error, null);
+        })
     }
 }
 module.exports = new Model();
