@@ -8,8 +8,8 @@ const { expect } = require('chai');
 chai.should();
 
 
-describe('Add label by id api ', () => {
-    it.only('Checking Server Error By AddLabelById', (done) => {
+describe('Add label by id api', () => {
+    it.only('Checking Server Error of AddLabelById', (done) => {
         chai
             .request(server)
             .post('/addlabel/:id')
@@ -18,7 +18,7 @@ describe('Add label by id api ', () => {
                 done();
             });
     });
-    it.only('Given Token give true When Valid Entry of Token', (done) => {
+    it.only('Gives true When Valid Entry of Token', (done) => {
         const token = labelDB.label.validToken
         chai
             .request(server)
@@ -29,7 +29,7 @@ describe('Add label by id api ', () => {
                 done();
             });
     });
-    it.only('Given Token Should give false when token is not verify', (done) => {
+    it.only('Gives false when token is not verify', (done) => {
         const token = labelDB.label.invalidToken
         chai
             .request(server)
@@ -40,4 +40,19 @@ describe('Add label by id api ', () => {
                 done();
             });
     });
+    it.only('If payload of data is validated then it should give true', (done) => {
+        const token = labelDB.label.validToken;
+        const labelName = {
+            labelname: faker.lorem.word()
+        }
+        chai
+            .request(server)
+            .post('/addlabel/:id')
+            .set({ authorization: token })
+            .send(labelName)
+            .end((err, res) => {
+                res.should.have.status(201);
+                done();
+            })
+    })
 })

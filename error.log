@@ -512,3 +512,4 @@
 {"level":"error","message":"Wrong Input Validations","timestamp":"2021-12-27T05:09:44.007Z"}
 {"level":"error","message":{"acknowledged":true,"matchedCount":1,"modifiedCount":1,"upsertedCount":0,"upsertedId":null},"timestamp":"2021-12-27T05:09:44.798Z"}
 {"level":"error","message":"Invalid password","timestamp":"2021-12-27T05:09:44.817Z"}
+{"level":"error","message":{"acknowledged":true,"matchedCount":1,"modifiedCount":1,"upsertedCount":0,"upsertedId":null},"timestamp":"2021-12-29T07:56:41.984Z"}
