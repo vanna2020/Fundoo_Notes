@@ -115,4 +115,19 @@ describe('Add label by id api', () => {
                 done();
             })
     });
+    it.only('Adding note into existing label, it should return true', (done) => {
+        const token = labelJson.label.validToken;
+        const labelName = {
+            labelname: faker.lorem.word()
+        }
+        chai
+            .request(server)
+            .post('/addlabel/61c4a09b974b4b083aec7d13')
+            .set({ authorization: token })
+            .send(labelName)
+            .end((err, res) => {
+                res.should.have.status(201);
+                done();
+            })
+    });
 })

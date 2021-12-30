@@ -4,11 +4,11 @@ const mongoose = require('mongoose');
 const labelSchema = mongoose.Schema({
     userId: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'user',
+        ref: 'User',
     },
     noteId: [{
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'note'
+        ref: 'NoteRegister'
     }],
     labelName: {
         type: String,
@@ -29,19 +29,29 @@ class Model {
                 return callback("Note is exits in user info", data);
             }
             else if (data){
-                labelRegister.find({email : label.email,noteId:label.noteId},(error,data)=>{
+                labelRegister.find({email :label.email,noteId:label.noteId},(error,data)=>{
                     if(error){
                         return callback("Some error to find note",null)
                     }
                     else if(!data){
-                        return callback("note is found ",data)
+                        callback("label is not found",data)
                     }
                     else{
-                        return callback(null,data);
-                    }
-                })
+                        labelRegister.findOneAndUpdate({ label:label.labelName },{ $addToSet: { noteId: label.noteId } },(error,data)=>{
+                            if(error){
+                                return callback("Some error occured",null)
+                            }
+                            else if(!data){
+                                return callback(null,data)
+                            }
+                            else{
+                                return callback(null,data);
+                            }
+                        })
             }
         })
-    }
 }
-module.exports = new Model();
+})
+}
+}
+module.exports = new Model()
