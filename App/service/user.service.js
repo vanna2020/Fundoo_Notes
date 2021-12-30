@@ -5,7 +5,7 @@
  * @author       Vandana Singh
  */
 
-const userModel = require('../models/note.model.js')
+const userModel = require('../models/user.model.js')
 const utilities = require('../utilities/helper.js');
 const { logger } = require('../../logger/logger');
 const bcrypt = require('bcryptjs');

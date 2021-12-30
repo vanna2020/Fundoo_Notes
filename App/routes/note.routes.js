@@ -5,10 +5,10 @@
  * @author       Vandana Singh
  */
 
-const controller = require('../Controller/note.controller.js');
-const noteController = require('../Controller/userNotes');
+const controller = require('../Controller/user.controller.js');
+const noteController = require('../Controller/notes.controller');
 const helper = require('../utilities/helper');
-const crud = require('../Controller/crud.label');
+const crud = require('../Controller/label.controller');
 
 module.exports = (app) => {
   // API for registration
