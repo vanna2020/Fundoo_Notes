@@ -100,4 +100,7 @@ class Model {
         })
     }
 }
-module.exports = new Model();
+module.exports = {
+ model:  new Model(),
+ note : NoteRegister 
+}

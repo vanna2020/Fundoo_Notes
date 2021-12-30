@@ -8,6 +8,7 @@
 const labelValidation = require('../utilities/validation')
 const { logger } = require('../../logger/logger')
 const serviceLayer = require('../service/label.service')
+const { errorMonitor } = require('nodemailer/lib/xoauth2')
 class Label {
     /**
      * @description function written to Added Label into the database
@@ -18,9 +19,10 @@ class Label {
     addLabelById = (req, res) => {
         try {
             if (req.user) {
-                const labelDetail = req.body.labelName
+                const labelDetail = { labelName : req.body.labelName }
                 const validation = labelValidation.authLabelValidation.validate(labelDetail);
                 if (validation.error) {
+                    console.log(validation.error)
                     const response = { sucess: false, message: "Error in Vaidation" }
                     return res.status(422).json(response)
                 }
@@ -33,14 +35,14 @@ class Label {
                     if (error) {
                         const response = { sucess: true, message: error.message }
                         return res.status(401).send(response)
-                    } else {
-                        return res.status(201).json({
+                    } else 
+                         return res.status(201).json({
                             message: 'Authentic Entry of Token'
                         });
-                    }
-                })
-            }
+                    })
+                }
         } catch (err) {
+            console.log("9999",err)
             logger.error('Internal Server Error');
             return res.status(500).json({
                 message: 'Internal Server Error'

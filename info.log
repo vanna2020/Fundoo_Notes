@@ -1366,3 +1366,6 @@
 {"level":"info","message":" token generated ","timestamp":"2021-12-29T10:31:29.695Z"}
 {"level":"info","message":"User logged in successfully","timestamp":"2021-12-29T10:31:29.763Z"}
 {"level":"info","message":"Successfully inserted note","timestamp":"2021-12-29T10:33:06.960Z"}
+{"level":"info","message":"Email id found","timestamp":"2021-12-30T13:21:17.223Z"}
+{"level":"info","message":" token generated ","timestamp":"2021-12-30T13:21:18.835Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2021-12-30T13:21:18.876Z"}

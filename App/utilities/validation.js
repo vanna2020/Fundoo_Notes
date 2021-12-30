@@ -85,7 +85,6 @@ class Validation {
   });
   authLabelValidation = Joi.object({
     labelName: Joi.string()
-      .required()
   });
 }
 module.exports = new Validation();
