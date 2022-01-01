@@ -96,7 +96,6 @@ class Controller {
       });
     }
     catch (error) {
-      console.log("In Catch", error);
       return res.status(500).json({
         success: false,
         message: 'Error while Login', error,

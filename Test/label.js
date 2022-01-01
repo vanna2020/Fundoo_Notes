@@ -9,7 +9,7 @@ chai.should();
 
 
 describe('Add label by id api', () => {
-    it.only('Checking Server Error of AddLabelById', (done) => {
+    it('Checking Server Error of AddLabelById', (done) => {
         chai
             .request(server)
             .post('/addlabel/:id')
@@ -18,7 +18,7 @@ describe('Add label by id api', () => {
                 done();
             });
     });
-    it.only('Gives true When Valid Entry of Token', (done) => {
+    it('Gives true When Valid Entry of Token', (done) => {
         const token = labelJson.label.validToken
         chai
             .request(server)
@@ -29,7 +29,7 @@ describe('Add label by id api', () => {
                 done();
             });
     });
-    it.only('Gives false when token is not verify', (done) => {
+    it('Gives false when token is not verify', (done) => {
         const token = labelJson.label.invalidToken
         chai
             .request(server)
@@ -40,7 +40,7 @@ describe('Add label by id api', () => {
                 done();
             });
     });
-    it.only('If payload of data is validated then it should give true', (done) => {
+    it('If payload of data is validated then it should give true', (done) => {
         const token = labelJson.label.validToken;
         const labelName = {
             labelname: faker.lorem.word()
@@ -55,7 +55,7 @@ describe('Add label by id api', () => {
                 done();
             })
     })
-    it.only('Should return true, when service layer is giving response', (done) => {
+    it('Should return true, when service layer is giving response', (done) => {
         const token = labelJson.label.validToken;
         const labelName = {
             labelname: faker.lorem.word()
@@ -70,7 +70,7 @@ describe('Add label by id api', () => {
                 done();
             })
     });
-    it.only('Recieving the response from the model layer, should return true', (done) => {
+    it('Recieving the response from the model layer, should return true', (done) => {
         const token = labelJson.label.validToken;
         const labelName = {
             labelname: faker.lorem.word()
@@ -85,7 +85,7 @@ describe('Add label by id api', () => {
                 done();
             })
     });
-    it.only('Checking the user with same note, should return true', (done) => {
+    it('Checking the user with same note, should return true', (done) => {
         const token = labelJson.label.validToken;
         const labelName = {
             labelname: faker.lorem.word()
@@ -100,7 +100,7 @@ describe('Add label by id api', () => {
                 done();
             })
     });
-    it.only('should give true message, When the label belongs to user', (done) => {
+    it('should give true message, When the label belongs to user', (done) => {
         const token = labelJson.label.validToken;
         const labelName = {
             labelname: faker.lorem.word()
@@ -115,7 +115,22 @@ describe('Add label by id api', () => {
                 done();
             })
     });
-    it.only('Adding note into existing label, it should return true', (done) => {
+    it('Adding note into existing label, it should return true', (done) => {
+        const token = labelJson.label.validToken;
+        const labelName = {
+            labelname: faker.lorem.word()
+        }
+        chai
+            .request(server)
+            .post('/addlabel/61c4a09b974b4b083aec7d13')
+            .set({ authorization: token })
+            .send(labelName)
+            .end((err, res) => {
+                res.should.have.status(201);
+                done();
+            })
+    });
+    it('Adding note into existing label, it should return true', (done) => {
         const token = labelJson.label.validToken;
         const labelName = {
             labelname: faker.lorem.word()

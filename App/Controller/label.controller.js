@@ -19,12 +19,12 @@ class Label {
     addLabelById = (req, res) => {
         try {
             if (req.user) {
-                const labelDetail = { labelName : req.body.labelName }
+                const labelDetail = { labelName: req.body.labelName }
                 const validation = labelValidation.authLabelValidation.validate(labelDetail);
                 if (validation.error) {
-                    console.log(validation.error)
-                    const response = { sucess: false, message: "Error in Vaidation" }
-                    return res.status(422).json(response)
+                    return res.status(422).json({
+                        message: 'Worng Credential Valdation',
+                    });
                 }
                 const label = {
                     labelName: req.body.labelName,
@@ -33,16 +33,19 @@ class Label {
                 }
                 serviceLayer.addLabelById(label, (error, data) => {
                     if (error) {
-                        const response = { sucess: true, message: error.message }
-                        return res.status(401).send(response)
-                    } else 
-                         return res.status(201).json({
-                            message: 'Authentic Entry of Token'
+                        return res.status(201).json({
+                            message: 'Successfully Note Is added',
+                            data:data
                         });
-                    })
-                }
+                    } else if(data){
+                        return res.status(400).json({
+                            message: 'Some error Occured !',
+                            data:data
+                        });
+                    }
+                })
+            }
         } catch (err) {
-            console.log("9999",err)
             logger.error('Internal Server Error');
             return res.status(500).json({
                 message: 'Internal Server Error'

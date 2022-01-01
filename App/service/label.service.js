@@ -7,10 +7,10 @@ class labelService {
      */
     addLabelById = (label, callback) => {
         modelLayer.addLabelById(label, (error, data) => {
-            if (!label) {
+            if (!data) {
                 return callback("Label is not defined", null)
             }
-            return callback(null, label);
+            return callback(null, data);
         })
     }
 }

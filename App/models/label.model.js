@@ -18,7 +18,7 @@ const labelSchema = mongoose.Schema({
     timestamps: true
 })
 
-const labelRegister = mongoose.model('labelRegister',labelSchema)
+const labelRegister = mongoose.model('labelRegister', labelSchema)
 class Model {
     /**
          * @description Creating a new label
@@ -28,30 +28,42 @@ class Model {
             if (!data) {
                 return callback("Note is exits in user info", data);
             }
-            else if (data){
-                labelRegister.find({email :label.email,noteId:label.noteId},(error,data)=>{
-                    if(error){
-                        return callback("Some error to find note",null)
+            else if (data) {
+                labelRegister.find({ email: label.email, noteId: label.noteId }, (error, data) => {
+                    if (error) {
+                        return callback("Some error to find note", null)
                     }
-                    else if(!data){
-                        callback("label is not found",data)
+                    else if (!data) {
+                        callback("label is not found", data)
                     }
-                    else{
-                        labelRegister.findOneAndUpdate({ label:label.labelName },{ $addToSet: { noteId: label.noteId } },(error,data)=>{
-                            if(error){
-                                return callback("Some error occured",null)
+                    else {
+                        labelRegister.findOneAndUpdate({ userId: label.userId, labelName: label.labelName }, { $addToSet: { noteId: label.noteId } }, (error, data) => {
+                            if (error) {
+                                return callback("Some error occured", null)
                             }
-                            else if(!data){
-                                return callback(null,data)
+                            else if (!data) {
+                                const labeldata = new labelRegister({
+                                    userId: label.userId,
+                                    noteId: [label.noteId],
+                                    labelName: label.labelName
+                                })
+                                labeldata.save((error, data) => {
+                                    if (data) {
+                                        return callback(null, data);
+                                    }
+                                    else {
+                                        return callback(error, null)
+                                    }
+                                })
                             }
-                            else{
-                                return callback(null,data);
+                            else {
+                                return callback(null, data);
                             }
                         })
+                    }
+                })
             }
         })
-}
-})
-}
+    }
 }
 module.exports = new Model()

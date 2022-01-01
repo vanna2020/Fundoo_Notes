@@ -62,7 +62,6 @@ class Note {
       const id = { id: req.user.dataForToken.id };
       const getNoteValidation = validation.NoteValidation.validate(id);
       if (getNoteValidation.error) {
-        console.log(getNoteValidation.error);
         return res.status(400).send({
           success: false,
           message: 'Wrong Input Validations',
@@ -106,7 +105,6 @@ class Note {
       const id = { userId: req.user.dataForToken.id, noteId: req.params.id };
       const getNoteValidation = validation.getNoteValidation.validate(id);
       if (getNoteValidation.error) {
-        console.log(getNoteValidation.error);
         return res.status(400).send({
           success: false,
           message: 'Wrong Input Validations',
