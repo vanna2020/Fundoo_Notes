@@ -148,7 +148,7 @@ describe('Add label by id api', () => {
 })
 
 describe('get label api', () => {
-    it('getlabel test case', (done) => {
+    it.only('getlabel test case', (done) => {
         chai
             .request(server)
             .get('/getlabel')
@@ -157,7 +157,7 @@ describe('get label api', () => {
                 done();
             });
     });
-    it('test case for valid token', (done) => {
+    it.only('test case for valid token', (done) => {
         const token = labelJson.label.validToken
         chai
             .request(server)
@@ -168,7 +168,7 @@ describe('get label api', () => {
                 done();
             });
     })
-    it('test case for invalid token', (done) => {
+    it.only('test case for invalid token', (done) => {
         const token = labelJson.label.invalidToken
         chai
             .request(server)
@@ -179,7 +179,18 @@ describe('get label api', () => {
                 done();
             });
     })
-    it('it should return true when credential is validated', (done) => {
+    it.only('it should return true when credential is validated', (done) => {
+        const token = labelJson.label.validToken
+        chai
+            .request(server)
+            .get('/getlabel')
+            .set({ authorization: token })
+            .end((err, res) => {
+                res.should.have.status(200);
+                done();
+            });
+    })
+    it.only('it should return true when service is added', (done) => {
         const token = labelJson.label.validToken
         chai
             .request(server)
