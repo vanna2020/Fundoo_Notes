@@ -67,11 +67,12 @@ class Model {
         })
     }
     getlabel = (labelCredential, callback) => {
-        if (!labelCredential) {
-            return callback("Not getting response from service layer", null)
-        } else {
-            return callback(null, labelCredential)
-        }
-    }
+            labelRegister.find({userId:labelCredential.id},(error,data)=>{
+                if(error){
+                    return callback("Not getting response from service layer", null)
+                }
+                return callback(null, data)
+            })
+        } 
 }
 module.exports = new Model()

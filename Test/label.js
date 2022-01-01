@@ -210,6 +210,17 @@ describe('get label api', () => {
             .end((err, res) => {
                 res.should.have.status(200);
                 done();
-        });
+            });
+    })
+    it.only('When Fetching labels it should return true', (done) => {
+        const token = labelJson.label.validToken
+        chai
+            .request(server)
+            .get('/getlabel')
+            .set({ authorization: token })
+            .end((err, res) => {
+                res.should.have.status(200);
+                done();
+            });
     })
 })
