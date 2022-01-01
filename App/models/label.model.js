@@ -1,5 +1,6 @@
 const note = require('../models/notes.model').note
 const mongoose = require('mongoose');
+const { logger } = require('../../logger/logger')
 
 const labelSchema = mongoose.Schema({
     userId: {
@@ -64,6 +65,13 @@ class Model {
                 })
             }
         })
+    }
+    getlabel = (labelCredential, callback) => {
+        if (!labelCredential) {
+            return callback("Not getting response from service layer", null)
+        } else {
+            return callback(null, labelCredential)
+        }
     }
 }
 module.exports = new Model()

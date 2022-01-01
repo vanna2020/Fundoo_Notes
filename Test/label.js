@@ -201,4 +201,15 @@ describe('get label api', () => {
                 done();
             });
     })
+    it.only('it should return true when Model layer is added', (done) => {
+        const token = labelJson.label.validToken
+        chai
+            .request(server)
+            .get('/getlabel')
+            .set({ authorization: token })
+            .end((err, res) => {
+                res.should.have.status(200);
+                done();
+        });
+    })
 })

@@ -15,12 +15,14 @@ class labelService {
     }
     //fetching labels
     getlabel = (labelCredential, callback) => {
-        if (!labelCredential) {
-            return callback("Not getting response from service layer", null)
-        }
-        else {
-            return callback(null, labelCredential)
-        }
+        modelLayer.getlabel(labelCredential,(error,data)=>{
+            if(error){
+               return callback(error,null);
+            }else if(!data){
+                return callback("data is not found or undefine",data);
+            }
+            return callback(null,data);
+        })
     }
 }
 module.exports = new labelService();
