@@ -41,5 +41,6 @@ module.exports = (app) => {
 
   // API for addLabel By Id 
   app.post('/addlabel/:id', helper.validateToken, crud.addLabelById);
-
+  // API for getlabel By Id 
+  app.get('/getlabel/:id', helper.validateToken, crud.getlabel);
 }

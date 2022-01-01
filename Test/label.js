@@ -146,3 +146,15 @@ describe('Add label by id api', () => {
             })
     });
 })
+
+describe('get label api', () => {
+    it.only('getlabel test case', (done) => {
+        chai
+            .request(server)
+            .get('/getlabel/:id')
+            .end((err, res) => {
+                res.should.have.status(500);
+                done();
+            });
+    });
+})
