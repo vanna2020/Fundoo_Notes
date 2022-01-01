@@ -148,13 +148,46 @@ describe('Add label by id api', () => {
 })
 
 describe('get label api', () => {
-    it.only('getlabel test case', (done) => {
+    it('getlabel test case', (done) => {
         chai
             .request(server)
-            .get('/getlabel/:id')
+            .get('/getlabel')
             .end((err, res) => {
                 res.should.have.status(500);
                 done();
             });
     });
+    it('test case for valid token', (done) => {
+        const token = labelJson.label.validToken
+        chai
+            .request(server)
+            .get('/getlabel')
+            .set({ authorization: token })
+            .end((err, res) => {
+                res.should.have.status(200);
+                done();
+            });
+    })
+    it('test case for invalid token', (done) => {
+        const token = labelJson.label.invalidToken
+        chai
+            .request(server)
+            .get('/getlabel')
+            .set({ authorization: token })
+            .end((err, res) => {
+                res.should.have.status(400);
+                done();
+            });
+    })
+    it('it should return true when credential is validated', (done) => {
+        const token = labelJson.label.validToken
+        chai
+            .request(server)
+            .get('/getlabel')
+            .set({ authorization: token })
+            .end((err, res) => {
+                res.should.have.status(200);
+                done();
+            });
+    })
 })

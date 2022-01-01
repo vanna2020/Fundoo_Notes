@@ -55,7 +55,19 @@ class Label {
     }
     getlabel = (req,res)=>{
         try{
-            console.log("I am in controller")
+            const labelCredential = {
+                id : req.user.dataForToken.id
+            }
+            const CredentialValidation = labelValidation.Validationlabel.validate(labelCredential)
+            if(CredentialValidation.error){
+                return res.status(422).json({
+                    error: CredentialValidation.error,
+                    message: 'Validation unsuccesful'
+                })
+            }
+            return res.status(200).json({
+                message: 'succesfully reterive labels '
+            })
         }catch(error){
             return res.status(500).json({
                 message: 'Internal Server Error'

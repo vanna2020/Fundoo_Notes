@@ -86,5 +86,8 @@ class Validation {
   authLabelValidation = Joi.object({
     labelName: Joi.string()
   });
+  Validationlabel =Joi.object({
+    id:Joi.string().required()
+  })
 }
 module.exports = new Validation();
