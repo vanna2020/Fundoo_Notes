@@ -241,11 +241,13 @@ describe('get labelById api', () => {
             });
     })
     it.only('Adding controller layer and checking the response of token in getLabelById, it should retuen true msg while adding ', (done) => {
+        const token = labelJson.label.validToken
         chai
             .request(server)
             .get('/getlabel/:id')
+            .set({ authorization: token })
             .end((err, res) => {
-                res.should.have.status(500);
+                res.should.have.status(200);
                 done();
             });
     })
