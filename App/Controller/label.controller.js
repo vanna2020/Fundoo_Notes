@@ -35,12 +35,12 @@ class Label {
                     if (error) {
                         return res.status(201).json({
                             message: 'Successfully Note Is added',
-                            data:data
+                            data: data
                         });
-                    } else if(data){
+                    } else if (data) {
                         return res.status(400).json({
                             message: 'Some error Occured !',
-                            data:data
+                            data: data
                         });
                     }
                 })
@@ -52,6 +52,55 @@ class Label {
             }
             )
         };
+    }
+    getlabel = (req, res) => {
+        try {
+            const labelCredential = {
+                id: req.user.dataForToken.id
+            }
+            const CredentialValidation = labelValidation.Validationlabel.validate(labelCredential)
+            if (CredentialValidation.error) {
+                return res.status(400).json({
+                    error: error.message,
+                    message: 'Some error Occured ',
+                    data: CredentialValidation.error
+                })
+            }
+            serviceLayer.getlabel(labelCredential, (error, data) => {
+                if (error) {
+                    return res.status(400).json({
+                        error: error.message,
+                        message: 'Some error Occured ',
+                        data: CredentialValidation.error
+                    })
+                }
+                else if (!data) {
+                    return res.status(401).json({
+                        error: error.message,
+                        data: data,
+                        message: 'data is not found!'
+                    })
+                }
+                return res.status(200).json({
+                    message: 'succesfully reterive labels ',
+                    data: data
+                })
+            })
+        } catch (error) {
+            return res.status(500).json({
+                message: 'Internal Server Error',
+                error: error
+            })
+        }
+    }
+    getlabelById = (req, res) => {
+        try {
+            console.log("U are in try block")
+        }
+        catch {
+            const response = { sucess: false, message: "Internal  Server error" }
+            return res.status(500).json(response)
+        }
     }
 }
 module.exports = new Label();

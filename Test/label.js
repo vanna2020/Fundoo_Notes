@@ -7,6 +7,7 @@ const labelJson = require('./label.json');
 const { expect } = require('chai');
 chai.should();
 
+//Add Label By Id API
 
 describe('Add label by id api', () => {
     it('Checking Server Error of AddLabelById', (done) => {
@@ -145,4 +146,98 @@ describe('Add label by id api', () => {
                 done();
             })
     });
+})
+
+//Get Label API 
+
+describe('get label api', () => {
+    it('getlabel test case', (done) => {
+        chai
+            .request(server)
+            .get('/getlabel')
+            .end((err, res) => {
+                res.should.have.status(500);
+                done();
+            });
+    });
+    it('test case for valid token', (done) => {
+        const token = labelJson.label.validToken
+        chai
+            .request(server)
+            .get('/getlabel')
+            .set({ authorization: token })
+            .end((err, res) => {
+                res.should.have.status(200);
+                done();
+            });
+    })
+    it('test case for invalid token', (done) => {
+        const token = labelJson.label.invalidToken
+        chai
+            .request(server)
+            .get('/getlabel')
+            .set({ authorization: token })
+            .end((err, res) => {
+                res.should.have.status(400);
+                done();
+            });
+    })
+    it('it should return true when credential is validated', (done) => {
+        const token = labelJson.label.validToken
+        chai
+            .request(server)
+            .get('/getlabel')
+            .set({ authorization: token })
+            .end((err, res) => {
+                res.should.have.status(200);
+                done();
+            });
+    })
+    it('it should return true when service is added', (done) => {
+        const token = labelJson.label.validToken
+        chai
+            .request(server)
+            .get('/getlabel')
+            .set({ authorization: token })
+            .end((err, res) => {
+                res.should.have.status(200);
+                done();
+            });
+    })
+    it('it should return true when Model layer is added', (done) => {
+        const token = labelJson.label.validToken
+        chai
+            .request(server)
+            .get('/getlabel')
+            .set({ authorization: token })
+            .end((err, res) => {
+                res.should.have.status(200);
+                done();
+            });
+    })
+    it('When Fetching labels it should return true', (done) => {
+        const token = labelJson.label.validToken
+        chai
+            .request(server)
+            .get('/getlabel')
+            .set({ authorization: token })
+            .end((err, res) => {
+                res.should.have.status(200);
+                done();
+            });
+    })
+})
+
+//Get Label By Id API 
+
+describe('get labelById api', () => {
+    it.only('getlabelById test case', (done) => {
+        chai
+            .request(server)
+            .get('/getlabel/:id')
+            .end((err, res) => {
+                res.should.have.status(500);
+                done();
+            });
+    })
 })
