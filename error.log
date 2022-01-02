@@ -653,3 +653,5 @@
 {"level":"error","message":{"acknowledged":true,"matchedCount":1,"modifiedCount":1,"upsertedCount":0,"upsertedId":null},"timestamp":"2022-01-01T16:21:16.286Z"}
 {"level":"error","message":"Invalid password","timestamp":"2022-01-01T16:21:16.300Z"}
 >>>>>>> Development
+{"level":"error","message":"Internal server error","timestamp":"2022-01-02T15:25:28.528Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-02T15:26:26.687Z"}

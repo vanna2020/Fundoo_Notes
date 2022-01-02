@@ -1543,3 +1543,5 @@
 {"level":"info","message":"Password reset succesfully","timestamp":"2022-01-01T16:21:16.287Z"}
 {"level":"error","message":"Invalid password","timestamp":"2022-01-01T16:21:16.300Z"}
 >>>>>>> Development
+{"level":"error","message":"Internal server error","timestamp":"2022-01-02T15:25:28.525Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-02T15:26:26.684Z"}

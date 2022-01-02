@@ -95,11 +95,30 @@ class Label {
     }
     getlabelById = (req, res) => {
         try {
-            const response = { sucess: false, message: "There is some internal error" }
-            return res.status(200).json(response)
+            const labelCredential = {
+                userId: req.user.dataForToken.id,
+                labelId: req.params.id
+            };
+            const CredentialValidation = labelValidation.labelvalidator.validate(labelCredential)
+            if (CredentialValidation.error) {
+                const response = {
+                    sucess: false,
+                    message: "Wrong Credential Validation"
+                }
+                return res.status(422).json(response)
+            } else {
+                const response = {
+                    sucess: true,
+                    message: "Succesfuly label is fetched",
+                }
+                return res.status(201).json(response)
+            }
         }
         catch {
-            const response = { sucess: false, message: "There is some internal error" }
+            const response = {
+                sucess: false,
+                message: "There is some internal error"
+            }
             return res.status(500).json(response)
         }
     }
