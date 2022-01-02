@@ -273,4 +273,15 @@ describe('get labelById api', () => {
                 done();
             });
     })
+    it.only('it should return true msg when Credential is added', (done) => {
+        const token = labelJson.label.validToken
+        chai
+            .request(server)
+            .get('/getlabel/61cdd42b99bc1829b73b2cd6')
+            .set({ authorization: token })
+            .end((err, res) => {
+                res.should.have.status(201);
+                done();
+            });
+    })
 })
