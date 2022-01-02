@@ -95,10 +95,12 @@ class Label {
     }
     getlabelById = (req, res) => {
         try {
-            console.log("U are in try block")
+            console.log("You are in try block")
+            const response = { sucess: false, message: "There is some internal error" }
+            return res.status(200).json(response)
         }
         catch {
-            const response = { sucess: false, message: "Internal  Server error" }
+            const response = { sucess: false, message: "There is some internal error" }
             return res.status(500).json(response)
         }
     }

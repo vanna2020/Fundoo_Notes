@@ -240,4 +240,13 @@ describe('get labelById api', () => {
                 done();
             });
     })
+    it.only('Adding controller layer and checking the response of token in getLabelById, it should retuen true msg while adding ', (done) => {
+        chai
+            .request(server)
+            .get('/getlabel/:id')
+            .end((err, res) => {
+                res.should.have.status(500);
+                done();
+            });
+    })
 })
