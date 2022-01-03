@@ -164,8 +164,11 @@ class Label {
 
     updatelabelById = (req, res) => {
         try {
-            if (req.user) {
-                const updatelabel = req.body.updatelabel
+            const updatelabel = {
+                userId: req.user.dataForToken.id,
+                id: req.params.id,
+                labelName: req.body.labelName
+            };
                 const CredentialValidation = labelValidation.updatelabelbyid.validate(updatelabel)
                 if (CredentialValidation.error) {
                     const response = {
@@ -175,10 +178,9 @@ class Label {
                     }
                     return res.status(422).json(response)
                 }
-            }
             const response = {
                 sucess: true,
-                message: 'token is validated and responding true message'
+                message: 'token is successfully Validated'
             }
             return res.status(201).json(response)
         }

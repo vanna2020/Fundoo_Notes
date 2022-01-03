@@ -32,7 +32,7 @@ class labelService {
 
     /**
      * @description get label By Id
-     * @method labelModel. getlabelById calls model class method
+     * @method labelModel.getlabelById calls model class method
      */
     getlabelById = (labelCredential, callback) => {
         modelLayer.getlabelById(labelCredential, (error, data) => {
@@ -41,6 +41,17 @@ class labelService {
             } 
             return callback(null, data);
         })
+    }
+
+    /**
+     * @description Update label By Id
+     * @method labelModel.UpdatelabelById calls model class method
+     */
+     updatelabelById = (labelCredential, callback) => {
+            if (!labelCredential) {
+                return callback(error, null);
+            } 
+            return callback(null, labelCredential);
     }
 }
 module.exports = new labelService();
