@@ -89,7 +89,7 @@ class Validation {
   Validationlabel =Joi.object({
     id:Joi.string()
   })
-  labelvalidator = Joi.object({
+  labelidvalidator = Joi.object({
     userId:Joi.string(),
     labelId:Joi.string()
   })

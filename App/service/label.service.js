@@ -14,6 +14,7 @@ class labelService {
         })
     }
     //fetching labels
+
     getlabel = (labelCredential, callback) => {
         modelLayer.getlabel(labelCredential,(error,data)=>{
             if(error){
@@ -24,5 +25,13 @@ class labelService {
             return callback(null,data);
         })
     }
-}
+     // Fetching all labels by Id
+
+     getlabelById = (labelCredential,callback) => {
+            if(!labelCredential){
+               return callback(error,null);
+            }
+            return callback(null,labelCredential);
+        }
+    }
 module.exports = new labelService();

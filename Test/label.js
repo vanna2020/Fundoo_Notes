@@ -273,7 +273,7 @@ describe('get labelById api', () => {
                 done();
             });
     })
-    it.only('it should return true msg when Credential is added', (done) => {
+    it.only('it should return true msg when Service layer is added', (done) => {
         const token = labelJson.label.validToken
         chai
             .request(server)

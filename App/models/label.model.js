@@ -27,7 +27,7 @@ class Model {
     addLabelById = (label, callback) => {
         note.find({ email: label.email, noteId: label.noteId }, (error, data) => {
             if (!data) {
-                return callback("Note is exits in user info", data);
+                return callback("Note does not exists in user info", data);
             }
             else if (data) {
                 labelRegister.find({ email: label.email, noteId: label.noteId }, (error, data) => {

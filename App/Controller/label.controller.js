@@ -98,23 +98,40 @@ class Label {
             const labelCredential = {
                 userId: req.user.dataForToken.id,
                 labelId: req.params.id
-            };
-            const CredentialValidation = labelValidation.labelvalidator.validate(labelCredential)
-            if (CredentialValidation.error) {
-                const response = {
-                    sucess: false,
-                    message: "Wrong Credential Validation"
-                }
-                return res.status(422).json(response)
-            } else {
-                const response = {
-                    sucess: true,
-                    message: "Succesfuly label is fetched",
-                }
-                return res.status(201).json(response)
             }
+            const CredentialValidation = labelValidation.labelidvalidator.validate(labelCredential)
+            if (CredentialValidation.error) {
+                return res.status(400).json({
+                    error: error.message,
+                    message: 'Some error Occured ',
+                    data: CredentialValidation.error
+                })
+
+            }
+            serviceLayer.getlabelById(labelCredential, (error, data) => {
+                if (error) {
+                    return res.status(400).json({
+                        error: error.message,
+                        message: 'Some error Occured ',
+                        data: CredentialValidation.error
+                    })
+                }
+                else if (!data) {
+                    return res.status(401).json({
+                        error: error.message,
+                        data: data,
+                        message: 'data is not found!'
+                    })
+
+                }
+                return res.status(201).json({
+                    message: 'succesfully reterive labels ',
+                    data: data
+                })
+            })
         }
-        catch {
+        catch (err) {
+            console.log("error", err);
             const response = {
                 sucess: false,
                 message: "There is some internal error"
