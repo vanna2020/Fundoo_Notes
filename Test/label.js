@@ -366,4 +366,16 @@ describe('Update labelById api', () => {
                 done();
             });
     })
+    it.only('it should return true msg when Model layer is added', (done) => {
+        const token = labelJson.label.validToken
+        chai
+            .request(server)
+            .put('/updatelabel/61cdd42b99bc1829b73b2cd6')
+            .set({authorization : token})
+            .send({labelName : 'Vandana'})
+            .end((err, res) => {
+                res.should.have.status(201);
+                done();
+            });
+    })
 })

@@ -84,5 +84,13 @@ class Model {
             return callback(null, data)
         })
     }
+    updatelabelById = (labelCredential, callback) => {
+            if (error) {
+                return callback(error, null)
+            } else if (!data) {
+                return callback("data is not found", data)
+            }
+            return callback(null, data)
+    }
 }
 module.exports = new Model()
