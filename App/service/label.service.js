@@ -25,13 +25,14 @@ class labelService {
             return callback(null,data);
         })
     }
-     // Fetching all labels by Id
+    
+     // Fetching labels 
 
      getlabelById = (labelCredential,callback) => {
-            if(!labelCredential){
-               return callback(error,null);
-            }
-            return callback(null,labelCredential);
+        if(!labelCredential){
+           return callback(error,null);
         }
+        return callback(null,labelCredential);
     }
+}
 module.exports = new labelService();
