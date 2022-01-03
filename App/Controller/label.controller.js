@@ -169,20 +169,32 @@ class Label {
                 id: req.params.id,
                 labelName: req.body.labelName
             };
-                const CredentialValidation = labelValidation.updatelabelbyid.validate(updatelabel)
-                if (CredentialValidation.error) {
-                    const response = {
-                        sucess: false,
-                        message: 'Validation Failed',
-                        error: CredentialValidation.error
-                    }
-                    return res.status(422).json(response)
+            const CredentialValidation = labelValidation.updatelabelbyid.validate(updatelabel)
+            if (CredentialValidation.error) {
+                console.log("err",CredentialValidation.error)
+                const response = {
+                    sucess: false,
+                    message: 'Validation Failed',
+                    error: CredentialValidation.error
                 }
-            const response = {
-                sucess: true,
-                message: 'token is successfully Validated'
+                return res.status(422).json(response)
             }
-            return res.status(201).json(response)
+            serviceLayer.updatelabelById(updatelabel, (error, data) => {
+                if (data) {
+                    const response = {
+                        sucess: true,
+                        message: 'token is successfully Validated',
+                        data: data
+                    }
+                    return res.status(201).json(response)
+                }
+                const response = {
+                    sucess: true,
+                    message: 'Some error occured .....!',
+                    data: data
+                }
+                return res.status(400).json(response)
+            })
         }
         catch {
             const response = {
