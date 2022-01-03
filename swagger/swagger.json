@@ -358,100 +358,181 @@
                 }
             }
         },
-        "/addlabel/{id}":{
-            "post":{
-              "tags":["Add label"],
-              "description":"Added label",
-              "parameters":[
-                {
-                  "in":"header",
-                  "name":"authorization",
-                  "description":"Token for validation",
-                  "schema":{
-                    "type":"string",
-                    "required":true
+        "/addlabel/{id}": {
+            "post": {
+                "tags": [
+                    "Add label"
+                ],
+                "description": "Added label",
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "authorization",
+                        "description": "Token for validation",
+                        "schema": {
+                            "type": "string",
+                            "required": true
+                        }
+                    },
+                    {
+                        "in": "path",
+                        "name": "id",
+                        "description": "Note id",
+                        "schema": {
+                            "type": "string",
+                            "required": true
+                        }
+                    },
+                    {
+                        "in": "body",
+                        "name": "addlabel",
+                        "description": "Label to be updated",
+                        "schema": {
+                            "$ref": "#/definitions/addlabel"
+                        }
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "label added"
+                    },
+                    "500": {
+                        "description": "Failed to add label"
+                    },
+                    "400": {
+                        "description": "Invalid Token"
+                    }
                 }
-              },
-              {
-                "in":"path",
-                "name":"id",
-                "description":"Note id",
-                "schema":{
-                  "type":"string",
-                  "required":true
-                }
-              },
-              {
-                "in":"body",
-                "name":"addlabel",
-                "description":"Label to be updated",
-                  "schema":{"$ref":"#/definitions/addlabel"}
-                }
-              ],
-              "produces":["application/json"],
-              "responses":{
-                "200":{"description":"label added"},
-                "500":{"description":"Failed to add label"},
-                "400":{"description":"Invalid Token"}
-              }
             }
         },
-        "/getlabel":{
-            "get":{
-              "tags":["get labels"],
-              "description":"Gets all labels",
-              "parameters":[
-                {
-                  "in":"header",
-                "name":"authorization",
-                "description":"Token for validation",
-                "schema":{
-                  "type":"string",
-                  "required":true
+        "/getlabel": {
+            "get": {
+                "tags": [
+                    "get labels"
+                ],
+                "description": "Gets all labels",
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "authorization",
+                        "description": "Token for validation",
+                        "schema": {
+                            "type": "string",
+                            "required": true
+                        }
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "labels retrieved"
+                    },
+                    "400": {
+                        "description": "Couldnt retrieve labels"
+                    },
+                    "500": {
+                        "description": "Some error Occured"
+                    }
                 }
-                }
-              ],
-              "produces":["application/json"],
-              "responses":{
-                "200":{"description":"labels retrieved"},
-                "400":{"description":"Couldnt retrieve labels"},
-                "500":{"description":"Some error Occured"}
-              }
             }
         },
-
-        "/getlabel/{id}":{
-            "get":{
-              "tags":["get label by id"],
-              "description":"Gets label by id",
-              "parameters":[
-                {
-                  "in":"header",
-                  "name":"authorization",
-                  "description":"Token for validation",
-                  "schema":{
-                    "type":"string",
-                    "required":true
-                  }
-                },
-                {
-                  "in":"path",
-                  "name":"id",
-                  "description":"Label id",
-                  "schema":{
-                    "type":"string",
-                    "required":true
-                  }
+        "/getlabel/{id}": {
+            "get": {
+                "tags": [
+                    "get label by id"
+                ],
+                "description": "Gets label by id",
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "authorization",
+                        "description": "Token for validation",
+                        "schema": {
+                            "type": "string",
+                            "required": true
+                        }
+                    },
+                    {
+                        "in": "path",
+                        "name": "id",
+                        "description": "Label id",
+                        "schema": {
+                            "type": "string",
+                            "required": true
+                        }
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "label Found"
+                    },
+                    "500": {
+                        "description": "label not Found"
+                    },
+                    "400": {
+                        "description": "Invalid Token"
+                    }
                 }
-              ],
-              "produces":["application/json"],
-              "responses":{
-                "200":{"description":"label Found"},
-                "500":{"description":"label not Found"},
-                "400":{"description":"Invalid Token"}
-              }
             }
-        } 
+        },
+        "/updatelabel/{id}": {
+            "put": {
+                "tags": [
+                    "Update Label"
+                ],
+                "description": "Updates Label",
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "authorization",
+                        "description": "Token for validation",
+                        "schema": {
+                            "type": "string",
+                            "required": true
+                        }
+                    },
+                    {
+                        "in": "path",
+                        "name": "id",
+                        "description": "Label id",
+                        "schema": {
+                            "type": "string",
+                            "required": true
+                        }
+                    },
+                    {
+                        "in": "body",
+                        "name": "label",
+                        "description": "Label to be updated",
+                        "schema": {
+                            "$ref": "#/definitions/UpdateLabel"
+                        }
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "label updated"
+                    },
+                    "500": {
+                        "description": "Failed to update label"
+                    },
+                    "400": {
+                        "description": "Invalid Token"
+                    }
+                }
+            }
+        }
     },
     "definitions": {
         "registerUser": {
@@ -534,14 +615,21 @@
                 "description": "Write a description here....."
             }
         },
-        "addlabel":{
-            "type":"object",
-            "properties":{
-                "labelName":{
-                  "type":"string"
+        "addlabel": {
+            "type": "object",
+            "properties": {
+                "labelName": {
+                    "type": "string"
                 }
-              }
+            }
+        },
+        "UpdateLabel": {
+            "type": "object",
+            "properties": {
+                "labelName": {
+                    "type": "string"
+                }
+            }
         }
-
     }
 }
