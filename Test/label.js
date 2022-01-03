@@ -393,12 +393,23 @@ describe('Update labelById api', () => {
 })
 
 describe('deletelabelById api', () => {
-    it.only('deletelabelById test case', (done) => {
+    it('deletelabelById test case', (done) => {
         chai
             .request(server)
             .delete('/deletelabel/:id')
             .end((err, res) => {
                 res.should.have.status(500);
+                done();
+            });
+    })
+    it('Adding controller layer and checking the response of token in DeleteLabelById, it should return true msg while adding  ', (done) => {
+        const token = labelJson.label.validToken
+        chai
+            .request(server)
+            .delete('/deletelabel/:id')
+            .set({authorization : token})
+            .end((err, res) => {
+                res.should.have.status(201);
                 done();
             });
     })

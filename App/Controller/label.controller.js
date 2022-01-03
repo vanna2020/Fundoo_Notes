@@ -205,9 +205,13 @@ class Label {
         }
     }
 
-    deletelabelById = () => {
+    deletelabelById = (req,res) => {
         try{
-            console.log("I am in controller layer")
+            const response = {
+                sucess: true,
+                message: 'token is successfully decoded',
+            }
+            return res.status(201).json(response)
         }catch(error){
             const response = {
                 sucess: false,
