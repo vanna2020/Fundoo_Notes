@@ -413,4 +413,15 @@ describe('deletelabelById api', () => {
                 done();
             });
     })
+    it('Adding controller layer and checking the response for Invalid token in DeleteLabelById, it should return true msg while adding  ', (done) => {
+        const token = labelJson.label.invalidToken
+        chai
+            .request(server)
+            .delete('/deletelabel/:id')
+            .set({authorization : token})
+            .end((err, res) => {
+                res.should.have.status(400);
+                done();
+            });
+    })
 })
