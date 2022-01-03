@@ -141,13 +141,17 @@ class Label {
     }
     updatelabelById  = (req, res) => {
         try {
-            console.log("You are in try block")
+            const response = { 
+                sucess: true,
+                 message: "Token is correct"
+                 }
+            return res.status(200).json(response)
         }
         catch {
             const response = {
-                 sucess: false,
-                 message: "Internal Server error" 
-                }
+                 sucess: false, 
+                 message: "There is some internal error"
+                 }
             return res.status(500).json(response)
         }
     }
