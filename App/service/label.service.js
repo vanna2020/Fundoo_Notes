@@ -55,5 +55,14 @@ class labelService {
             return callback(null, data);
         })
     }
+
+    deletelabelById = (deletelabel)=>{
+        return new Promise((resolve,reject)=>{
+            if(!deletelabel){
+                reject("deletelabel is not found");
+            }
+            resolve(deletelabel);
+        })
+    }
 }
 module.exports = new labelService();

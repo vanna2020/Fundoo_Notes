@@ -217,13 +217,22 @@ class Label {
                     message: 'Validation failed of Params',
                 }
                 return res.status(422).json(response)
-
             }
-            const response = {
-                sucess: true,
-                message: 'token is successfully decoded',
-            }
-            return res.status(201).json(response)
+                serviceLayer.deletelabelById(deletelabel)
+                .then((data)=>{
+                    const response = {
+                        sucess: true,
+                        message: 'checking response from service',
+                        data : data
+                    }
+                    return res.status(201).json(response)
+                }).catch((error)=>{
+                    const response = {
+                        sucess: true,
+                        message: 'Some error Occured ',
+                    }
+                    return res.status(400).json(response)
+                })
         }catch(error){
             const response = {
                 sucess: false,
