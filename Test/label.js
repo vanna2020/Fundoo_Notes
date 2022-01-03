@@ -328,4 +328,15 @@ describe('Update labelById api', () => {
                 done();
             });
     })
+    it.only('Adding controller layer and checking the response of Invalid token in UpdateLabelById, it should return true msg while adding ', (done) => {
+        const token = labelJson.label.invalidToken
+        chai
+            .request(server)
+            .put('/updatelabel/:id')
+            .set({authorization : token})
+            .end((err, res) => {
+                res.should.have.status(400);
+                done();
+            });
+    })
 })
