@@ -240,7 +240,7 @@ describe('get labelById api', () => {
                 done();
             });
     })
-    it('Adding controller layer and checking the response of token in getLabelById, it should retuen true msg while adding ', (done) => {
+    it('Adding controller layer and checking the response of token in getLabelById, it should return true msg while adding ', (done) => {
         const token = labelJson.label.validToken
         chai
             .request(server)
@@ -251,7 +251,7 @@ describe('get labelById api', () => {
                 done();
             });
     })
-    it('Adding controller layer and checking the response of Invalid token in getLabelById, it should retuen true msg while adding ', (done) => {
+    it('Adding controller layer and checking the response for Invalid token in getLabelById, it should return true msg while adding ', (done) => {
         const token = labelJson.label.invalidToken
         chai
             .request(server)
@@ -266,7 +266,7 @@ describe('get labelById api', () => {
         const token = labelJson.label.validToken
         chai
             .request(server)
-            .get('/getlabel/61cdd42b99bc1829b73b2cd6')
+            .get('/getlabel/61d029a90e685652a8fab41d')
             .set({ authorization: token })
             .end((err, res) => {
                 res.should.have.status(201);
@@ -277,7 +277,7 @@ describe('get labelById api', () => {
         const token = labelJson.label.validToken
         chai
             .request(server)
-            .get('/getlabel/61cdd42b99bc1829b73b2cd6')
+            .get('/getlabel/61d029a90e685652a8fab41d')
             .set({ authorization: token })
             .end((err, res) => {
                 res.should.have.status(201);
@@ -307,6 +307,9 @@ describe('get labelById api', () => {
             });
     })
 })
+
+//Update Label By Id API
+
 describe('Update labelById api', () => {
     it.only('updatelabelById test case', (done) => {
         chai
@@ -324,18 +327,29 @@ describe('Update labelById api', () => {
             .put('/updatelabel/:id')
             .set({authorization : token})
             .end((err, res) => {
-                res.should.have.status(200);
+                res.should.have.status(201);
                 done();
             });
     })
-    it.only('Adding controller layer and checking the response of Invalid token in UpdateLabelById, it should return true msg while adding ', (done) => {
+    it.only('Adding controller layer and checking the response for Invalid token in UpdateLabelById, it should return true msg while adding ', (done) => {
         const token = labelJson.label.invalidToken
         chai
             .request(server)
-            .put('/updatelabel/:id')
+            .put('/updatelabel/61cdd42b99bc1829b73b2cd6')
             .set({authorization : token})
             .end((err, res) => {
                 res.should.have.status(400);
+                done();
+            });
+    })
+    it.only('it should return true msg when Credential is added', (done) => {
+        const token = labelJson.label.validToken
+        chai
+            .request(server)
+            .put('/updatelabel/61cdd42b99bc1829b73b2cd6')
+            .set({authorization : token})
+            .end((err, res) => {
+                res.should.have.status(201);
                 done();
             });
     })

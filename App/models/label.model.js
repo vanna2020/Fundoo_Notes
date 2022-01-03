@@ -75,9 +75,11 @@ class Model {
         })
     }
     getlabelById = (labelCredential, callback) => {
-        labelRegister.find({ userId: labelCredential.id }, (error, data) => {
+        labelRegister.find({ $and: [{ _id: labelCredential.labelId }, { userId: labelCredential.userId }] }, (error, data) => {
             if (error) {
-                return callback("Not getting response from service layer", null)
+                return callback(error, null)
+            } else if (!data) {
+                return callback("data is not found", data)
             }
             return callback(null, data)
         })

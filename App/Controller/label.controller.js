@@ -10,12 +10,14 @@ const { logger } = require('../../logger/logger')
 const serviceLayer = require('../service/label.service')
 const { errorMonitor } = require('nodemailer/lib/xoauth2')
 class Label {
+
     /**
      * @description function written to Added Label into the database
      * @param {*} a valid req body is expected
      * @param {*} res
      * @returns response
      */
+
     addLabelById = (req, res) => {
         try {
             if (req.user) {
@@ -53,6 +55,14 @@ class Label {
             )
         };
     }
+
+    /**
+     * @description function written to Get Label into the database
+     * @param {*} a valid req body is expected
+     * @param {*} res
+     * @returns response
+     */
+
     getlabel = (req, res) => {
         try {
             const labelCredential = {
@@ -62,7 +72,7 @@ class Label {
             if (CredentialValidation.error) {
                 return res.status(400).json({
                     error: error.message,
-                    message: 'Some error Occured ',
+                    message: 'Some error Occured',
                     data: CredentialValidation.error
                 })
             }
@@ -70,7 +80,7 @@ class Label {
                 if (error) {
                     return res.status(400).json({
                         error: error.message,
-                        message: 'Some error Occured ',
+                        message: 'Some error Occured',
                         data: CredentialValidation.error
                     })
                 }
@@ -78,11 +88,11 @@ class Label {
                     return res.status(401).json({
                         error: error.message,
                         data: data,
-                        message: 'data is not found!'
+                        message: 'data is not found'
                     })
                 }
                 return res.status(200).json({
-                    message: 'succesfully reterive labels ',
+                    message: 'succesfully reterive labels',
                     data: data
                 })
             })
@@ -93,6 +103,14 @@ class Label {
             })
         }
     }
+
+    /**
+     * @description function written to GetLabelById into the database
+     * @param {*} a valid req body is expected
+     * @param {*} res
+     * @returns response
+     */
+
     getlabelById = (req, res) => {
         try {
             const labelCredential = {
@@ -112,17 +130,15 @@ class Label {
                 if (error) {
                     return res.status(400).json({
                         error: error.message,
-                        message: 'Some error Occured ',
-                        data: CredentialValidation.error
+                        message: 'Some error Occured'
                     })
                 }
                 else if (!data) {
                     return res.status(401).json({
                         error: error.message,
                         data: data,
-                        message: 'data is not found!'
+                        message: 'data is not found'
                     })
-
                 }
                 return res.status(201).json({
                     message: 'succesfully reterive labels ',
@@ -130,28 +146,47 @@ class Label {
                 })
             })
         }
-        catch (err) {
-            console.log("error", err);
+        catch {
             const response = {
                 sucess: false,
-                message: "There is some internal error"
+                message: 'There is some internal error'
             }
             return res.status(500).json(response)
         }
     }
-    updatelabelById  = (req, res) => {
+
+    /**
+     * @description function written to Update Label By Id into the database
+     * @param {*} a valid req body is expected
+     * @param {*} res
+     * @returns response
+     */
+
+    updatelabelById = (req, res) => {
         try {
-            const response = { 
+            if(req.user){
+                const updatelabel = req.body.updatelabel
+            const CredentialValidation = labelValidation.updatelabelbyid.validate(updatelabel)
+            if (CredentialValidation.error) {
+                const response = {
+                    sucess: false,
+                    message: 'Validation Failed',
+                    error: CredentialValidation.error
+                }
+                return res.status(422).json(response)
+            }
+        }
+            const response = {
                 sucess: true,
-                 message: "Token is correct"
-                 }
-            return res.status(200).json(response)
+                message: 'token is validated and responding true message'
+            }
+            return res.status(201).json(response)
         }
         catch {
             const response = {
-                 sucess: false, 
-                 message: "There is some internal error"
-                 }
+                sucess: false,
+                message: 'There is some internal error'
+            }
             return res.status(500).json(response)
         }
     }

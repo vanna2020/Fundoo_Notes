@@ -16,23 +16,25 @@ class labelService {
     //fetching labels
 
     getlabel = (labelCredential, callback) => {
-        modelLayer.getlabel(labelCredential,(error,data)=>{
-            if(error){
-               return callback(error,null);
-            }else if(!data){
-                return callback("data is not found or undefine",data);
+        modelLayer.getlabel(labelCredential, (error, data) => {
+            if (error) {
+                return callback(error, null);
+            } else if (!data) {
+                return callback("data is not found or undefine", data);
             }
-            return callback(null,data);
+            return callback(null, data);
         })
     }
-    
-     // Fetching labels 
 
-     getlabelById = (labelCredential,callback) => {
-        if(!labelCredential){
-           return callback(error,null);
-        }
-        return callback(null,labelCredential);
+    // Fetching labels 
+
+    getlabelById = (labelCredential, callback) => {
+        modelLayer.getlabelById(labelCredential, (error, data) => {
+            if (error) {
+                return callback(error, null);
+            } 
+            return callback(null, data);
+        })
     }
 }
 module.exports = new labelService();
