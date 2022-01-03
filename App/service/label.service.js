@@ -1,6 +1,7 @@
 const modelLayer = require('../models/label.model')
 
 class labelService {
+    
     /**
      * @description Create a new label 
      * @method labelModel.addlabelBYId calls model class method
@@ -13,8 +14,11 @@ class labelService {
             return callback(null, data);
         })
     }
-    //fetching labels
-
+   
+     /**
+     * @description get label
+     * @method labelModel.getlabel calls model class method
+     */
     getlabel = (labelCredential, callback) => {
         modelLayer.getlabel(labelCredential, (error, data) => {
             if (error) {
@@ -26,8 +30,10 @@ class labelService {
         })
     }
 
-    // Fetching labels 
-
+    /**
+     * @description get label By Id
+     * @method labelModel. getlabelById calls model class method
+     */
     getlabelById = (labelCredential, callback) => {
         modelLayer.getlabelById(labelCredential, (error, data) => {
             if (error) {

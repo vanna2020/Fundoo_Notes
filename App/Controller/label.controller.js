@@ -164,18 +164,18 @@ class Label {
 
     updatelabelById = (req, res) => {
         try {
-            if(req.user){
+            if (req.user) {
                 const updatelabel = req.body.updatelabel
-            const CredentialValidation = labelValidation.updatelabelbyid.validate(updatelabel)
-            if (CredentialValidation.error) {
-                const response = {
-                    sucess: false,
-                    message: 'Validation Failed',
-                    error: CredentialValidation.error
+                const CredentialValidation = labelValidation.updatelabelbyid.validate(updatelabel)
+                if (CredentialValidation.error) {
+                    const response = {
+                        sucess: false,
+                        message: 'Validation Failed',
+                        error: CredentialValidation.error
+                    }
+                    return res.status(422).json(response)
                 }
-                return res.status(422).json(response)
             }
-        }
             const response = {
                 sucess: true,
                 message: 'token is validated and responding true message'
