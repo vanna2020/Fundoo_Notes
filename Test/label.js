@@ -393,7 +393,7 @@ describe('Update labelById api', () => {
 })
 
 describe('deletelabelById api', () => {
-    it('deletelabelById test case', (done) => {
+    it.only('deletelabelById test case', (done) => {
         chai
             .request(server)
             .delete('/deletelabel/:id')
@@ -402,7 +402,7 @@ describe('deletelabelById api', () => {
                 done();
             });
     })
-    it('Adding controller layer and checking the response of token in DeleteLabelById, it should return true msg while adding  ', (done) => {
+    it.only('Adding controller layer and checking the response of token in DeleteLabelById, it should return true msg while adding  ', (done) => {
         const token = labelJson.label.validToken
         chai
             .request(server)
@@ -413,7 +413,7 @@ describe('deletelabelById api', () => {
                 done();
             });
     })
-    it('Adding controller layer and checking the response for Invalid token in DeleteLabelById, it should return true msg while adding  ', (done) => {
+    it.only('Adding controller layer and checking the response for Invalid token in DeleteLabelById, it should return true msg while adding  ', (done) => {
         const token = labelJson.label.invalidToken
         chai
             .request(server)
@@ -421,6 +421,17 @@ describe('deletelabelById api', () => {
             .set({authorization : token})
             .end((err, res) => {
                 res.should.have.status(400);
+                done();
+            });
+    })
+    it.only('it should return true msg when true params is passes', (done) => {
+        const token = labelJson.label.validToken
+        chai
+            .request(server)
+            .delete('/deletelabel/61d319e0f2e391bb82a80a8f')
+            .set({authorization : token})
+            .end((err, res) => {
+                res.should.have.status(201);
                 done();
             });
     })

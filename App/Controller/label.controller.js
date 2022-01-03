@@ -207,6 +207,18 @@ class Label {
 
     deletelabelById = (req,res) => {
         try{
+            const deletelabel = {
+                id:req.params.id
+            }
+            const deletionResult = labelValidation.deletinglabel.validate(deletelabel)
+            if( deletionResult.eror){
+                const response = {
+                    sucess: true,
+                    message: 'Validation failed of Params',
+                }
+                return res.status(422).json(response)
+
+            }
             const response = {
                 sucess: true,
                 message: 'token is successfully decoded',
