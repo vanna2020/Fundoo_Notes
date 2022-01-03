@@ -295,4 +295,15 @@ describe('get labelById api', () => {
                 done();
             });
     })
+    it.only('When Fetching labels it should return true', (done) => {
+        const token = labelJson.label.validToken
+        chai
+            .request(server)
+            .get('/getlabel/61cdd42b99bc1829b73b2cd6')
+            .set({ authorization: token })
+            .end((err, res) => {
+                res.should.have.status(201);
+                done();
+            });
+    })
 })
