@@ -688,3 +688,34 @@
 {"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-03T08:43:46.166Z"}
 {"level":"error","message":{"acknowledged":true,"matchedCount":1,"modifiedCount":1,"upsertedCount":0,"upsertedId":null},"timestamp":"2022-01-03T08:43:46.690Z"}
 {"level":"error","message":"Invalid password","timestamp":"2022-01-03T08:43:46.706Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-03T09:14:58.771Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-03T09:14:58.842Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-03T09:14:58.884Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-03T09:14:58.963Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-03T09:14:59.025Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-03T09:14:59.100Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-03T09:14:59.137Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-03T09:14:59.168Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-03T09:14:59.206Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-03T09:14:59.446Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-03T09:14:59.511Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-03T09:14:59.544Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-03T09:14:59.585Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-03T09:14:59.628Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-03T09:14:59.657Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-03T09:14:59.690Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-03T09:14:59.731Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-03T09:14:59.848Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-03T09:14:59.892Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-03T09:14:59.923Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-03T09:14:59.960Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-03T09:14:59.994Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-03T09:15:00.049Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-03T09:15:02.081Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-03T09:15:02.097Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-03T09:15:02.113Z"}
+{"level":"error","message":"Invalid User","timestamp":"2022-01-03T09:15:02.498Z"}
+{"level":"error","message":"Invalid Credential","timestamp":"2022-01-03T09:15:02.498Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-03T09:15:02.590Z"}
+{"level":"error","message":{"acknowledged":true,"matchedCount":1,"modifiedCount":1,"upsertedCount":0,"upsertedId":null},"timestamp":"2022-01-03T09:15:03.398Z"}
+{"level":"error","message":"Invalid password","timestamp":"2022-01-03T09:15:03.451Z"}

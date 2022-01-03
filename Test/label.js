@@ -307,3 +307,14 @@ describe('get labelById api', () => {
             });
     })
 })
+describe('Update labelById api', () => {
+    it.only('updatelabelById test case', (done) => {
+        chai
+            .request(server)
+            .put('/updatelabel/:id')
+            .end((err, res) => {
+                res.should.have.status(500);
+                done();
+            });
+    })
+})

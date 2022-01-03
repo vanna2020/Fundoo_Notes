@@ -139,5 +139,17 @@ class Label {
             return res.status(500).json(response)
         }
     }
+    updatelabelById  = (req, res) => {
+        try {
+            console.log("You are in try block")
+        }
+        catch {
+            const response = {
+                 sucess: false,
+                 message: "Internal Server error" 
+                }
+            return res.status(500).json(response)
+        }
+    }
 }
 module.exports = new Label();

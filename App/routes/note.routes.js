@@ -47,4 +47,8 @@ module.exports = (app) => {
 
   // API for getLabel By Id
   app.get('/getlabel/:id', helper.validateToken, crud.getlabelById);
+
+  // API for UpdateLabel By Id
+  app.put('/updatelabel/:id', helper.validateToken, crud.updatelabelById);
+  
 }
