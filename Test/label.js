@@ -231,7 +231,7 @@ describe('get label api', () => {
 //Get Label By Id API 
 
 describe('get labelById api', () => {
-    it.only('getlabelById test case', (done) => {
+    it('getlabelById test case', (done) => {
         chai
             .request(server)
             .get('/getlabel/:id')
@@ -240,7 +240,7 @@ describe('get labelById api', () => {
                 done();
             });
     })
-    it.only('Adding controller layer and checking the response of token in getLabelById, it should retuen true msg while adding ', (done) => {
+    it('Adding controller layer and checking the response of token in getLabelById, it should retuen true msg while adding ', (done) => {
         const token = labelJson.label.validToken
         chai
             .request(server)
@@ -251,7 +251,7 @@ describe('get labelById api', () => {
                 done();
             });
     })
-    it.only('Adding controller layer and checking the response of Invalid token in getLabelById, it should retuen true msg while adding ', (done) => {
+    it('Adding controller layer and checking the response of Invalid token in getLabelById, it should retuen true msg while adding ', (done) => {
         const token = labelJson.label.invalidToken
         chai
             .request(server)
@@ -262,7 +262,7 @@ describe('get labelById api', () => {
                 done();
             });
     })
-    it.only('it should return true msg when Credential is added ', (done) => {
+    it('it should return true msg when Credential is added ', (done) => {
         const token = labelJson.label.validToken
         chai
             .request(server)
@@ -273,7 +273,7 @@ describe('get labelById api', () => {
                 done();
             });
     })
-    it.only('it should return true msg when Service layer is added', (done) => {
+    it('it should return true msg when Service layer is added', (done) => {
         const token = labelJson.label.validToken
         chai
             .request(server)
@@ -284,7 +284,7 @@ describe('get labelById api', () => {
                 done();
             });
     })
-    it.only('it should return true msg when Model layer is added', (done) => {
+    it('it should return true msg when Model layer is added', (done) => {
         const token = labelJson.label.validToken
         chai
             .request(server)
@@ -295,7 +295,7 @@ describe('get labelById api', () => {
                 done();
             });
     })
-    it.only('When Fetching labels it should return true', (done) => {
+    it('When Fetching labels it should return true', (done) => {
         const token = labelJson.label.validToken
         chai
             .request(server)
