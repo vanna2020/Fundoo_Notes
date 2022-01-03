@@ -325,7 +325,7 @@ describe('Update labelById api', () => {
         chai
             .request(server)
             .put('/updatelabel/61cdd42b99bc1829b73b2cd6')
-            .set({authorization : token})
+            .set({ authorization: token })
             .end((err, res) => {
                 res.should.have.status(201);
                 done();
@@ -336,7 +336,7 @@ describe('Update labelById api', () => {
         chai
             .request(server)
             .put('/updatelabel/61cdd42b99bc1829b73b2cd6')
-            .set({authorization : token})
+            .set({ authorization: token })
             .end((err, res) => {
                 res.should.have.status(400);
                 done();
@@ -347,8 +347,8 @@ describe('Update labelById api', () => {
         chai
             .request(server)
             .put('/updatelabel/61cdd42b99bc1829b73b2cd6')
-            .set({authorization : token})
-            .send({labelName : 'Vandana'})
+            .set({ authorization: token })
+            .send({ labelName: 'Vandana' })
             .end((err, res) => {
                 res.should.have.status(201);
                 done();
@@ -359,8 +359,8 @@ describe('Update labelById api', () => {
         chai
             .request(server)
             .put('/updatelabel/61cdd42b99bc1829b73b2cd6')
-            .set({authorization : token})
-            .send({labelName : 'Vandana'})
+            .set({ authorization: token })
+            .send({ labelName: 'Vandana' })
             .end((err, res) => {
                 res.should.have.status(201);
                 done();
@@ -371,8 +371,8 @@ describe('Update labelById api', () => {
         chai
             .request(server)
             .put('/updatelabel/61cdd42b99bc1829b73b2cd6')
-            .set({authorization : token})
-            .send({labelName : 'Vandana'})
+            .set({ authorization: token })
+            .send({ labelName: 'Vandana' })
             .end((err, res) => {
                 res.should.have.status(201);
                 done();
@@ -383,10 +383,22 @@ describe('Update labelById api', () => {
         chai
             .request(server)
             .put('/updatelabel/61cdd42b99bc1829b73b2cd6')
-            .set({authorization : token})
-            .send({labelName : 'Vandana'})
+            .set({ authorization: token })
+            .send({ labelName: 'Vandana' })
             .end((err, res) => {
                 res.should.have.status(201);
+                done();
+            });
+    })
+})
+
+describe('deletelabelById api', () => {
+    it.only('deletelabelById test case', (done) => {
+        chai
+            .request(server)
+            .delete('/deletelabel/:id')
+            .end((err, res) => {
+                res.should.have.status(500);
                 done();
             });
     })

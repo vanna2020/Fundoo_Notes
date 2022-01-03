@@ -50,5 +50,7 @@ module.exports = (app) => {
 
   // API for UpdateLabel By Id
   app.put('/updatelabel/:id', helper.validateToken, crud.updatelabelById);
-  
+
+  //API for DeleteLabel By Id
+  app.delete('/deletelabel/:id', helper.validateToken, crud.deletelabelById);
 }

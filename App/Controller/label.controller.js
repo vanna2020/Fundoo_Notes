@@ -204,5 +204,17 @@ class Label {
             return res.status(500).json(response)
         }
     }
+
+    deletelabelById = () => {
+        try{
+            console.log("I am in controller layer")
+        }catch(error){
+            const response = {
+                sucess: false,
+                message: 'There is some internal error'
+            }
+            return res.status(500).json(response)  
+        }
+    }
 }
 module.exports = new Label();
