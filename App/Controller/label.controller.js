@@ -171,7 +171,6 @@ class Label {
             };
             const CredentialValidation = labelValidation.updatelabelbyid.validate(updatelabel)
             if (CredentialValidation.error) {
-                console.log("err",CredentialValidation.error)
                 const response = {
                     sucess: false,
                     message: 'Validation Failed',
@@ -208,10 +207,11 @@ class Label {
     deletelabelById = (req,res) => {
         try{
             const deletelabel = {
+                userId: req.user.dataForToken.id,
                 id:req.params.id
             }
             const deletionResult = labelValidation.deletinglabel.validate(deletelabel)
-            if( deletionResult.eror){
+            if( deletionResult.error){
                 const response = {
                     sucess: true,
                     message: 'Validation failed of Params',

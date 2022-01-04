@@ -1,3 +1,4 @@
+const { database } = require('faker/locale/az');
 const modelLayer = require('../models/label.model')
 
 class labelService {
@@ -59,10 +60,11 @@ class labelService {
     deletelabelById = (deletelabel) => {
         return new Promise((resolve, reject) => {
             modelLayer.deletelabelById(deletelabel)
-            if (!deletelabel) {
-                reject("deletelabel is not found");
-            }
-            resolve(deletelabel);
+            .then(data =>{
+                resolve(data);
+            }).catch(error =>{
+                reject(error);
+            })
         })
     }
 }

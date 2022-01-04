@@ -99,7 +99,8 @@ class Validation {
     labelName : Joi.string()
   })
   deletinglabel =Joi.object({
-    id:Joi.string().min(20)
+    userId:Joi.string(),
+    id:Joi.string()
   })
 }
 module.exports = new Validation();

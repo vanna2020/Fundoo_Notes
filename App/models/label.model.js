@@ -13,6 +13,7 @@ const labelSchema = mongoose.Schema({
     }],
     labelName: {
         type: String,
+        unique: true,
         required: true
     },
 }, {
@@ -95,11 +96,13 @@ class Model {
         })
     }
     deletelabelById = (labelCredential) => {
-        return new Promise((reject, resolve) => {
-            if (!labelCredential) {
-                reject("label is not found")
-            }
-            resolve(labelCredential)
+        return new Promise((resolve, reject) => {
+            labelRegister.findOneAndDelete(labelCredential.id, { userId: labelCredential.userId })
+                .then(data => {
+                    resolve(data)
+                }).catch(error => {
+                    reject(error)
+                })
         })
     }
 }

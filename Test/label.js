@@ -428,7 +428,7 @@ describe('deletelabelById api', () => {
         const token = labelJson.label.validToken
         chai
             .request(server)
-            .delete('/deletelabel/61d319e0f2e391bb82a80a8f')
+            .delete('/deletelabel/61d3d068b4cb2d3e7a27dbdc')
             .set({authorization : token})
             .end((err, res) => {
                 res.should.have.status(201);
@@ -439,7 +439,7 @@ describe('deletelabelById api', () => {
         const token = labelJson.label.validToken
         chai
             .request(server)
-            .delete('/deletelabel/61d319e0f2e391bb82a80a8f')
+            .delete('/deletelabel/61d3d068b4cb2d3e7a27dbdc')
             .set({authorization : token})
             .end((err, res) => {
                 res.should.have.status(201);
@@ -450,7 +450,18 @@ describe('deletelabelById api', () => {
         const token = labelJson.label.validToken
         chai
             .request(server)
-            .delete('/deletelabel/61d319e0f2e391bb82a80a8f')
+            .delete('/deletelabel/61d3d068b4cb2d3e7a27dbdc')
+            .set({authorization : token})
+            .end((err, res) => {
+                res.should.have.status(201);
+                done();
+            });
+    })
+    it.only('When Fetching labels it should return true', (done) => {
+        const token = labelJson.label.validToken
+        chai
+            .request(server)
+            .delete('/deletelabel/61d3d068b4cb2d3e7a27dbdc')
             .set({authorization : token})
             .end((err, res) => {
                 res.should.have.status(201);
