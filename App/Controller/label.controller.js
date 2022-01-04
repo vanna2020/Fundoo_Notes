@@ -222,7 +222,7 @@ class Label {
                 .then((data)=>{
                     const response = {
                         sucess: true,
-                        message: 'checking response from service',
+                        message: 'Succesfully Deleted Label',
                         data : data
                     }
                     return res.status(201).json(response)

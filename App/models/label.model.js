@@ -94,5 +94,13 @@ class Model {
             return callback(null, data)
         })
     }
+    deletelabelById = (labelCredential) => {
+        return new Promise((reject, resolve) => {
+            if (!labelCredential) {
+                reject("label is not found")
+            }
+            resolve(labelCredential)
+        })
+    }
 }
-module.exports = new Model()
+module.exports = new Model();

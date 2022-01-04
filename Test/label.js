@@ -446,4 +446,15 @@ describe('deletelabelById api', () => {
                 done();
             });
     })
+    it.only('it should return true msg when Model layer is added', (done) => {
+        const token = labelJson.label.validToken
+        chai
+            .request(server)
+            .delete('/deletelabel/61d319e0f2e391bb82a80a8f')
+            .set({authorization : token})
+            .end((err, res) => {
+                res.should.have.status(201);
+                done();
+            });
+    })
 })

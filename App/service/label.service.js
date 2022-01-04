@@ -56,9 +56,10 @@ class labelService {
         })
     }
 
-    deletelabelById = (deletelabel)=>{
-        return new Promise((resolve,reject)=>{
-            if(!deletelabel){
+    deletelabelById = (deletelabel) => {
+        return new Promise((resolve, reject) => {
+            modelLayer.deletelabelById(deletelabel)
+            if (!deletelabel) {
                 reject("deletelabel is not found");
             }
             resolve(deletelabel);
