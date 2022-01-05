@@ -1735,3 +1735,36 @@
 {"level":"error","message":{"acknowledged":true,"matchedCount":1,"modifiedCount":1,"upsertedCount":0,"upsertedId":null},"timestamp":"2022-01-03T19:03:23.751Z"}
 {"level":"info","message":"Password reset succesfully","timestamp":"2022-01-03T19:03:23.752Z"}
 {"level":"error","message":"Invalid password","timestamp":"2022-01-03T19:03:23.801Z"}
+{"level":"info","message":"Email id found","timestamp":"2022-01-05T15:34:57.186Z"}
+{"level":"info","message":" token generated ","timestamp":"2022-01-05T15:34:57.623Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2022-01-05T15:34:57.702Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-05T15:56:24.841Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-05T15:56:24.889Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-05T15:56:24.917Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-05T15:56:25.002Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-05T15:56:25.042Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-05T15:56:25.073Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-05T15:56:25.121Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-05T15:56:25.182Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-05T15:56:25.235Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-05T15:56:25.275Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-05T15:56:25.304Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-05T15:56:25.348Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-05T15:56:26.081Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-05T15:56:26.153Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-05T15:56:26.191Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-05T15:56:26.223Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-05T15:56:26.259Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-05T15:56:26.287Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-05T15:56:28.320Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-05T15:56:28.362Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-05T15:56:28.380Z"}
+{"level":"info","message":"Email id found","timestamp":"2022-01-05T15:56:28.441Z"}
+{"level":"info","message":" token generated ","timestamp":"2022-01-05T15:56:28.803Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2022-01-05T15:56:28.808Z"}
+{"level":"error","message":"Invalid User","timestamp":"2022-01-05T15:56:28.829Z"}
+{"level":"error","message":"Invalid Credential","timestamp":"2022-01-05T15:56:28.830Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-05T15:56:29.179Z"}
+{"level":"error","message":{"acknowledged":true,"matchedCount":1,"modifiedCount":1,"upsertedCount":0,"upsertedId":null},"timestamp":"2022-01-05T15:56:29.611Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2022-01-05T15:56:29.611Z"}
+{"level":"error","message":"Invalid password","timestamp":"2022-01-05T15:56:29.631Z"}

@@ -393,7 +393,7 @@ describe('Update labelById api', () => {
 })
 
 describe('deletelabelById api', () => {
-    it.only('deletelabelById test case', (done) => {
+    it('deletelabelById test case', (done) => {
         chai
             .request(server)
             .delete('/deletelabel/:id')
@@ -402,7 +402,7 @@ describe('deletelabelById api', () => {
                 done();
             });
     })
-    it.only('Adding controller layer and checking the response of token in DeleteLabelById, it should return true msg while adding  ', (done) => {
+    it('Adding controller layer and checking the response of token in DeleteLabelById, it should return true msg while adding  ', (done) => {
         const token = labelJson.label.validToken
         chai
             .request(server)
@@ -413,7 +413,7 @@ describe('deletelabelById api', () => {
                 done();
             });
     })
-    it.only('Adding controller layer and checking the response for Invalid token in DeleteLabelById, it should return true msg while adding  ', (done) => {
+    it('Adding controller layer and checking the response for Invalid token in DeleteLabelById, it should return true msg while adding  ', (done) => {
         const token = labelJson.label.invalidToken
         chai
             .request(server)
@@ -424,7 +424,7 @@ describe('deletelabelById api', () => {
                 done();
             });
     })
-    it.only('it should return true msg when true params is passes', (done) => {
+    it('it should return true msg when true params is passes', (done) => {
         const token = labelJson.label.validToken
         chai
             .request(server)
@@ -435,7 +435,7 @@ describe('deletelabelById api', () => {
                 done();
             });
     })
-    it.only('it should return true msg when Service layer is added', (done) => {
+    it('it should return true msg when Service layer is added', (done) => {
         const token = labelJson.label.validToken
         chai
             .request(server)
@@ -446,7 +446,7 @@ describe('deletelabelById api', () => {
                 done();
             });
     })
-    it.only('it should return true msg when Model layer is added', (done) => {
+    it('it should return true msg when Model layer is added', (done) => {
         const token = labelJson.label.validToken
         chai
             .request(server)
@@ -457,7 +457,7 @@ describe('deletelabelById api', () => {
                 done();
             });
     })
-    it.only('When Fetching labels it should return true', (done) => {
+    it('When Fetching labels it should return true', (done) => {
         const token = labelJson.label.validToken
         chai
             .request(server)

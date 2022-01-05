@@ -1,5 +1,6 @@
 const { database } = require('faker/locale/az');
 const modelLayer = require('../models/label.model')
+const nodeRedis = require('../Redis/redis');
 
 class labelService {
 
@@ -40,6 +41,7 @@ class labelService {
             if (error) {
                 return callback(error, null);
             }
+            nodeRedis.putData('findRedisById',60,JSON.stringify(data))
             return callback(null, data);
         })
     }
