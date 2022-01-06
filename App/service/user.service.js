@@ -19,14 +19,13 @@ class userService {
      * @param callback callback for controller
      */
 
-  registerUser = (user, callback) => {
-    userModel.registerUser(user, (err, data) => {
-      if (err) {
-        callback(err, null);
-      } else {
-        callback(null, data);
-      }
-    });
+  registerUser = async (user) => {
+    let register = await userModel.registerUser(user)
+    if (!register) {
+      return register
+    } else {
+      return register
+    }
   }
 
   /**
@@ -77,14 +76,12 @@ class userService {
    * @param {*} callback
    * @returns
    */
-  resetPassword = (userData, callback) => {
-    userModel.resetPassword(userData)
-      .then((data) => {
-        logger.error(data);
-        return callback(null, data);
-      }).catch((error) => {
-        return callback(error, null);
-      });
+  resetPassword = async (userData) => {
+    let resetPassword = await userModel.resetPassword(userData)
+    if (!resetPassword) {
+      return resetPassword
+    }
+    return resetPassword
   };
 }
 module.exports = new userService();

@@ -10,7 +10,7 @@ const faker = require('faker');
 
 chai.should();
 
-describe('registartion', () => {
+describe('registration', () => {
   it('givenRegistrationDetails_whenProper_shouldSaveInDB', (done) => {
     const registerfaker = {
       firstName: faker.name.firstName(),

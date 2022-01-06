@@ -7,7 +7,7 @@
 
 const Joi = require('joi');
 class Validation {
-  authRegister =
+  RegisterValidation =
     Joi.object({
       firstName: Joi.string()
         .min(3)

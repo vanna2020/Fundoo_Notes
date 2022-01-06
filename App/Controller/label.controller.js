@@ -35,13 +35,13 @@ class Label {
                 }
                 serviceLayer.addLabelById(label, (error, data) => {
                     if (error) {
-                        return res.status(201).json({
-                            message: 'Successfully Note Is added',
+                        return res.status(400).json({
+                            message: 'Error occurred',
                             data: data
                         });
                     } else if (data) {
-                        return res.status(400).json({
-                            message: 'Some error Occured !',
+                        return res.status(201).json({
+                            message: 'Label is added Succesfully!',
                             data: data
                         });
                     }

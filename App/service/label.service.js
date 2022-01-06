@@ -1,6 +1,6 @@
 const { database } = require('faker/locale/az');
 const modelLayer = require('../models/label.model')
-const nodeRedis = require('../Redis/redis');
+const nodeRedis = require('../RedisConnector/redis');
 
 class labelService {
 
@@ -59,6 +59,10 @@ class labelService {
         })
     }
 
+     /**
+     * @description Update label By Id
+     * @method labelModel.deletelabelById calls model class method
+     */
     deletelabelById = (deletelabel) => {
         return new Promise((resolve, reject) => {
             modelLayer.deletelabelById(deletelabel)

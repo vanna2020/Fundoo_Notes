@@ -14,7 +14,7 @@ class Controller {
      * @param req,res for service
      */
 
-  register = (req, res) => {
+  register = async (req, res) => {
     try {
       const user = {
         firstName: req.body.firstName,
@@ -23,7 +23,7 @@ class Controller {
         password: req.body.password
       };
 
-      const registerValidation = validation.authRegister.validate(user)
+      const registerValidation = validation.RegisterValidation.validate(user)
       if (registerValidation.error) {
         logger.error('Wrong Input Validations');
         return res.status(400).send({
@@ -33,26 +33,26 @@ class Controller {
         });
       }
 
-      userService.registerUser(user, (error, data) => {
-        if (error) {
-          return res.status(400).json({
-            success: false,
-            message: 'User already exist',
-          });
-        } else {
-          logger.info('User registered');
-          return res.status(200).json({
-            success: true,
-            message: "User Registered",
-            data: data,
-          });
-        }
-      });
+      let register = await userService.registerUser(user)
+      if (!register) {
+        return res.status(400).json({
+          success: false,
+          message: 'User already exist'
+        });
+      } else {
+        logger.info('User registered');
+        return res.status(200).json({
+          success: true,
+          message: "User Registered Succesfully",
+          data: register
+        });
+      }
     } catch (error) {
       logger.error('Internal server error');
+      console.log("5555",error);
       return res.status(500).json({
         success: false, message: "Error While Registering",
-        data: null,
+        data: null
       });
     }
   }
@@ -126,7 +126,7 @@ class Controller {
           data: validationforgotPassword
         });
       }
-      
+
       userService.forgotPassword(userCredential, (error, result) => {
         if (error) {
           return res.status(400).send({
@@ -156,7 +156,7 @@ class Controller {
    * @param {*} res
    * @returns
    */
-  resetPassword = (req, res) => {
+  resetPassword = async (req, res) => {
     try {
       const userData = {
         email: req.body.email,
@@ -173,29 +173,28 @@ class Controller {
         });
         return;
       }
-    
-      userService.resetPassword(userData, (error, userData) => {
-        if (error) {
-          logger.error(error);
-          return res.status(400).send({
-            message: error,
-            success: false
-          });
-        } else {
-          logger.info('Password reset succesfully');
-          return res.status(200).json({
-            success: true,
-            message: 'Password reset succesfully',
-            data: userData
-          });
-        }
+
+      let resetPassword = await userService.resetPassword(userData)
+      if (!resetPassword) {
+        logger.error(error);
+        return res.status(400).send({
+          message: error,
+          success: false
+        });
+      }
+      logger.info('Password reset succesfully');
+      return res.status(200).json({
+        success: true,
+        message: 'Password reset succesfully',
+        data: userData
       });
-    } catch (error) {
+    }
+    catch (error) {
       logger.error('Internal server error');
       return res.status(500).send({
         success: false,
         message: 'Internal server error',
-        data: null
+        error: error
       });
     }
   }

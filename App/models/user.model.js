@@ -8,6 +8,7 @@ const mongoose = require('mongoose');
 const utilities = require('../utilities/helper.js');
 const { logger } = require('../../logger/logger');
 const Otp = require('./otp.js');
+const { database } = require('faker/locale/ar');
 
 const userSchema = mongoose.Schema({
     firstName: {
@@ -41,34 +42,30 @@ class userModel {
       * @param User
       * @param callback
       */
+    registerUser = async (userDetails) => {
 
-    registerUser = (userDetails, callback) => {
         const newUser = new user({
             firstName: userDetails.firstName,
             lastName: userDetails.lastName,
             email: userDetails.email,
             password: userDetails.password
         });
-        try {
-            utilities.hashing(userDetails.password, (error, hash) => {
-                if (hash) {
-                    newUser.password = hash;
-                    newUser.save((error, data) => {
-                        if (error) {
-                            callback(error, null);
-                        } else {
-                            callback(null, data);
-                        }
-                    });
+            let hashed = await utilities.hashing(userDetails.password)
+            console.log("333",hashed);
+            if (hashed) {
+                console.log("555",hashed);
+                newUser.password = hashed;
+                console.log("666",hashed);
+                let User = await newUser.save()
+                console.log("uu",User);
+                if (!User) {
+                    return User
                 } else {
-                    throw error;
+                    return User
                 }
-            });
-        }
-        catch (error) {
-            logger.error('Find error in model');
-            return callback('Internal Error', null)
-        }
+            } else {
+                throw error;
+            }  
     }
 
     /**
@@ -76,7 +73,6 @@ class userModel {
       * @param loginInfo
       * @param callback for service
       */
-
     loginUser = (loginData, callBack) => {
         //To find a user email in the database
         user.findOne({ email: loginData.email }, (error, data) => {
@@ -119,31 +115,23 @@ class userModel {
         * @param {*} callback
         * @returns
         */
-
-    resetPassword = (userData) => {
-        return new Promise((resolve, reject) => {
-            Otp.findOne({ code: userData.code })
-                .then((data) => {
-                    if (userData.code == data.code) {
-                        utilities.hashing(userData.password)
-                            .then((hash) => {
-                                userData.password = hash;
-                                user.updateOne({ email: userData.email }, { '$set': { "password": userData.password } })
-                                    .then((data) => {
-                                        resolve(data)
-                                    }).catch((error) => {
-                                        reject(error)
-                                    })
-                            }).catch((error) => {
-                                rejct(error)
-                            })
-                    } else {
-                        reject(null)
+    resetPassword = async (userData) => {
+        let otpcode = await Otp.findOne({ code: userData.code })
+        if (otpcode) {
+            if (userData.code == otpcode.code) {
+                let hashingpassword = await utilities.hashing(userData.password)
+                if (hashingpassword) {
+                    userData.password = hashingpassword;
+                    let setpassword = await user.updateOne({ email: userData.email }, { '$set': { "password": userData.password } })
+                    if (!setpassword) {
+                        return setpassword
                     }
-                }).catch((error) => {
-                    reject("Otp doesnt match", null)
-                });
-        });
+                    return setpassword
+                }
+                return null
+            }
+            return "code not found"
+        } return "otp does not match"
     }
 }
 module.exports = new userModel();

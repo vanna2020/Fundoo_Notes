@@ -101,6 +101,6 @@ class Model {
     }
 }
 module.exports = {
- model:  new Model(),
- note : NoteRegister 
+ Model:  new Model(),
+ note : NoteRegister
 }
