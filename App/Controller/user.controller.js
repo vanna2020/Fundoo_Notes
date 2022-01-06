@@ -49,7 +49,6 @@ class Controller {
       }
     } catch (error) {
       logger.error('Internal server error');
-      console.log("5555",error);
       return res.status(500).json({
         success: false, message: "Error While Registering",
         data: null
