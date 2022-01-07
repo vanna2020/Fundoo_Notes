@@ -9,7 +9,10 @@ const userModel = require('../models/user.model.js')
 const utilities = require('../utilities/helper.js');
 const { logger } = require('../../logger/logger');
 const bcrypt = require('bcryptjs');
+const rabbitMQ = require('../utilities/rabbitmq');
 const nodemailer = require('../utilities/nodeemailer.js');
+const jsonWebToken = require("jsonwebtoken");
+require("dotenv").config();
 
 class userService {
 
@@ -24,6 +27,17 @@ class userService {
     if (!register) {
       return register
     } else {
+      utilities.sendWelcomeMail(user);
+      const secretkey = process.env.JWT_SECRET;
+      utilities.jwtTokenVerifyMail(register, secretkey, (err, token) => {
+        if (token) {
+          rabbitMQ.sender(register, register.email);
+          nodemailer.verifyMail(token, register);
+          return token
+        } else {
+          return null
+        }
+      });
       return register
     }
   }
@@ -82,6 +96,33 @@ class userService {
       return resetPassword
     }
     return resetPassword
+  };
+
+  /**
+   * @description it acts as a middleware between controller and model for confirm registration
+   * @param {*} data
+   * @param {*} callback
+   * @returns
+   */
+  confirmRegister = (data, callback) => {
+    console.log("con 44: ", data.token);
+    const decode = jsonWebToken.verify(data.token, process.env.JWT_SECRET);
+    if (decode) {
+      rabbitMQ
+        .receiver(decode.email)
+        .then((val) => {
+          userModel.confirmRegister(JSON.parse(val), (error, data) => {
+            if (data) {
+              return callback(null, data);
+            } else {
+              return callback(error, null);
+            }
+          });
+        })
+        .catch((error) => {
+          logger.error(error);
+        });
+    }
   };
 }
 module.exports = new userService();

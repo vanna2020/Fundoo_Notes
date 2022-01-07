@@ -150,7 +150,7 @@ class Note {
         title: req.body.title,
         description: req.body.description
       };
-      const updateNoteValidation = validation. updatelabelbyid.validate(updateNote);
+      const updateNoteValidation = validation.notesUpdateValidation.validate(updateNote);
       if (updateNoteValidation.error) {
         return res.status(400).send({
           success: false,

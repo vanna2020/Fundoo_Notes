@@ -23,7 +23,7 @@ class RedisConnection {
       }
     });
   };
-  putData = (key, time, data) => {
+  setData = (key, time, data) => {
     client.setEx(key, time, data);
   };
   deleteCache = (key) => {

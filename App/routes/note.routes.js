@@ -53,4 +53,7 @@ module.exports = (app) => {
 
   //API for DeleteLabel By Id
   app.delete('/deletelabel/:id', helper.validateToken, crud.deletelabelById);
-}
+
+  //Verifying  User
+  app.get('/confirmregister/:token', controller.confirmRegister);
+};

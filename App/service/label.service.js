@@ -1,6 +1,6 @@
 const { database } = require('faker/locale/az');
 const modelLayer = require('../models/label.model')
-const nodeRedis = require('../RedisConnector/redis');
+const redisService = require('../RedisConnector/redis');
 
 class labelService {
 
@@ -37,11 +37,12 @@ class labelService {
      * @method labelModel.getlabelById calls model class method
      */
     getlabelById = (labelCredential, callback) => {
+        redisService.findData('getRedisById')
         modelLayer.getlabelById(labelCredential, (error, data) => {
             if (error) {
                 return callback(error, null);
             }
-            nodeRedis.putData('findRedisById',60,JSON.stringify(data))
+            redisService.setData('getRedisById',60,JSON.stringify(data))
             return callback(null, data);
         })
     }

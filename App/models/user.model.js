@@ -27,10 +27,15 @@ const userSchema = mongoose.Schema({
     password: {
         type: String,
         required: true,
+    },
+    googleLogin: { type: Boolean },
+    verified: {
+        type: Boolean,
+        default: false
     }
 },
     {
-        timestamps: true
+        timestamps: false
     })
 
 const user = mongoose.model('User', userSchema);
@@ -50,22 +55,19 @@ class userModel {
             email: userDetails.email,
             password: userDetails.password
         });
-            let hashed = await utilities.hashing(userDetails.password)
-            console.log("333",hashed);
-            if (hashed) {
-                console.log("555",hashed);
-                newUser.password = hashed;
-                console.log("666",hashed);
-                let User = await newUser.save()
-                console.log("uu",User);
-                if (!User) {
-                    return User
-                } else {
-                    return User
-                }
+        let hashed = await utilities.hashing(userDetails.password)
+
+        if (hashed) {
+            newUser.password = hashed;
+            let User = await newUser.save()
+            if (!User) {
+                return User
             } else {
-                throw error;
-            }  
+                return User
+            }
+        } else {
+            throw error;
+        }
     }
 
     /**
@@ -82,9 +84,14 @@ class userModel {
             } else if (!data) {
                 logger.error('Invalid User');
                 return callBack("Invalid Credential", null);
-            } else {
-                logger.info('Email id found');
-                return callBack(null, data);
+            }
+            else {
+                if (data.verified == true) {
+                    logger.info("data found in database");
+                    return callBack(null, data);
+                } else {
+                    return error;
+                }
             }
         });
     }
@@ -133,5 +140,30 @@ class userModel {
             return "code not found"
         } return "otp does not match"
     }
+
+     /**
+        * @description mongooose method for confirm the register
+        * @param {*} data
+        * @param {*} callback
+        * @returns
+        */
+    confirmRegister = (data, callback) => {
+        console.log("con mod 78: ", data.firstName);
+        user.findOneAndUpdate(
+            { email: data.email },
+            {
+                verified: true
+            },
+            (error, data) => {
+                if (error) {
+                    logger.error("data not found in database");
+                    return callback(error, null);
+                } else {
+                    logger.info("data found in database");
+                    return callback(null, data);
+                }
+            }
+        );
+    };
 }
 module.exports = new userModel();

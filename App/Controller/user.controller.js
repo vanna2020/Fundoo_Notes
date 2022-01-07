@@ -49,6 +49,7 @@ class Controller {
       }
     } catch (error) {
       logger.error('Internal server error');
+      console.log("444",error);
       return res.status(500).json({
         success: false, message: "Error While Registering",
         data: null
@@ -197,5 +198,32 @@ class Controller {
       });
     }
   }
+
+   /**
+   * description controller function for confirm register
+   * @param {*} req
+   * @param {*} res
+   * @returns
+   */
+  confirmRegister = (req, res) => {
+    try {
+      const data = {
+        token: req.params.token
+      };
+      userService.confirmRegister(data, (error, data) => {
+        if (error) {
+          return res.status(404).json({
+            success: false,
+            message: "error"
+          });
+        } else {
+          return res.status(200).json({
+            success: true,
+            message: "Email Successfully Verified"
+          });
+        }
+      });
+    } catch { }
+  };
 }
 module.exports = new Controller();

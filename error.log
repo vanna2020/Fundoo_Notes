@@ -1015,3 +1015,49 @@
 {"level":"error","message":"Invalid User","timestamp":"2022-01-06T08:41:35.293Z"}
 {"level":"error","message":"Invalid Credential","timestamp":"2022-01-06T08:41:35.294Z"}
 {"level":"error","message":"Invalid password","timestamp":"2022-01-06T08:45:57.847Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-06T17:06:26.503Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-06T17:06:26.519Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-06T17:06:26.536Z"}
+{"level":"error","message":"Invalid User","timestamp":"2022-01-06T17:06:27.130Z"}
+{"level":"error","message":"Invalid Credential","timestamp":"2022-01-06T17:06:27.130Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-06T17:06:27.329Z"}
+{"level":"error","message":"Invalid password","timestamp":"2022-01-06T17:06:28.040Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\":id\"","timestamp":"2022-01-06T17:23:39.121Z","value":":id","valueType":"string"}
+{"level":"error","message":"failed to update note","timestamp":"2022-01-06T17:23:39.122Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-06T17:23:40.114Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-06T17:23:40.134Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-06T17:23:40.151Z"}
+{"level":"error","message":"Invalid User","timestamp":"2022-01-06T17:23:40.734Z"}
+{"level":"error","message":"Invalid Credential","timestamp":"2022-01-06T17:23:40.735Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-06T17:23:40.842Z"}
+{"level":"error","message":"Invalid password","timestamp":"2022-01-06T17:23:41.265Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\":id\"","timestamp":"2022-01-07T01:49:28.609Z","value":":id","valueType":"string"}
+{"level":"error","message":"failed to update note","timestamp":"2022-01-07T01:49:28.611Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-07T01:49:29.585Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-07T01:49:29.599Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-07T01:49:29.615Z"}
+{"level":"error","message":"Invalid User","timestamp":"2022-01-07T01:49:29.902Z"}
+{"level":"error","message":"Invalid Credential","timestamp":"2022-01-07T01:49:29.903Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-07T01:49:30.047Z"}
+{"level":"error","message":"Invalid password","timestamp":"2022-01-07T01:49:30.460Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-07T01:52:28.434Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-07T16:40:05.988Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-07T16:41:53.044Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-07T16:43:23.798Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-07T16:46:33.171Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-07T16:47:14.590Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-07T16:53:47.401Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-07T16:58:00.544Z"}
+{"level":"error","timestamp":"2022-01-07T17:02:22.300Z"}
+{"level":"error","timestamp":"2022-01-07T17:10:48.278Z"}
+{"level":"error","timestamp":"2022-01-07T17:22:44.844Z"}
+{"level":"error","timestamp":"2022-01-07T17:32:29.827Z"}
+{"level":"error","timestamp":"2022-01-07T17:34:02.103Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-07T17:35:43.955Z"}
+{"level":"error","timestamp":"2022-01-07T17:37:32.027Z"}
+{"level":"error","timestamp":"2022-01-07T17:41:39.245Z"}
+{"level":"error","timestamp":"2022-01-07T17:42:04.812Z"}
+{"level":"error","timestamp":"2022-01-07T17:42:45.979Z"}
+{"level":"error","timestamp":"2022-01-07T17:47:45.497Z"}
+{"level":"error","timestamp":"2022-01-07T17:51:33.988Z"}
+{"level":"error","timestamp":"2022-01-07T17:51:53.303Z"}
