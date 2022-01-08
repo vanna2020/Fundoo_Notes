@@ -2339,3 +2339,766 @@
 {"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-07T19:47:16.771Z"}
 {"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-07T19:47:16.862Z"}
 {"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-07T19:47:16.899Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-07T20:30:44.501Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-07T20:30:44.549Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-07T20:30:44.599Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-07T20:30:44.694Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-07T20:30:44.726Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-07T20:30:44.755Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-07T20:30:44.797Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-07T20:30:44.846Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-07T20:30:44.895Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-07T20:30:44.929Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-07T20:30:44.958Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-07T20:30:44.985Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-07T20:30:47.036Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-07T20:30:47.054Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-07T20:30:47.074Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-07T20:30:47.093Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-07T20:30:47.113Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\":id\"","timestamp":"2022-01-07T20:30:47.141Z","value":":id","valueType":"string"}
+{"level":"error","message":"failed to update note","timestamp":"2022-01-07T20:30:47.143Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-07T20:30:47.202Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-07T20:30:47.229Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-07T20:30:47.254Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-07T20:30:47.278Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-07T20:30:47.301Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-07T20:30:47.325Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-07T20:30:47.642Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-07T20:30:47.678Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-07T20:30:47.703Z"}
+{"level":"info","message":"User registered","timestamp":"2022-01-07T20:30:48.210Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-07T20:30:48.273Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-07T20:30:48.610Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-07T20:30:48.649Z"}
+{"level":"error","message":"Invalid User","timestamp":"2022-01-07T20:30:48.710Z"}
+{"level":"error","message":"Invalid Credential","timestamp":"2022-01-07T20:30:48.711Z"}
+{"level":"error","message":"Invalid User","timestamp":"2022-01-07T20:30:48.744Z"}
+{"level":"error","message":"Invalid Credential","timestamp":"2022-01-07T20:30:48.744Z"}
+{"level":"error","message":"User Not Exist","timestamp":"2022-01-07T20:30:48.776Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-07T20:30:50.776Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2022-01-07T20:30:51.093Z"}
+{"level":"error","message":"Invalid password","timestamp":"2022-01-07T20:30:51.105Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-07T20:34:09.585Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-07T20:34:09.659Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-07T20:34:09.726Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-07T20:34:09.796Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-07T20:34:09.823Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-07T20:34:09.856Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-07T20:34:09.896Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-07T20:34:09.963Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-07T20:34:10.025Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-07T20:34:10.057Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-07T20:34:10.086Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-07T20:34:10.117Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-07T20:34:12.185Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-07T20:34:12.205Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-07T20:34:12.223Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-07T20:34:12.245Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-07T20:34:12.268Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\":id\"","timestamp":"2022-01-07T20:34:12.291Z","value":":id","valueType":"string"}
+{"level":"error","message":"failed to update note","timestamp":"2022-01-07T20:34:12.293Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-07T20:34:12.365Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-07T20:34:12.390Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-07T20:34:12.412Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-07T20:34:12.434Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-07T20:34:12.455Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-07T20:34:12.478Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-07T20:34:12.499Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-07T20:34:12.797Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-07T20:34:12.836Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-07T20:34:12.868Z"}
+{"level":"info","message":"User registered","timestamp":"2022-01-07T20:34:13.322Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-07T20:34:13.445Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-07T20:34:13.509Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-07T20:34:13.538Z"}
+{"level":"error","message":"Invalid User","timestamp":"2022-01-07T20:34:13.581Z"}
+{"level":"error","message":"Invalid Credential","timestamp":"2022-01-07T20:34:13.582Z"}
+{"level":"error","message":"Invalid User","timestamp":"2022-01-07T20:34:13.616Z"}
+{"level":"error","message":"Invalid Credential","timestamp":"2022-01-07T20:34:13.616Z"}
+{"level":"error","message":"User Not Exist","timestamp":"2022-01-07T20:34:13.664Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-07T20:34:15.659Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2022-01-07T20:34:15.968Z"}
+{"level":"error","message":"Invalid password","timestamp":"2022-01-07T20:34:15.982Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-07T20:37:15.218Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-07T20:40:56.604Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-07T20:40:56.654Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-07T20:40:56.737Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-07T20:40:56.775Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-07T20:40:56.819Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-07T20:40:56.848Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-07T20:40:56.887Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-07T20:40:56.940Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-07T20:40:56.996Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-07T20:40:57.035Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-07T20:40:57.069Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-07T20:40:57.106Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-07T20:40:59.154Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-07T20:40:59.172Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-07T20:40:59.193Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-07T20:40:59.214Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-07T20:40:59.237Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\":id\"","timestamp":"2022-01-07T20:40:59.260Z","value":":id","valueType":"string"}
+{"level":"error","message":"failed to update note","timestamp":"2022-01-07T20:40:59.262Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-07T20:40:59.338Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-07T20:40:59.375Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-07T20:40:59.396Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-07T20:40:59.420Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-07T20:40:59.442Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-07T20:40:59.467Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-07T20:40:59.496Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-07T20:40:59.782Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-07T20:40:59.819Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-07T20:40:59.843Z"}
+{"level":"info","message":"User registered","timestamp":"2022-01-07T20:41:00.275Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-07T20:41:00.388Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-07T20:41:00.432Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-07T20:41:00.461Z"}
+{"level":"error","message":"Invalid User","timestamp":"2022-01-07T20:41:00.503Z"}
+{"level":"error","message":"Invalid Credential","timestamp":"2022-01-07T20:41:00.505Z"}
+{"level":"error","message":"Invalid User","timestamp":"2022-01-07T20:41:00.542Z"}
+{"level":"error","message":"Invalid Credential","timestamp":"2022-01-07T20:41:00.543Z"}
+{"level":"error","message":"User Not Exist","timestamp":"2022-01-07T20:41:00.583Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-07T20:41:02.585Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2022-01-07T20:41:02.914Z"}
+{"level":"error","message":"Invalid password","timestamp":"2022-01-07T20:41:02.931Z"}
+{"level":"info","message":"data found in database","timestamp":"2022-01-07T20:43:22.007Z"}
+{"level":"info","message":"data found in database","timestamp":"2022-01-08T02:21:22.855Z"}
+{"level":"info","message":"data found in database","timestamp":"2022-01-08T02:21:22.878Z"}
+{"level":"info","message":"data found in database","timestamp":"2022-01-08T02:21:22.880Z"}
+{"level":"info","message":"data found in database","timestamp":"2022-01-08T02:21:22.890Z"}
+{"level":"info","message":"data found in database","timestamp":"2022-01-08T02:21:23.163Z"}
+{"level":"info","message":"data found in database","timestamp":"2022-01-08T02:21:23.358Z"}
+{"level":"info","message":"User registered","timestamp":"2022-01-08T02:26:28.874Z"}
+{"level":"info","message":"data found in database","timestamp":"2022-01-08T02:27:06.124Z"}
+{"level":"info","message":"User registered","timestamp":"2022-01-08T02:51:17.907Z"}
+{"level":"info","message":"User registered","timestamp":"2022-01-08T03:00:20.051Z"}
+{"level":"error","message":"email is not verified yet $(loginData.email","timestamp":"2022-01-08T03:00:34.060Z"}
+{"level":"error","message":"email is not verified yet $(loginData.email,)","timestamp":"2022-01-08T03:00:34.062Z"}
+{"level":"info","message":"User registered","timestamp":"2022-01-08T03:11:18.280Z"}
+{"level":"error","message":"email is not verified yet $(loginData.email","timestamp":"2022-01-08T03:11:29.248Z"}
+{"level":"error","message":"email is not verified yet $(loginData.email,)","timestamp":"2022-01-08T03:11:29.252Z"}
+{"level":"info","message":"data found in database","timestamp":"2022-01-08T03:12:52.322Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-08T03:14:28.608Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-08T03:14:28.663Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T03:14:28.764Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T03:14:28.823Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T03:14:28.848Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T03:14:28.874Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T03:14:28.926Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T03:14:28.988Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T03:14:29.051Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T03:14:29.097Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T03:14:29.142Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T03:14:29.179Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T03:14:31.224Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T03:14:31.246Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T03:14:31.269Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T03:14:31.300Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T03:14:31.322Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\":id\"","timestamp":"2022-01-08T03:14:31.344Z","value":":id","valueType":"string"}
+{"level":"error","message":"failed to update note","timestamp":"2022-01-08T03:14:31.345Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T03:14:31.413Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T03:14:31.440Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T03:14:31.472Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T03:14:31.500Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T03:14:31.523Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T03:14:31.547Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T03:14:31.568Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T03:14:31.905Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T03:14:31.951Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T03:14:31.997Z"}
+{"level":"info","message":"User registered","timestamp":"2022-01-08T03:14:32.669Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T03:14:32.822Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T03:14:32.876Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T03:14:32.930Z"}
+{"level":"info","message":"data found in database","timestamp":"2022-01-08T03:14:32.970Z"}
+{"level":"info","message":" token generated ","timestamp":"2022-01-08T03:14:33.331Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2022-01-08T03:14:33.334Z"}
+{"level":"error","message":"Invalid User","timestamp":"2022-01-08T03:14:33.352Z"}
+{"level":"error","message":"Invalid Credential","timestamp":"2022-01-08T03:14:33.353Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T03:14:33.401Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2022-01-08T03:14:33.775Z"}
+{"level":"error","message":"Invalid password","timestamp":"2022-01-08T03:14:33.789Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-08T03:32:13.729Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-08T03:32:13.776Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T03:32:13.851Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T03:32:13.897Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T03:32:13.919Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T03:32:13.941Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T03:32:13.975Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T03:32:14.057Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T03:32:14.110Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T03:32:14.145Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T03:32:14.180Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T03:32:14.232Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T03:32:16.279Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T03:32:16.299Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T03:32:16.330Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T03:32:16.352Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T03:32:16.382Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\":id\"","timestamp":"2022-01-08T03:32:16.405Z","value":":id","valueType":"string"}
+{"level":"error","message":"failed to update note","timestamp":"2022-01-08T03:32:16.407Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T03:32:16.480Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T03:32:16.523Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T03:32:16.551Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T03:32:16.582Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T03:32:16.610Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T03:32:16.634Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T03:32:16.654Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T03:32:16.964Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T03:32:17.055Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T03:32:17.127Z"}
+{"level":"info","message":"User registered","timestamp":"2022-01-08T03:32:17.810Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T03:32:17.963Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T03:32:18.016Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T03:32:18.052Z"}
+{"level":"info","message":"data found in database","timestamp":"2022-01-08T03:32:18.102Z"}
+{"level":"info","message":" token generated ","timestamp":"2022-01-08T03:32:18.434Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2022-01-08T03:32:18.437Z"}
+{"level":"error","message":"Invalid User","timestamp":"2022-01-08T03:32:18.456Z"}
+{"level":"error","message":"Invalid Credential","timestamp":"2022-01-08T03:32:18.457Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T03:32:18.512Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2022-01-08T03:32:18.861Z"}
+{"level":"error","message":"Invalid password","timestamp":"2022-01-08T03:32:18.874Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-08T03:39:53.556Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-08T03:39:53.591Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T03:39:53.632Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T03:39:53.675Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T03:39:53.704Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T03:39:53.758Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T03:39:53.921Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T03:39:53.987Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T03:39:54.047Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T03:39:54.109Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T03:39:54.179Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T03:39:54.236Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T03:39:56.301Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T03:39:56.329Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T03:39:56.351Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T03:39:56.376Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T03:39:56.398Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\":id\"","timestamp":"2022-01-08T03:39:56.428Z","value":":id","valueType":"string"}
+{"level":"error","message":"failed to update note","timestamp":"2022-01-08T03:39:56.430Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T03:39:56.498Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T03:39:56.533Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T03:39:56.562Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T03:39:56.587Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T03:39:56.614Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T03:39:56.639Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T03:39:56.666Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T03:39:56.976Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T03:39:57.018Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T03:39:57.046Z"}
+{"level":"info","message":"User registered","timestamp":"2022-01-08T03:39:57.508Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T03:39:57.628Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T03:39:57.694Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T03:39:57.720Z"}
+{"level":"info","message":"data found in database","timestamp":"2022-01-08T03:39:57.771Z"}
+{"level":"info","message":" token generated ","timestamp":"2022-01-08T03:39:58.104Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2022-01-08T03:39:58.107Z"}
+{"level":"error","message":"Invalid User","timestamp":"2022-01-08T03:39:58.124Z"}
+{"level":"error","message":"Invalid Credential","timestamp":"2022-01-08T03:39:58.124Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T03:39:58.179Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2022-01-08T03:39:58.531Z"}
+{"level":"error","message":"Invalid password","timestamp":"2022-01-08T03:39:58.546Z"}
+{"level":"info","message":"data found in database","timestamp":"2022-01-08T15:59:10.888Z"}
+{"level":"info","message":" token generated ","timestamp":"2022-01-08T15:59:11.241Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2022-01-08T15:59:11.249Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-08T16:01:14.781Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-08T16:01:14.818Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T16:01:14.888Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T16:01:14.932Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T16:01:14.966Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T16:01:15.038Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T16:01:15.083Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T16:01:15.180Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T16:01:15.228Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T16:01:15.261Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T16:01:15.325Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T16:01:15.446Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T16:01:17.493Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T16:01:17.515Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T16:01:17.539Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T16:01:17.563Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T16:01:17.587Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\":id\"","timestamp":"2022-01-08T16:01:17.637Z","value":":id","valueType":"string"}
+{"level":"error","message":"failed to update note","timestamp":"2022-01-08T16:01:17.638Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T16:01:17.734Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T16:01:17.772Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T16:01:17.814Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T16:01:17.853Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T16:01:17.891Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T16:01:17.918Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T16:01:17.950Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T16:01:18.370Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T16:01:18.450Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T16:01:18.480Z"}
+{"level":"info","message":"User registered","timestamp":"2022-01-08T16:01:19.161Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T16:01:19.344Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T16:01:19.360Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T16:01:19.388Z"}
+{"level":"info","message":"data found in database","timestamp":"2022-01-08T16:01:19.460Z"}
+{"level":"info","message":" token generated ","timestamp":"2022-01-08T16:01:19.865Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2022-01-08T16:01:19.867Z"}
+{"level":"error","message":"Invalid User","timestamp":"2022-01-08T16:01:19.889Z"}
+{"level":"error","message":"Invalid Credential","timestamp":"2022-01-08T16:01:19.890Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T16:01:19.965Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2022-01-08T16:01:20.407Z"}
+{"level":"error","message":"Invalid password","timestamp":"2022-01-08T16:01:20.420Z"}
+{"level":"info","message":"data found in database","timestamp":"2022-01-08T16:38:34.959Z"}
+{"level":"info","message":" token generated ","timestamp":"2022-01-08T16:38:35.358Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2022-01-08T16:38:35.374Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-08T16:41:12.366Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-08T16:41:12.419Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T16:41:12.479Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T16:41:12.524Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T16:41:12.555Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T16:41:12.582Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T16:41:12.628Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T16:41:12.689Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T16:41:12.747Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T16:41:12.796Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T16:41:12.826Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T16:41:12.858Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T16:41:14.898Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T16:41:14.914Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T16:41:14.934Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T16:41:14.958Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T16:41:14.985Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\":id\"","timestamp":"2022-01-08T16:41:15.032Z","value":":id","valueType":"string"}
+{"level":"error","message":"failed to update note","timestamp":"2022-01-08T16:41:15.034Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T16:41:15.098Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T16:41:15.128Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T16:41:15.165Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T16:41:15.189Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T16:41:15.225Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T16:41:15.288Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T16:41:15.577Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T16:41:15.611Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T16:41:15.638Z"}
+{"level":"info","message":"User registered","timestamp":"2022-01-08T16:41:16.124Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T16:41:16.173Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T16:41:16.242Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T16:41:16.263Z"}
+{"level":"info","message":"data found in database","timestamp":"2022-01-08T16:41:16.359Z"}
+{"level":"info","message":" token generated ","timestamp":"2022-01-08T16:41:16.699Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2022-01-08T16:41:16.703Z"}
+{"level":"error","message":"Invalid User","timestamp":"2022-01-08T16:41:16.719Z"}
+{"level":"error","message":"Invalid Credential","timestamp":"2022-01-08T16:41:16.719Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T16:41:16.773Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2022-01-08T16:41:17.132Z"}
+{"level":"error","message":"Invalid password","timestamp":"2022-01-08T16:41:17.147Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-08T16:56:06.128Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-08T16:56:06.178Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T16:56:06.228Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T16:56:06.315Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T16:56:06.345Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T16:56:06.376Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T16:56:06.430Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T16:56:06.504Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T16:56:06.561Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T16:56:06.599Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T16:56:06.638Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T16:56:06.674Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T16:56:08.792Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T16:56:08.815Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T16:56:08.848Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T16:56:08.881Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T16:56:08.903Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\":id\"","timestamp":"2022-01-08T16:56:08.927Z","value":":id","valueType":"string"}
+{"level":"error","message":"failed to update note","timestamp":"2022-01-08T16:56:08.928Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T16:56:09.024Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T16:56:09.053Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T16:56:09.081Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T16:56:09.112Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T16:56:09.137Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T16:56:09.166Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T16:56:09.191Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T16:56:09.545Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T16:56:09.579Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T16:56:09.603Z"}
+{"level":"info","message":"User registered","timestamp":"2022-01-08T16:56:10.084Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T16:56:10.131Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T16:56:10.245Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T16:56:10.303Z"}
+{"level":"info","message":"data found in database","timestamp":"2022-01-08T16:56:10.355Z"}
+{"level":"info","message":" token generated ","timestamp":"2022-01-08T16:56:10.772Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2022-01-08T16:56:10.779Z"}
+{"level":"error","message":"Invalid User","timestamp":"2022-01-08T16:56:10.867Z"}
+{"level":"error","message":"Invalid Credential","timestamp":"2022-01-08T16:56:10.867Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T16:56:10.970Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2022-01-08T16:56:11.537Z"}
+{"level":"error","message":"Invalid password","timestamp":"2022-01-08T16:56:11.607Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-08T17:02:56.201Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-08T17:02:56.252Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:02:56.368Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:02:56.504Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:02:56.548Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:02:56.796Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:02:56.862Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T17:02:56.979Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T17:02:57.150Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T17:02:57.192Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T17:02:57.230Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T17:02:57.281Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:02:59.329Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:02:59.358Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:02:59.381Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:02:59.405Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:02:59.434Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\":id\"","timestamp":"2022-01-08T17:02:59.463Z","value":":id","valueType":"string"}
+{"level":"error","message":"failed to update note","timestamp":"2022-01-08T17:02:59.464Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:02:59.538Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:02:59.566Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:02:59.592Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:02:59.612Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:02:59.636Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:02:59.672Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:02:59.699Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:03:00.074Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:03:00.117Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:03:00.141Z"}
+{"level":"info","message":"User registered","timestamp":"2022-01-08T17:03:00.729Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T17:03:00.948Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T17:03:01.045Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T17:03:01.081Z"}
+{"level":"info","message":"data found in database","timestamp":"2022-01-08T17:03:01.156Z"}
+{"level":"info","message":" token generated ","timestamp":"2022-01-08T17:03:01.479Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2022-01-08T17:03:01.482Z"}
+{"level":"error","message":"Invalid User","timestamp":"2022-01-08T17:03:01.499Z"}
+{"level":"error","message":"Invalid Credential","timestamp":"2022-01-08T17:03:01.499Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T17:03:01.552Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2022-01-08T17:03:02.002Z"}
+{"level":"error","message":"Invalid password","timestamp":"2022-01-08T17:03:02.027Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-08T17:08:25.761Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-08T17:08:25.824Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:08:25.884Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:08:25.926Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:08:25.955Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:08:25.985Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:08:26.032Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T17:08:26.103Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T17:08:26.166Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T17:08:26.253Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T17:08:26.304Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T17:08:26.347Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:08:28.408Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:08:28.429Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:08:28.457Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:08:28.477Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:08:28.501Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\":id\"","timestamp":"2022-01-08T17:08:28.527Z","value":":id","valueType":"string"}
+{"level":"error","message":"failed to update note","timestamp":"2022-01-08T17:08:28.530Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:08:28.602Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:08:28.636Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:08:28.667Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:08:28.693Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:08:28.719Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:08:28.741Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:08:28.760Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:08:29.086Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:08:29.121Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:08:29.143Z"}
+{"level":"info","message":"User registered","timestamp":"2022-01-08T17:08:29.597Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T17:08:29.651Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T17:08:29.767Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T17:08:29.796Z"}
+{"level":"info","message":"data found in database","timestamp":"2022-01-08T17:08:29.843Z"}
+{"level":"info","message":" token generated ","timestamp":"2022-01-08T17:08:30.179Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2022-01-08T17:08:30.181Z"}
+{"level":"error","message":"Invalid User","timestamp":"2022-01-08T17:08:30.198Z"}
+{"level":"error","message":"Invalid Credential","timestamp":"2022-01-08T17:08:30.198Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T17:08:30.247Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2022-01-08T17:08:30.592Z"}
+{"level":"error","message":"Invalid password","timestamp":"2022-01-08T17:08:30.605Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-08T17:32:42.881Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-08T17:32:42.949Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:32:43.003Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:32:43.052Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:32:43.082Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:32:43.128Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:32:43.155Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T17:32:43.233Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T17:32:43.416Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T17:32:43.479Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T17:32:43.534Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T17:32:43.586Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:32:45.674Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:32:45.700Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:32:45.727Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:32:45.758Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:32:45.782Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\":id\"","timestamp":"2022-01-08T17:32:45.814Z","value":":id","valueType":"string"}
+{"level":"error","message":"failed to update note","timestamp":"2022-01-08T17:32:45.815Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:32:45.955Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:32:45.991Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:32:46.019Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:32:46.055Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:32:46.082Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:32:46.105Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:32:46.131Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:32:46.484Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:32:46.526Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:32:46.548Z"}
+{"level":"info","message":"User registered","timestamp":"2022-01-08T17:32:47.258Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T17:32:47.418Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T17:32:47.465Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T17:32:47.508Z"}
+{"level":"info","message":"data found in database","timestamp":"2022-01-08T17:32:47.580Z"}
+{"level":"info","message":" token generated ","timestamp":"2022-01-08T17:32:47.964Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2022-01-08T17:32:47.966Z"}
+{"level":"error","message":"Invalid User","timestamp":"2022-01-08T17:32:47.986Z"}
+{"level":"error","message":"Invalid Credential","timestamp":"2022-01-08T17:32:47.987Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T17:32:48.057Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2022-01-08T17:32:48.438Z"}
+{"level":"error","message":"Invalid password","timestamp":"2022-01-08T17:32:48.451Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-08T17:37:17.030Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-08T17:37:17.094Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:37:17.131Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:37:17.182Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:37:17.214Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:37:17.255Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:37:17.283Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T17:37:17.352Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T17:37:17.429Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T17:37:17.482Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T17:37:17.523Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T17:37:17.577Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:37:19.636Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:37:19.655Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:37:19.676Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:37:19.700Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:37:19.721Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\":id\"","timestamp":"2022-01-08T17:37:19.748Z","value":":id","valueType":"string"}
+{"level":"error","message":"failed to update note","timestamp":"2022-01-08T17:37:19.749Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:37:19.847Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:37:19.872Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:37:19.896Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:37:19.918Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:37:19.942Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:37:19.967Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:37:19.994Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:37:20.314Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:37:20.350Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:37:20.377Z"}
+{"level":"info","message":"User registered","timestamp":"2022-01-08T17:37:20.836Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T17:37:20.965Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T17:37:21.012Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T17:37:21.031Z"}
+{"level":"info","message":"data found in database","timestamp":"2022-01-08T17:37:21.074Z"}
+{"level":"info","message":" token generated ","timestamp":"2022-01-08T17:37:21.385Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2022-01-08T17:37:21.387Z"}
+{"level":"error","message":"Invalid User","timestamp":"2022-01-08T17:37:21.403Z"}
+{"level":"error","message":"Invalid Credential","timestamp":"2022-01-08T17:37:21.403Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T17:37:21.459Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2022-01-08T17:37:21.799Z"}
+{"level":"error","message":"Invalid password","timestamp":"2022-01-08T17:37:21.817Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-08T17:45:56.407Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-08T17:45:56.465Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:45:56.536Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:45:56.577Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:45:56.612Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:45:56.662Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:45:56.695Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T17:45:56.758Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T17:45:56.860Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T17:45:56.923Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T17:45:57.012Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T17:45:57.082Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:45:59.164Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:45:59.195Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:45:59.220Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:45:59.247Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:45:59.299Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\":id\"","timestamp":"2022-01-08T17:45:59.367Z","value":":id","valueType":"string"}
+{"level":"error","message":"failed to update note","timestamp":"2022-01-08T17:45:59.368Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:45:59.490Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:45:59.534Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:45:59.562Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:45:59.587Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:45:59.625Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:45:59.656Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T17:45:59.680Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:46:00.039Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:46:00.071Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T17:46:00.098Z"}
+{"level":"info","message":"User registered","timestamp":"2022-01-08T17:46:00.763Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T17:46:00.951Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T17:46:01.019Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T17:46:01.060Z"}
+{"level":"info","message":"data found in database","timestamp":"2022-01-08T17:46:01.133Z"}
+{"level":"info","message":" token generated ","timestamp":"2022-01-08T17:46:01.581Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2022-01-08T17:46:01.588Z"}
+{"level":"error","message":"Invalid User","timestamp":"2022-01-08T17:46:01.629Z"}
+{"level":"error","message":"Invalid Credential","timestamp":"2022-01-08T17:46:01.630Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T17:46:01.705Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2022-01-08T17:46:02.224Z"}
+{"level":"error","message":"Invalid password","timestamp":"2022-01-08T17:46:02.240Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-08T18:03:46.587Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-08T18:03:46.649Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:03:46.690Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:03:46.744Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:03:46.780Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:03:46.844Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:03:46.884Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T18:03:46.950Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T18:03:47.015Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T18:03:47.077Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T18:03:47.147Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T18:03:47.194Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T18:03:49.270Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T18:03:49.299Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T18:03:49.323Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T18:03:49.351Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T18:03:49.381Z"}
+{"kind":"ObjectId","level":"error","path":"_id","reason":{},"stringValue":"\":id\"","timestamp":"2022-01-08T18:03:49.417Z","value":":id","valueType":"string"}
+{"level":"error","message":"failed to update note","timestamp":"2022-01-08T18:03:49.418Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:03:49.537Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:03:49.587Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:03:49.617Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:03:49.646Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:03:49.671Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:03:49.699Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:03:49.727Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T18:03:50.105Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T18:03:50.143Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T18:03:50.179Z"}
+{"level":"info","message":"User registered","timestamp":"2022-01-08T18:03:50.824Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T18:03:50.895Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T18:03:51.282Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T18:03:51.313Z"}
+{"level":"info","message":"data found in database","timestamp":"2022-01-08T18:03:51.346Z"}
+{"level":"info","message":" token generated ","timestamp":"2022-01-08T18:03:51.688Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2022-01-08T18:03:51.690Z"}
+{"level":"error","message":"Invalid User","timestamp":"2022-01-08T18:03:51.790Z"}
+{"level":"error","message":"Invalid Credential","timestamp":"2022-01-08T18:03:51.790Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T18:03:51.853Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2022-01-08T18:03:52.189Z"}
+{"level":"error","message":"Invalid password","timestamp":"2022-01-08T18:03:52.203Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-08T18:05:59.386Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-08T18:05:59.427Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:05:59.480Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:05:59.544Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:05:59.578Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:05:59.630Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:05:59.665Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T18:05:59.734Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T18:05:59.809Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T18:05:59.864Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T18:05:59.924Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T18:05:59.978Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T18:06:00.017Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T18:06:00.059Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T18:06:00.091Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T18:06:00.115Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T18:06:00.137Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T18:06:00.158Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:06:00.192Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:06:00.235Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:06:00.259Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:06:00.285Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:06:00.309Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:06:00.333Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:06:00.359Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:06:00.384Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T18:06:00.739Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T18:06:00.778Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T18:06:00.809Z"}
+{"level":"info","message":"User registered","timestamp":"2022-01-08T18:06:01.369Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T18:06:01.583Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T18:06:01.644Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T18:06:01.664Z"}
+{"level":"info","message":"data found in database","timestamp":"2022-01-08T18:06:01.776Z"}
+{"level":"info","message":" token generated ","timestamp":"2022-01-08T18:06:02.130Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2022-01-08T18:06:02.133Z"}
+{"level":"error","message":"Invalid User","timestamp":"2022-01-08T18:06:02.159Z"}
+{"level":"error","message":"Invalid Credential","timestamp":"2022-01-08T18:06:02.159Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T18:06:02.213Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2022-01-08T18:06:02.669Z"}
+{"level":"error","message":"Invalid password","timestamp":"2022-01-08T18:06:02.683Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-08T18:09:44.422Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-08T18:09:44.476Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:09:44.632Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:09:44.823Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:09:44.878Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:09:44.976Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:09:45.073Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T18:09:45.162Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T18:09:45.278Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T18:09:45.338Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T18:09:45.408Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T18:09:45.476Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T18:09:45.516Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T18:09:45.567Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T18:09:45.594Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T18:09:45.615Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T18:09:45.639Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T18:09:45.667Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:09:45.695Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:09:45.737Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:09:45.774Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:09:45.807Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:09:45.833Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:09:45.860Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:09:45.894Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:09:45.917Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T18:09:46.285Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T18:09:46.317Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T18:09:46.338Z"}
+{"level":"info","message":"User registered","timestamp":"2022-01-08T18:09:46.884Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T18:09:47.026Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T18:09:47.102Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T18:09:47.119Z"}
+{"level":"info","message":"data found in database","timestamp":"2022-01-08T18:09:47.153Z"}
+{"level":"info","message":" token generated ","timestamp":"2022-01-08T18:09:47.516Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2022-01-08T18:09:47.519Z"}
+{"level":"error","message":"Invalid User","timestamp":"2022-01-08T18:09:47.536Z"}
+{"level":"error","message":"Invalid Credential","timestamp":"2022-01-08T18:09:47.536Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T18:09:47.588Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2022-01-08T18:09:47.991Z"}
+{"level":"error","message":"Invalid password","timestamp":"2022-01-08T18:09:48.007Z"}
+{"level":"info","message":"User registered","timestamp":"2022-01-08T18:12:12.139Z"}
+{"level":"info","message":"User registered","timestamp":"2022-01-08T18:14:27.053Z"}
+{"level":"info","message":"User registered","timestamp":"2022-01-08T18:15:39.232Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-08T18:17:17.783Z"}
+{"level":"info","message":"Wrong Input Validation","timestamp":"2022-01-08T18:17:17.844Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:17:17.900Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:17:17.947Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:17:17.976Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:17:18.029Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:17:18.080Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T18:17:18.147Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T18:17:18.222Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T18:17:18.289Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T18:17:18.350Z"}
+{"level":"info","message":"Get All Notes successfully","timestamp":"2022-01-08T18:17:18.431Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T18:17:18.503Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T18:17:18.564Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T18:17:18.619Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T18:17:18.647Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T18:17:18.733Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T18:17:18.782Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:17:18.922Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:17:19.018Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:17:19.113Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:17:19.141Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:17:19.177Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:17:19.202Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:17:19.234Z"}
+{"level":"info","message":"Successfully inserted note","timestamp":"2022-01-08T18:17:19.264Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T18:17:19.731Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T18:17:19.771Z"}
+{"level":"info","message":"Get Note _id successfully","timestamp":"2022-01-08T18:17:19.802Z"}
+{"level":"info","message":"User registered","timestamp":"2022-01-08T18:17:20.288Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T18:17:20.353Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T18:17:20.434Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T18:17:20.459Z"}
+{"level":"info","message":"data found in database","timestamp":"2022-01-08T18:17:20.501Z"}
+{"level":"info","message":" token generated ","timestamp":"2022-01-08T18:17:20.849Z"}
+{"level":"info","message":"User logged in successfully","timestamp":"2022-01-08T18:17:20.851Z"}
+{"level":"error","message":"Invalid User","timestamp":"2022-01-08T18:17:20.868Z"}
+{"level":"error","message":"Invalid Credential","timestamp":"2022-01-08T18:17:20.868Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T18:17:20.941Z"}
+{"level":"info","message":"Password reset succesfully","timestamp":"2022-01-08T18:17:21.378Z"}
+{"level":"error","message":"Invalid password","timestamp":"2022-01-08T18:17:21.393Z"}

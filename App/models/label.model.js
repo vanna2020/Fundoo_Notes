@@ -31,7 +31,7 @@ class Model {
                 return callback("Note does not exists in user info", data);
             }
             else if (data) {
-                labelRegister.find({ email: label.email, noteId: label.noteId }, (error, data) => {
+                labelRegister.find({ email: label.email, labelName: label.labelName }, (error, data) => {
                     if (error) {
                         return callback("Some error to find note", null)
                     }
@@ -90,6 +90,7 @@ class Model {
             if (error) {
                 return callback(error, null)
             } else if (!data) {
+                console.log("888",data);
                 return callback("data is not found", data)
             }
             return callback(null, data)

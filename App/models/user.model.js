@@ -90,7 +90,8 @@ class userModel {
                     logger.info("data found in database");
                     return callBack(null, data);
                 } else {
-                    return error;
+                    logger.error("email is not verified yet $(loginData.email");
+                    return callBack(`email is not verified yet $(loginData.email,)`,null);
                 }
             }
         });

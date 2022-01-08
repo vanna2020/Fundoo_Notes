@@ -1,6 +1,6 @@
 {
     "redis": {
-    "validToken": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhRm9yVG9rZW4iOnsiaWQiOiI2MWQ4N2UwNzYwOWQyZDlkN2NkYTg5MTgiLCJmaXJzdE5hbWUiOiJWYW5kYW5hIiwibGFzdE5hbWUiOiJTaW5naCIsImVtYWlsIjoidmFubmFzaW5naDE5OTlAZ21haWwuY29tIn0sImlhdCI6MTY0MTU3ODA1MywiZXhwIjoxNjQxNjY0NDUzfQ.GuNuN_iebJrbAQYx-kkWCN4JV4lY4-2CLX4hywRm8k0",
+    "validToken": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhRm9yVG9rZW4iOnsiaWQiOiI2MWQ5MDBkNTVmY2VhNzhjNzFiMWUyYWIiLCJmaXJzdE5hbWUiOiJWYW5kYW5hIiwibGFzdE5hbWUiOiJTaW5naCIsImVtYWlsIjoidmFubmFzaW5naDE5OTlAZ21haWwuY29tIn0sImlhdCI6MTY0MTY1OTkxNSwiZXhwIjoxNjQxNzQ2MzE1fQ.QN1eovhSIM7KP5oXPqYHzeVAaKKUs0ftGWjLtrl0kLw",
     "invalidToken":  "bearer eyJhbGciOR5cCI6IkpXVCJ9.eyJkYXRhRm9yVG9rZW4iOnsiZW1haWwiOiJ2aXZlay5paXRkOTNAZ21haWwuY29tIn0sImlhdCI6MTYzMzU1NTAyOH0.wJqpcpyzvlQPT684BKIeup28MMdy8M37gRuWuU-RhTY",
     "id":"61d88aaaaab377829df163cc"
 }

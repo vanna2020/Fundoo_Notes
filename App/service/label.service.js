@@ -54,8 +54,10 @@ class labelService {
     updatelabelById = (labelCredential, callback) => {
         modelLayer.updatelabelById(labelCredential, (error, data) => {
             if (error) {
+                console.log("999",error);
                 return callback(error, null);
             }
+            console.log("1111",data);
             return callback(null, data);
         })
     }

@@ -176,6 +176,7 @@ class Label {
                     message: 'Validation Failed',
                     error: CredentialValidation.error
                 }
+                console.log("333",error);
                 return res.status(422).json(response)
             }
             serviceLayer.updatelabelById(updatelabel, (error, data) => {
@@ -187,10 +188,11 @@ class Label {
                     }
                     return res.status(201).json(response)
                 }
+                console.log("222",error);
                 const response = {
-                    sucess: true,
+                    sucess: false,
                     message: 'Some error occured .....!',
-                    data: data
+                    error: error
                 }
                 return res.status(400).json(response)
             })
@@ -204,41 +206,41 @@ class Label {
         }
     }
 
-    deletelabelById = (req,res) => {
-        try{
+    deletelabelById = (req, res) => {
+        try {
             const deletelabel = {
                 userId: req.user.dataForToken.id,
-                id:req.params.id
+                id: req.params.id
             }
             const deletionResult = labelValidation.deletinglabel.validate(deletelabel)
-            if( deletionResult.error){
+            if (deletionResult.error) {
                 const response = {
                     sucess: true,
                     message: 'Validation failed of Params',
                 }
                 return res.status(422).json(response)
             }
-                serviceLayer.deletelabelById(deletelabel)
-                .then((data)=>{
+            serviceLayer.deletelabelById(deletelabel)
+                .then((data) => {
                     const response = {
                         sucess: true,
                         message: 'Succesfully Deleted Label',
-                        data : data
+                        data: data
                     }
                     return res.status(201).json(response)
-                }).catch((error)=>{
+                }).catch((error) => {
                     const response = {
                         sucess: true,
                         message: 'Some error Occured ',
                     }
                     return res.status(400).json(response)
                 })
-        }catch(error){
+        } catch (error) {
             const response = {
                 sucess: false,
                 message: 'There is some internal error'
             }
-            return res.status(500).json(response)  
+            return res.status(500).json(response)
         }
     }
 }
