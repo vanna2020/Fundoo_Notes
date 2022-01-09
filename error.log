@@ -1242,3 +1242,45 @@
 {"level":"error","message":"Invalid Credential","timestamp":"2022-01-08T18:17:20.868Z"}
 {"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-08T18:17:20.941Z"}
 {"level":"error","message":"Invalid password","timestamp":"2022-01-08T18:17:21.394Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-09T14:06:02.582Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-09T14:06:02.594Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-09T14:06:03.172Z"}
+{"level":"error","message":"Invalid User","timestamp":"2022-01-09T14:06:03.704Z"}
+{"level":"error","message":"Invalid Credential","timestamp":"2022-01-09T14:06:03.704Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-09T14:06:03.748Z"}
+{"level":"error","message":"Invalid password","timestamp":"2022-01-09T14:06:04.090Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-09T15:47:23.051Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-09T15:47:23.073Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-09T15:47:23.086Z"}
+{"level":"error","message":"Invalid User","timestamp":"2022-01-09T15:47:23.597Z"}
+{"level":"error","message":"Invalid Credential","timestamp":"2022-01-09T15:47:23.597Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-09T15:47:23.653Z"}
+{"level":"error","message":"Invalid password","timestamp":"2022-01-09T15:47:24.011Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-09T15:55:45.326Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-09T15:56:49.603Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-09T15:57:13.079Z"}
+{"level":"error","message":"Internal server error","timestamp":"2022-01-09T15:59:12.412Z"}
+{"level":"error","message":"email is not verified yet $(loginData.email","timestamp":"2022-01-09T16:02:43.395Z"}
+{"level":"error","message":"email is not verified yet $(loginData.email,)","timestamp":"2022-01-09T16:02:43.396Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-09T16:03:48.225Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-09T16:03:48.292Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-09T16:03:48.321Z"}
+{"level":"error","message":"email is not verified yet $(loginData.email","timestamp":"2022-01-09T16:03:48.358Z"}
+{"level":"error","message":"email is not verified yet $(loginData.email,)","timestamp":"2022-01-09T16:03:48.360Z"}
+{"level":"error","message":"Invalid User","timestamp":"2022-01-09T16:03:48.438Z"}
+{"level":"error","message":"Invalid Credential","timestamp":"2022-01-09T16:03:48.438Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-09T16:03:48.519Z"}
+{"level":"error","message":"Invalid password","timestamp":"2022-01-09T16:03:48.813Z"}
+{"level":"error","message":"email is not verified yet $(loginData.email)","timestamp":"2022-01-09T16:13:21.105Z"}
+{"level":"error","message":"email is not verified yet $(loginData.email)","timestamp":"2022-01-09T16:13:21.106Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-09T16:18:56.854Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-09T16:18:56.924Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-09T16:18:56.937Z"}
+{"level":"error","message":"email is not verified yet $(loginData.email)","timestamp":"2022-01-09T16:18:57.032Z"}
+{"level":"error","message":"email is not verified yet $(loginData.email)","timestamp":"2022-01-09T16:18:57.037Z"}
+{"level":"error","message":"Invalid User","timestamp":"2022-01-09T16:18:57.109Z"}
+{"level":"error","message":"Invalid Credential","timestamp":"2022-01-09T16:18:57.109Z"}
+{"level":"error","message":"Wrong Input Validations","timestamp":"2022-01-09T16:18:57.187Z"}
+{"level":"error","message":"Invalid password","timestamp":"2022-01-09T16:18:57.478Z"}
+{"level":"error","message":"email is not verified yet vannasingh1999@gmail.com","timestamp":"2022-01-09T16:28:51.247Z"}
+{"level":"error","message":"email is not verified yet vannasingh1999@gmail.com","timestamp":"2022-01-09T16:28:51.249Z"}

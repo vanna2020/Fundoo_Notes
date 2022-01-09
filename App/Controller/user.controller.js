@@ -83,8 +83,7 @@ class Controller {
         if (error) {
           return res.status(400).json({
             success: false,
-            message: 'Unable to login. Please enter correct info',
-            error
+            message: 'Invalid login details! Enter valid information',error
           });
         }
         logger.info('User logged in successfully');

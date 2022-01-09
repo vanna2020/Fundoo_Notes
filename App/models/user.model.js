@@ -79,7 +79,7 @@ class userModel {
         //To find a user email in the database
         user.findOne({ email: loginData.email }, (error, data) => {
             if (error) {
-                logger.error('Find error while loggin user');
+                logger.error('Find error while login user');
                 return callBack(error, null);
             } else if (!data) {
                 logger.error('Invalid User');
@@ -90,8 +90,8 @@ class userModel {
                     logger.info("data found in database");
                     return callBack(null, data);
                 } else {
-                    logger.error("email is not verified yet $(loginData.email");
-                    return callBack(`email is not verified yet $(loginData.email,)`,null);
+                    logger.error(`email is not verified yet ${loginData.email}`);
+                    return callBack(`email is not verified yet ${loginData.email}`,null);
                 }
             }
         });
